@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "homeTitle": "유천 칡냉면 · 호놀룰루 본점 | Yu Chun Korean Restaurant",
+    "menuTitle": "메뉴 · 유천 칡냉면 호놀룰루",
+    "visitTitle": "영업시간 · 오시는 길 · 유천 칡냉면 호놀룰루",
+    "galleryTitle": "갤러리 · 유천 칡냉면 호놀룰루",
+    "reviewsTitle": "리뷰 · 유천 칡냉면 호놀룰루"
+  },
+  "a11y": {
+    "skip": "본문으로 건너뛰기",
+    "language": "언어",
+    "mainNav": "주 메뉴",
+    "quickActions": "바로가기"
+  },
+  "nav": { "home": "홈", "menu": "메뉴", "visit": "오시는 길", "gallery": "사진", "reviews": "리뷰" },
+  "cta": { "call": "전화하기", "directions": "길찾기", "menu": "메뉴", "fullMenu": "전체 메뉴 보기" },
+  "placeholder": "확인 중",
+  "home": {
+    "eyebrow": "카피올라니 블러바드 · 호놀룰루",
+    "tagline": "유천 칡냉면의 원조, 호놀룰루 본점입니다.",
+    "intro": "칡으로 만든 쫄깃한 검은 면을 살얼음 동동 시원한 육수에, 또는 매콤한 특제 양념에 즐겨 보세요.",
+    "sigTitle": "대표 메뉴: 칡냉면",
+    "sigText": "칡이 면에 깊은 색과 탱탱한 식감을 더합니다. 물냉면, 비빔냉면, 따뜻한 온면으로 즐기실 수 있습니다.",
+    "setsTitle": "세트 스페셜",
+    "setsText": "냉면과 인기 고기 메뉴를 한 번에.",
+    "setLabel": "세트",
+    "setsNote": "세트의 회냉면은 1개당 $3.00 추가됩니다.",
+    "visitTitle": "오시는 길",
+    "visitText": "카피올라니 블러바드 1159, 알라모아나 근처. 와이키키에서 약 10분 거리입니다."
+  },
+  "menu": {
+    "title": "메뉴",
+    "intro": "모든 메뉴에 한국어, 영어, 일본어 이름이 함께 적혀 있어 손가락으로 가리켜 주문하실 수 있습니다.",
+    "jump": "섹션으로 이동",
+    "sections": {
+      "signature": "대표 칡냉면",
+      "main": "메인",
+      "extras": "추가 · 사이드",
+      "special": "스페셜",
+      "sets": "세트",
+      "drinks": "음료"
+    },
+    "drinkGroups": {
+      "beer": "맥주",
+      "wine": "와인",
+      "korean": "막걸리 · 소주",
+      "tea": "차",
+      "soda": "탄산음료 · 주스"
+    },
+    "signature": "대표",
+    "spicy": "매운맛",
+    "number": "No.",
+    "legend": "대표 메뉴 · 매운 메뉴",
+    "taxNote": "위 금액은 세금과 봉사료가 포함되지 않은 금액입니다.",
+    "serviceNote": "5인 이상의 단체에는 20% 봉사료가 추가됩니다.",
+    "advisory": "익히지 않았거나 덜 익힌 육류, 가금류, 해산물, 조개류, 달걀을 섭취하면 식중독 위험이 높아질 수 있으며, 특히 특정 질환이 있는 분은 주의하시기 바랍니다.",
+    "loading": "메뉴를 불러오는 중…",
+    "error": "메뉴를 불러오지 못했습니다. (808) 589-0022로 전화 주세요."
+  },
+  "visit": {
+    "title": "영업시간 · 오시는 길",
+    "address": "주소",
+    "phone": "전화",
+    "hours": "영업시간",
+    "hoursPlaceholder": "영업시간을 확인 중입니다. 방문 전에 전화로 확인해 주세요.",
+    "closed": "휴무일",
+    "closedPlaceholder": "확인 중입니다.",
+    "reservations": "예약",
+    "reservationsPlaceholder": "예약 안내를 확인 중입니다. 단체 방문 시 미리 전화 주세요.",
+    "payment": "결제",
+    "paymentPlaceholder": "결제 수단을 확인 중입니다.",
+    "waikikiTitle": "와이키키에서 오시는 길",
+    "waikikiTaxi": "택시 · 차량 호출 앱: 약 10분.",
+    "waikikiBus": "더버스(TheBus): 13번 버스가 카피올라니 블러바드를 지납니다. 가까운 정류장과 시간은 DaBus2 앱에서 확인해 주세요.",
+    "mapTitle": "카피올라니 블러바드 1159 유천 칡냉면 위치 지도"
+  },
+  "gallery": {
+    "title": "갤러리",
+    "intro": "유천의 음식을 사진으로 만나 보세요.",
+    "soon": "사진 준비 중"
+  },
+  "reviews": {
+    "title": "리뷰",
+    "intro": "손님들의 후기를 확인하시고, 직접 리뷰도 남겨 주세요.",
+    "google": "Google 리뷰",
+    "yelp": "Yelp",
+    "tripadvisor": "트립어드바이저",
+    "opens": "새 탭에서 열립니다"
+  },
+  "footer": {
+    "prices": "위 금액은 세금과 봉사료가 포함되지 않은 금액입니다. 5인 이상의 단체에는 20% 봉사료가 추가됩니다.",
+    "credits": "냉면 일러스트: 이 데모를 위한 오리지널 작품입니다. 지도 데이터 © Google",
+    "rights": "유천 칡냉면"
+  }
+}

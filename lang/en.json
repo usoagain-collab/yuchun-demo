@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "homeTitle": "Yu Chun Korean Restaurant · Black Arrowroot Naengmyeon, Honolulu",
+    "menuTitle": "Menu · Yu Chun Korean Restaurant",
+    "visitTitle": "Hours & Location · Yu Chun Korean Restaurant",
+    "galleryTitle": "Gallery · Yu Chun Korean Restaurant",
+    "reviewsTitle": "Reviews · Yu Chun Korean Restaurant"
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "language": "Language",
+    "mainNav": "Main",
+    "quickActions": "Quick actions"
+  },
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "visit": "Visit",
+    "gallery": "Gallery",
+    "reviews": "Reviews"
+  },
+  "cta": {
+    "call": "Call",
+    "directions": "Directions",
+    "menu": "Menu",
+    "fullMenu": "See the full menu"
+  },
+  "placeholder": "To confirm",
+  "home": {
+    "eyebrow": "Kapiolani Blvd · Honolulu",
+    "tagline": "The original home of Yu Chun's black arrowroot naengmyeon.",
+    "intro": "Chewy, dark noodles made with arrowroot (kudzu), served ice-cold in a tangy broth or tossed in our spicy house sauce.",
+    "sigTitle": "The signature: black noodles",
+    "sigText": "Arrowroot gives our noodles their deep color and springy bite. Try them in iced soup, with spicy sauce, or warm.",
+    "setsTitle": "Set specials",
+    "setsText": "Noodles plus a grill favorite, one price.",
+    "setLabel": "Set",
+    "setsNote": "Raw fish naengmyeon is +$3.00 each in sets.",
+    "visitTitle": "Find us",
+    "visitText": "1159 Kapiolani Blvd, near Ala Moana. About 10 minutes from Waikiki."
+  },
+  "menu": {
+    "title": "Menu",
+    "intro": "Point at any item: each one shows its English, Korean and Japanese name.",
+    "jump": "Jump to section",
+    "sections": {
+      "signature": "Signature Noodles",
+      "main": "Main",
+      "extras": "Extras",
+      "special": "Special",
+      "sets": "Sets",
+      "drinks": "Drinks"
+    },
+    "drinkGroups": {
+      "beer": "Beer",
+      "wine": "Wine",
+      "korean": "Makgeolli & Soju",
+      "tea": "Tea",
+      "soda": "Soda & juice"
+    },
+    "signature": "Signature",
+    "spicy": "Spicy",
+    "number": "No.",
+    "legend": "Signature dish · Spicy",
+    "taxNote": "Prices do not include tax and service charge.",
+    "serviceNote": "A 20% gratuity will be added to parties of 5 or more.",
+    "advisory": "Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of foodborne illness, especially if you have certain medical conditions.",
+    "loading": "Loading menu…",
+    "error": "The menu couldn't load. Please call us at (808) 589-0022."
+  },
+  "visit": {
+    "title": "Hours & Location",
+    "address": "Address",
+    "phone": "Phone",
+    "hours": "Hours",
+    "hoursPlaceholder": "Hours are being confirmed. Please call before visiting.",
+    "closed": "Closed days",
+    "closedPlaceholder": "Being confirmed.",
+    "reservations": "Reservations",
+    "reservationsPlaceholder": "Policy being confirmed. Please call ahead for large groups.",
+    "payment": "Payment",
+    "paymentPlaceholder": "Accepted payment methods are being confirmed.",
+    "waikikiTitle": "From Waikiki",
+    "waikikiTaxi": "Taxi or rideshare: about 10 minutes.",
+    "waikikiBus": "TheBus: Route 13 runs along Kapiolani Blvd. Check the DaBus2 app for the nearest stop and times.",
+    "mapTitle": "Map showing Yu Chun Korean Restaurant at 1159 Kapiolani Blvd"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "intro": "A taste of what's on the table.",
+    "soon": "Photo coming soon"
+  },
+  "reviews": {
+    "title": "Reviews",
+    "intro": "See what guests are saying, or leave a review of your own.",
+    "google": "Google reviews",
+    "yelp": "Yelp",
+    "tripadvisor": "Tripadvisor",
+    "opens": "Opens in a new tab"
+  },
+  "footer": {
+    "prices": "Prices do not include tax and service charge. A 20% gratuity will be added to parties of 5 or more.",
+    "credits": "Bowl illustration: original artwork for this demo. Map data © Google.",
+    "rights": "Yu Chun Korean Restaurant"
+  }
+}
