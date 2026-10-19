@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="t">
+  <title id="t">Illustration of a bowl of black arrowroot naengmyeon in iced soup</title>
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0" stop-color="#f6efe4"/><stop offset="1" stop-color="#e3d3bd"/>
+    </radialGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4f4f2"/><stop offset=".45" stop-color="#b9bcbf"/><stop offset=".7" stop-color="#e9eaea"/><stop offset="1" stop-color="#8e9297"/>
+    </linearGradient>
+    <radialGradient id="broth" cx="45%" cy="40%" r="65%">
+      <stop offset="0" stop-color="#d9b77c"/><stop offset=".7" stop-color="#c49a5c"/><stop offset="1" stop-color="#a87d43"/>
+    </radialGradient>
+    <linearGradient id="ice" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".95"/><stop offset="1" stop-color="#dce9ef" stop-opacity=".7"/>
+    </linearGradient>
+    <radialGradient id="shadow"><stop offset=".55" stop-color="#6b5236" stop-opacity=".4"/><stop offset="1" stop-color="#6b5236" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- table texture lines -->
+  <g stroke="#d6c4ab" stroke-width="2" opacity=".5">
+    <path d="M0 470 C200 455 600 485 800 465"/><path d="M0 520 C220 505 580 535 800 515"/>
+  </g>
+  <!-- chopsticks -->
+  <g transform="rotate(-18 640 120)">
+    <rect x="470" y="96" width="330" height="12" rx="6" fill="#7a4a2a"/>
+    <rect x="470" y="118" width="330" height="12" rx="6" fill="#8b5a36"/>
+  </g>
+  <!-- shadow -->
+  <ellipse cx="400" cy="440" rx="320" ry="85" fill="url(#shadow)"/>
+  <!-- bowl outer -->
+  <ellipse cx="400" cy="300" rx="300" ry="190" fill="url(#steel)"/>
+  <ellipse cx="400" cy="300" rx="278" ry="174" fill="#d4d6d7"/>
+  <!-- broth -->
+  <ellipse cx="400" cy="306" rx="262" ry="160" fill="url(#broth)"/>
+  <ellipse cx="360" cy="270" rx="150" ry="70" fill="#f0d9a8" opacity=".35"/>
+  <!-- black noodles: a loose nest -->
+  <g fill="none" stroke-linecap="round">
+    <g stroke="#1e1916" stroke-width="7">
+      <path d="M230 320 C260 230 380 210 450 240 S560 330 500 370 S330 400 300 340 S360 250 430 270 S520 340 460 360"/>
+      <path d="M250 350 C280 260 420 230 500 270 S580 360 480 390 S300 390 280 320"/>
+      <path d="M300 380 C260 300 330 240 420 240 S560 270 560 330 S470 410 380 390"/>
+      <path d="M320 300 C350 250 450 250 490 290 S500 370 420 375 S320 350 340 310"/>
+      <path d="M270 300 C300 270 360 260 400 265"/>
+      <path d="M440 380 C500 380 545 350 548 310"/>
+    </g>
+    <g stroke="#3a312b" stroke-width="3" opacity=".9">
+      <path d="M240 330 C270 245 385 225 452 252 S552 330 495 362"/>
+      <path d="M305 372 C268 305 335 252 420 252 S548 280 548 330"/>
+      <path d="M328 305 C355 262 445 262 482 296"/>
+    </g>
+    <g stroke="#6a5b51" stroke-width="1.5" opacity=".6">
+      <path d="M262 342 C292 262 418 238 495 276"/>
+      <path d="M335 296 C362 258 448 258 486 292"/>
+    </g>
+  </g>
+  <!-- ice crystals -->
+  <g fill="url(#ice)" stroke="#ffffff" stroke-width="2">
+    <rect x="182" y="268" width="44" height="40" rx="9" transform="rotate(-12 204 288)"/>
+    <rect x="560" y="352" width="48" height="42" rx="10" transform="rotate(14 584 373)"/>
+    <rect x="598" y="262" width="36" height="34" rx="8" transform="rotate(-8 616 279)"/>
+    <rect x="222" y="372" width="34" height="30" rx="7" transform="rotate(20 239 387)"/>
+  </g>
+  <!-- julienned cucumber -->
+  <g stroke-linecap="round" stroke-width="7">
+    <path d="M330 224 L380 238" stroke="#6f9a3e"/><path d="M336 238 L388 250" stroke="#8fb85a"/>
+    <path d="M326 252 L372 262" stroke="#6f9a3e"/><path d="M344 214 L392 226" stroke="#a6c86f"/>
+  </g>
+  <!-- pear slices -->
+  <g>
+    <path d="M440 210 C470 200 510 206 528 222 L446 232 Z" fill="#fbf4dc" stroke="#e5d7a6" stroke-width="2"/>
+    <path d="M448 226 C478 220 518 228 534 244 L452 248 Z" fill="#f7eecd" stroke="#e5d7a6" stroke-width="2"/>
+  </g>
+  <!-- beef slices -->
+  <g stroke="#6e3b2a" stroke-width="2">
+    <path d="M462 300 C490 282 540 288 552 312 C532 330 486 330 462 300 Z" fill="#9c5a43"/>
+    <path d="M470 318 C500 304 548 312 556 336 C534 350 490 348 470 318 Z" fill="#b06a50"/>
+  </g>
+  <!-- half boiled egg -->
+  <g transform="rotate(-10 400 296)">
+    <ellipse cx="400" cy="296" rx="46" ry="34" fill="#fffdf6" stroke="#eadfca" stroke-width="2"/>
+    <ellipse cx="402" cy="298" rx="22" ry="17" fill="#f2b62b"/>
+    <ellipse cx="396" cy="292" rx="8" ry="5" fill="#f8d36a" opacity=".8"/>
+  </g>
+  <!-- sesame seeds -->
+  <g fill="#f8efd8">
+    <ellipse cx="360" cy="320" rx="3" ry="1.6" transform="rotate(30 360 320)"/>
+    <ellipse cx="452" cy="270" rx="3" ry="1.6" transform="rotate(-20 452 270)"/>
+    <ellipse cx="430" cy="340" rx="3" ry="1.6" transform="rotate(60 430 340)"/>
+    <ellipse cx="380" cy="350" rx="3" ry="1.6" transform="rotate(10 380 350)"/>
+    <ellipse cx="420" cy="250" rx="3" ry="1.6"/>
+    <ellipse cx="340" cy="290" rx="3" ry="1.6" transform="rotate(-40 340 290)"/>
+  </g>
+  <!-- rim highlight -->
+  <path d="M140 250 C190 150 330 112 430 112" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" opacity=".7"/>
+</svg>
