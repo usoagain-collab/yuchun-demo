@@ -1,0 +1,541 @@
+{
+  "_howto": "Edit prices and names here. Each item has names in ko / en / ja and a short description per language. 'no' is the number printed on the paper menu. 'signature' adds the star badge, 'spicy' adds the chili icon.",
+  "sections": [
+    {
+      "id": "signature",
+      "items": [
+        {
+          "no": 1,
+          "price": "20.95",
+          "signature": true,
+          "ko": "칡물냉면",
+          "en": "Black Noodle in Iced Soup",
+          "ja": "葛水冷麺(冷たいスープ)",
+          "desc": {
+            "en": "Our signature: chewy arrowroot (kudzu) noodles in an ice-cold, tangy broth.",
+            "ja": "当店の看板メニュー。コシのある葛入り黒麺を、キリッと冷えた甘酸っぱいスープでどうぞ。",
+            "ko": "유천의 대표 메뉴. 쫄깃한 칡면을 살얼음 동동 시원하고 새콤한 육수에 말았습니다."
+          }
+        },
+        {
+          "no": 2,
+          "price": "20.95",
+          "signature": true,
+          "spicy": true,
+          "ko": "칡비빔냉면",
+          "en": "Black Noodle with Spicy Sauce",
+          "ja": "葛ビビン冷麺(辛いタレ)",
+          "desc": {
+            "en": "Arrowroot noodles tossed in our sweet-and-spicy house sauce. Mix well before eating.",
+            "ja": "葛入り黒麺を甘辛い特製ダレで和えた一品です。よく混ぜてお召し上がりください。",
+            "ko": "칡면을 새콤달콤 매콤한 특제 양념에 비벼 드세요."
+          }
+        },
+        {
+          "no": 3,
+          "price": "23.95",
+          "spicy": true,
+          "ko": "칡회냉면",
+          "en": "Black Noodle with Spicy Sauce & Raw Fish",
+          "ja": "葛フェ冷麺(辛いタレと刺身)",
+          "desc": {
+            "en": "Spicy arrowroot noodles topped with marinated raw fish.",
+            "ja": "辛いタレの葛冷麺に、味付けした刺身をのせました。",
+            "ko": "매콤한 칡비빔냉면에 양념한 회를 올렸습니다."
+          }
+        },
+        {
+          "no": 4,
+          "price": "20.95",
+          "ko": "칡온면",
+          "en": "Black Noodle in Warm Soup",
+          "ja": "葛温麺(温かいスープ)",
+          "desc": {
+            "en": "The same arrowroot noodles in a warm, comforting broth.",
+            "ja": "同じ葛入り黒麺を、やさしい温かいスープで。",
+            "ko": "칡면을 따뜻하고 구수한 국물에 말았습니다."
+          }
+        }
+      ]
+    },
+    {
+      "id": "main",
+      "items": [
+        {
+          "no": 5,
+          "price": "20.95",
+          "ko": "물만두",
+          "en": "Boiled Mandoo",
+          "ja": "水マンドゥ(水餃子)",
+          "desc": {
+            "en": "Korean dumplings, boiled.",
+            "ja": "ゆでた韓国風餃子です。",
+            "ko": "삶은 만두."
+          }
+        },
+        {
+          "no": 6,
+          "price": "20.95",
+          "ko": "튀김만두",
+          "en": "Pan Fried Mandoo",
+          "ja": "焼きマンドゥ(焼き餃子)",
+          "desc": {
+            "en": "Korean dumplings, pan fried until crisp.",
+            "ja": "こんがり焼いた韓国風餃子です。",
+            "ko": "바삭하게 구운 만두."
+          }
+        },
+        {
+          "no": 7,
+          "price": "22.95",
+          "ko": "만두국",
+          "en": "Mandoo Soup",
+          "ja": "マンドゥクッ(餃子スープ)",
+          "desc": {
+            "en": "Dumplings in a clear, savory soup.",
+            "ja": "餃子入りの澄んだスープです。",
+            "ko": "맑은 국물에 만두를 넣었습니다."
+          }
+        },
+        {
+          "no": 8,
+          "price": "21.95",
+          "ko": "만두국수",
+          "en": "Mandoo & Noodle in Soup",
+          "ja": "マンドゥ麺(餃子入り麺スープ)",
+          "desc": {
+            "en": "Dumplings and noodles together in soup.",
+            "ja": "餃子と麺が入ったスープです。",
+            "ko": "만두와 국수를 함께 담았습니다."
+          }
+        },
+        {
+          "no": 9,
+          "price": "20.95",
+          "ko": "떡국",
+          "en": "Rice Cake Soup",
+          "ja": "トックッ(お餅のスープ)",
+          "desc": {
+            "en": "Sliced rice cakes in a mild, savory broth.",
+            "ja": "薄切りのお餅が入った、やさしい味のスープです。",
+            "ko": "떡을 넣은 담백한 국물."
+          }
+        },
+        {
+          "no": 10,
+          "price": "21.95",
+          "ko": "떡만두국",
+          "en": "Rice Cake & Mandoo in Soup",
+          "ja": "トックマンドゥクッ(お餅と餃子のスープ)",
+          "desc": {
+            "en": "Rice cakes and dumplings in soup.",
+            "ja": "お餅と餃子が入ったスープです。",
+            "ko": "떡과 만두를 함께 넣은 국."
+          }
+        },
+        {
+          "no": 11,
+          "price": "24.95",
+          "ko": "오징어튀김",
+          "en": "Squid Tempura",
+          "ja": "イカの天ぷら",
+          "desc": {
+            "en": "Lightly battered, fried squid.",
+            "ja": "サクッと揚げたイカの天ぷらです。",
+            "ko": "바삭하게 튀긴 오징어."
+          }
+        },
+        {
+          "no": 12,
+          "price": "29.95",
+          "ko": "해물파전",
+          "en": "Seafood, Green Onion in Pancake",
+          "ja": "海鮮チヂミ(ネギ入り)",
+          "desc": {
+            "en": "Savory pancake with seafood and green onion. Good for sharing.",
+            "ja": "海鮮とネギたっぷりのチヂミ。シェアにおすすめです。",
+            "ko": "해물과 파를 듬뿍 넣은 전. 나눠 드시기 좋습니다."
+          }
+        },
+        {
+          "no": 13,
+          "price": "20.95",
+          "spicy": true,
+          "ko": "육개장",
+          "en": "Beef & Vegetable in Hot & Spicy Soup",
+          "ja": "ユッケジャン(辛い牛肉と野菜のスープ)",
+          "desc": {
+            "en": "Hearty spicy soup with shredded beef and vegetables.",
+            "ja": "牛肉と野菜がたっぷり入った辛いスープです。",
+            "ko": "고기와 채소를 넣은 얼큰한 국."
+          }
+        },
+        {
+          "no": 14,
+          "price": "35.95",
+          "ko": "불고기",
+          "en": "Bulgogi",
+          "ja": "プルコギ",
+          "desc": {
+            "en": "Thinly sliced beef in a sweet soy marinade.",
+            "ja": "甘めの醤油ダレに漬け込んだ薄切り牛肉です。",
+            "ko": "달콤한 간장 양념에 재운 소고기."
+          }
+        },
+        {
+          "no": 15,
+          "price": "38.95",
+          "ko": "갈비",
+          "en": "Kalbi",
+          "ja": "カルビ",
+          "desc": {
+            "en": "Marinated beef short ribs.",
+            "ja": "味付けした牛カルビです。",
+            "ko": "양념 소갈비."
+          }
+        },
+        {
+          "no": 16,
+          "price": "24.95",
+          "ko": "가마솥비빔밥",
+          "en": "Rice with Assorted Mixture in Kettle",
+          "ja": "釜ビビンバ",
+          "desc": {
+            "en": "Rice and assorted toppings served in a hot kettle pot. Mix before eating.",
+            "ja": "熱々の釜で提供するビビンバです。よく混ぜてお召し上がりください。",
+            "ko": "뜨거운 가마솥에 담은 비빔밥."
+          }
+        },
+        {
+          "no": 17,
+          "price": "24.95",
+          "spicy": true,
+          "ko": "떡볶이",
+          "en": "Rice Cake & Vegetable with Spicy Sauce",
+          "ja": "トッポッキ(餅と野菜の甘辛煮)",
+          "desc": {
+            "en": "Chewy rice cakes and vegetables in a spicy red sauce.",
+            "ja": "もちもちのお餅と野菜を甘辛いタレで煮込みました。",
+            "ko": "쫄깃한 떡과 채소를 매콤한 양념에 볶았습니다."
+          }
+        },
+        {
+          "no": 18,
+          "price": "20.95",
+          "ko": "우동",
+          "en": "Udon with Fish Cake",
+          "ja": "練り物入りうどん",
+          "desc": {
+            "en": "Udon noodles in broth with fish cake.",
+            "ja": "練り物(韓国のおでん)をのせたうどんです。",
+            "ko": "어묵을 올린 우동."
+          }
+        },
+        {
+          "no": 19,
+          "price": "20.95",
+          "spicy": true,
+          "ko": "순두부찌개",
+          "en": "Soft Tofu Soup",
+          "ja": "スンドゥブチゲ",
+          "desc": {
+            "en": "Silky soft tofu in a bubbling spicy stew.",
+            "ja": "なめらかなおぼろ豆腐の辛いチゲです。",
+            "ko": "부드러운 순두부를 넣은 얼큰한 찌개."
+          }
+        }
+      ]
+    },
+    {
+      "id": "extras",
+      "items": [
+        {
+          "no": 20,
+          "price": "7.00",
+          "ko": "냉면사리",
+          "en": "Extra Black Noodle",
+          "ja": "冷麺替え玉(追加の麺)",
+          "desc": {
+            "en": "",
+            "ja": "",
+            "ko": ""
+          }
+        },
+        {
+          "no": 21,
+          "price": "7.00",
+          "ko": "김",
+          "en": "Seaweed",
+          "ja": "韓国のり",
+          "desc": {
+            "en": "",
+            "ja": "",
+            "ko": ""
+          }
+        },
+        {
+          "no": 22,
+          "price": "3.00",
+          "ko": "공기밥",
+          "en": "Rice",
+          "ja": "ライス",
+          "desc": {
+            "en": "",
+            "ja": "",
+            "ko": ""
+          }
+        },
+        {
+          "no": 23,
+          "price": "10.00",
+          "ko": "반찬세트",
+          "en": "Side Dish Set",
+          "ja": "おかずセット(パンチャン)",
+          "desc": {
+            "en": "",
+            "ja": "",
+            "ko": ""
+          }
+        },
+        {
+          "no": 24,
+          "ko": "김치",
+          "en": "Kimchi",
+          "ja": "キムチ",
+          "prices": [
+            {
+              "size": "S",
+              "price": "2.00"
+            },
+            {
+              "size": "L",
+              "price": "10.00"
+            }
+          ],
+          "desc": {
+            "en": "",
+            "ja": "",
+            "ko": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "special",
+      "items": [
+        {
+          "price": "26.95",
+          "ko": "고기전",
+          "en": "Meat Jun",
+          "ja": "肉チヂミ",
+          "desc": {
+            "en": "Thin slices of beef, egg-battered and pan fried. A Hawaii favorite.",
+            "ja": "薄切り牛肉に卵の衣をつけて焼いた、ハワイで人気の一品です。",
+            "ko": "얇은 소고기에 달걀옷을 입혀 부친 전."
+          }
+        },
+        {
+          "price": "26.95",
+          "ko": "생선전",
+          "en": "Fish Jun",
+          "ja": "魚チヂミ",
+          "desc": {
+            "en": "White fish, egg-battered and pan fried.",
+            "ja": "白身魚に卵の衣をつけて焼きました。",
+            "ko": "흰살 생선에 달걀옷을 입혀 부친 전."
+          }
+        },
+        {
+          "price": "29.95",
+          "spicy": true,
+          "ko": "돼지불고기",
+          "en": "Spicy Pork",
+          "ja": "ぶたプルコギ",
+          "desc": {
+            "en": "Pork in a spicy red pepper marinade.",
+            "ja": "ピリ辛ダレに漬け込んだ豚肉です。",
+            "ko": "매콤한 고추장 양념 돼지고기."
+          }
+        },
+        {
+          "price": "29.95",
+          "ko": "BBQ 치킨",
+          "en": "BBQ Chicken",
+          "ja": "BBQチキン",
+          "desc": {
+            "en": "Chicken in a Korean-style barbecue marinade.",
+            "ja": "韓国風BBQダレのチキンです。",
+            "ko": "한국식 양념 바비큐 치킨."
+          }
+        },
+        {
+          "price": "26.95",
+          "ko": "잡채",
+          "en": "Jap Chae",
+          "ja": "チャプチェ",
+          "desc": {
+            "en": "Stir-fried long rice noodle with beef & vegetables.",
+            "ja": "春雨と牛肉、野菜の炒めものです。",
+            "ko": "당면과 소고기, 채소를 볶은 잡채."
+          }
+        },
+        {
+          "price": "29.95",
+          "spicy": true,
+          "ko": "오징어볶음",
+          "en": "Spicy Squid",
+          "ja": "イカとやさいのイタメもの",
+          "desc": {
+            "en": "Stir-fried spicy squid with vegetables.",
+            "ja": "イカと野菜のピリ辛炒めです。",
+            "ko": "오징어와 채소를 매콤하게 볶았습니다."
+          }
+        }
+      ]
+    }
+  ],
+  "sets": [
+    {
+      "id": "A",
+      "price": "65.95",
+      "desc": {
+        "en": "2 cold noodles (water or spicy) + 1 Kalbi, Bulgogi or Spicy Pork",
+        "ja": "冷麺2つ(水冷麺またはビビン冷麺)+ カルビ・プルコギ・ぶたプルコギから1品",
+        "ko": "냉면 2개 (물 또는 비빔) + 갈비·불고기·돼지불고기 중 1개"
+      }
+    },
+    {
+      "id": "B",
+      "price": "45.95",
+      "desc": {
+        "en": "1 cold noodle (water or spicy) + 1 Kalbi, Bulgogi or Spicy Pork",
+        "ja": "冷麺1つ(水冷麺またはビビン冷麺)+ カルビ・プルコギ・ぶたプルコギから1品",
+        "ko": "냉면 1개 (물 또는 비빔) + 갈비·불고기·돼지불고기 중 1개"
+      }
+    }
+  ],
+  "drinks": [
+    {
+      "id": "beer",
+      "items": [
+        {
+          "en": "Coors Light",
+          "ja": "クアーズ・ライト",
+          "ko": "쿠어스 라이트",
+          "price": "6"
+        },
+        {
+          "en": "Budweiser",
+          "ja": "バドワイザー",
+          "ko": "버드와이저",
+          "price": "6"
+        },
+        {
+          "en": "Bud Light",
+          "ja": "バドライト",
+          "ko": "버드 라이트",
+          "price": "6"
+        },
+        {
+          "en": "Asahi",
+          "ja": "アサヒ",
+          "ko": "아사히",
+          "price": "7"
+        },
+        {
+          "en": "Heineken",
+          "ja": "ハイネケン",
+          "ko": "하이네켄",
+          "price": "7"
+        },
+        {
+          "en": "Corona",
+          "ja": "コロナ",
+          "ko": "코로나",
+          "price": "7"
+        },
+        {
+          "en": "Terra",
+          "ja": "テラ",
+          "ko": "테라",
+          "price": "7"
+        }
+      ]
+    },
+    {
+      "id": "wine",
+      "items": [
+        {
+          "en": "Red & White Wine (187ml)",
+          "ja": "赤・白ワイン(187ml)",
+          "ko": "레드·화이트 와인 (187ml)",
+          "price": "7"
+        }
+      ]
+    },
+    {
+      "id": "korean",
+      "items": [
+        {
+          "en": "Makgeolli",
+          "ja": "マッコリ",
+          "ko": "막걸리",
+          "price": "15"
+        },
+        {
+          "en": "Soju: Chamisul Fresh",
+          "ja": "焼酎(チャミスル・フレッシュ)",
+          "ko": "소주 참이슬 후레쉬",
+          "price": "15"
+        }
+      ]
+    },
+    {
+      "id": "tea",
+      "items": [
+        {
+          "en": "Green Tea",
+          "ja": "緑茶",
+          "ko": "녹차",
+          "price": "4"
+        },
+        {
+          "en": "Oolong Tea",
+          "ja": "ウーロン茶",
+          "ko": "우롱차",
+          "price": "4"
+        }
+      ]
+    },
+    {
+      "id": "soda",
+      "items": [
+        {
+          "en": "Coke / Diet Coke",
+          "ja": "コーラ/ダイエットコーラ",
+          "ko": "콜라 / 다이어트 콜라",
+          "price": "3"
+        },
+        {
+          "en": "Sprite",
+          "ja": "スプライト",
+          "ko": "스프라이트",
+          "price": "3"
+        },
+        {
+          "en": "Guava Juice",
+          "ja": "グァバジュース",
+          "ko": "구아바 주스",
+          "price": "3"
+        },
+        {
+          "en": "Passion Orange Juice",
+          "ja": "パッションオレンジジュース",
+          "ko": "패션 오렌지 주스",
+          "price": "3"
+        }
+      ]
+    }
+  ],
+  "_source": "Printed menu photo content/menu-photo.jpg (Yelp, May 2026)."
+}
