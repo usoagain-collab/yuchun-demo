@@ -1,0 +1,41 @@
+{
+  "_howto": "To add a real photo: put the file in assets/img/ (for example assets/img/kalbi.jpg), then set \"src\" to \"assets/img/kalbi.jpg\" and fill in \"credit\" (who took it). Leave \"src\" empty to show a 'Photo coming soon' card.",
+  "photos": [
+    {
+      "src": "",
+      "credit": "",
+      "caption": { "en": "Black Noodle in Iced Soup", "ja": "葛水冷麺", "ko": "칡물냉면" },
+      "alt": { "en": "A bowl of black arrowroot noodles in iced soup", "ja": "冷たいスープの葛入り黒冷麺", "ko": "시원한 육수의 칡물냉면" }
+    },
+    {
+      "src": "",
+      "credit": "",
+      "caption": { "en": "Black Noodle with Spicy Sauce", "ja": "葛ビビン冷麺", "ko": "칡비빔냉면" },
+      "alt": { "en": "Black noodles tossed in red spicy sauce", "ja": "辛いタレで和えた黒冷麺", "ko": "매콤한 양념의 칡비빔냉면" }
+    },
+    {
+      "src": "",
+      "credit": "",
+      "caption": { "en": "Kalbi", "ja": "カルビ", "ko": "갈비" },
+      "alt": { "en": "Grilled marinated beef short ribs", "ja": "焼いた味付け牛カルビ", "ko": "구운 양념 갈비" }
+    },
+    {
+      "src": "",
+      "credit": "",
+      "caption": { "en": "Bulgogi", "ja": "プルコギ", "ko": "불고기" },
+      "alt": { "en": "Sweet soy marinated beef bulgogi", "ja": "甘辛いプルコギ", "ko": "달콤한 불고기" }
+    },
+    {
+      "src": "",
+      "credit": "",
+      "caption": { "en": "Seafood Pancake", "ja": "海鮮チヂミ", "ko": "해물파전" },
+      "alt": { "en": "Seafood and green onion pancake", "ja": "海鮮とネギのチヂミ", "ko": "해물파전" }
+    },
+    {
+      "src": "",
+      "credit": "",
+      "caption": { "en": "Pan Fried Mandoo", "ja": "焼きマンドゥ", "ko": "튀김만두" },
+      "alt": { "en": "Pan fried Korean dumplings", "ja": "焼いた韓国風餃子", "ko": "바삭한 튀김만두" }
+    }
+  ]
+}
