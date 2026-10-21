@@ -12,8 +12,19 @@
     "mainNav": "주 메뉴",
     "quickActions": "바로가기"
   },
-  "nav": { "home": "홈", "menu": "메뉴", "visit": "오시는 길", "gallery": "사진", "reviews": "리뷰" },
-  "cta": { "call": "전화하기", "directions": "길찾기", "menu": "메뉴", "fullMenu": "전체 메뉴 보기" },
+  "nav": {
+    "home": "홈",
+    "menu": "메뉴",
+    "visit": "오시는 길",
+    "gallery": "사진",
+    "reviews": "리뷰"
+  },
+  "cta": {
+    "call": "전화하기",
+    "directions": "길찾기",
+    "menu": "메뉴",
+    "fullMenu": "전체 메뉴 보기"
+  },
   "placeholder": "확인 중",
   "home": {
     "eyebrow": "카피올라니 블러바드 · 호놀룰루",
@@ -26,7 +37,7 @@
     "setLabel": "세트",
     "setsNote": "세트의 회냉면은 1개당 $3.00 추가됩니다.",
     "visitTitle": "오시는 길",
-    "visitText": "카피올라니 블러바드 1159, 알라모아나 근처. 와이키키에서 약 10분 거리입니다."
+    "visitText": "카피올라니 블러바드 1159, 알라모아나 근처. 매일 오전 11시~오후 9시 영업. 와이키키에서 약 10분 거리입니다."
   },
   "menu": {
     "title": "메뉴",
@@ -62,17 +73,17 @@
     "address": "주소",
     "phone": "전화",
     "hours": "영업시간",
-    "hoursPlaceholder": "영업시간을 확인 중입니다. 방문 전에 전화로 확인해 주세요.",
     "closed": "휴무일",
-    "closedPlaceholder": "확인 중입니다.",
     "reservations": "예약",
-    "reservationsPlaceholder": "예약 안내를 확인 중입니다. 단체 방문 시 미리 전화 주세요.",
     "payment": "결제",
     "paymentPlaceholder": "결제 수단을 확인 중입니다.",
     "waikikiTitle": "와이키키에서 오시는 길",
     "waikikiTaxi": "택시 · 차량 호출 앱: 약 10분.",
     "waikikiBus": "더버스(TheBus): 13번 버스가 카피올라니 블러바드를 지납니다. 가까운 정류장과 시간은 DaBus2 앱에서 확인해 주세요.",
-    "mapTitle": "카피올라니 블러바드 1159 유천 칡냉면 위치 지도"
+    "mapTitle": "카피올라니 블러바드 1159 유천 칡냉면 위치 지도",
+    "hoursText": "매일 오전 11시 ~ 오후 9시",
+    "closedText": "매일 영업합니다.",
+    "reservationsText": "예약은 받지 않습니다. 편하게 방문해 주세요."
   },
   "gallery": {
     "title": "갤러리",

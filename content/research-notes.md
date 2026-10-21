@@ -18,6 +18,14 @@ Only facts with a source are listed. Anything unconfirmed is in `TODO.md` and sh
 
 Menu photo link (Yelp): https://www.yelp.com/biz_photos/yu-chun-korean-restaurant-honolulu?select=5T0lt5P37N8ytT63lioFZA
 
+## Confirmed by the project owner (Oct 21, 2026)
+
+- Hours: 11:00 AM – 9:00 PM, every day.
+- No reservations.
+- This is the original, main location.
+
+These replace the conflicting online hours below.
+
 ## Address and phone (also matches online listings)
 
 - Listed as "1159 Kapiolani Blvd **Ste A**, Honolulu, HI 96814-2102", phone (808) 589-0022.

@@ -4,9 +4,9 @@ Each item below shows on the site as a yellow **"To confirm"** placeholder (or i
 
 ## Must confirm before this goes beyond a demo
 
-- [ ] **Business hours** for each day. Online listings disagree (closing at 9 PM vs 10 PM). Edit `lang/en.json`, `ja.json`, `ko.json` → `visit.hoursPlaceholder`.
-- [ ] **Closed days** (if any). → `visit.closedPlaceholder`
-- [ ] **Reservation policy**: do they take reservations? For how many people? → `visit.reservationsPlaceholder`
+- [x] ~~Business hours~~: **11:00 AM – 9:00 PM daily** (confirmed Oct 21, 2026). On the site.
+- [x] ~~Closed days~~: open every day. Still worth asking about holiday closures (Thanksgiving, New Year).
+- [x] ~~Reservation policy~~: **no reservations**. On the site.
 - [ ] **Payment methods**: cards? Which ones? Cash only? → `visit.paymentPlaceholder`
 - [ ] **Bus directions**: confirm the nearest TheBus stop and route from Waikiki (Route 13 runs along Kapiolani Blvd, stop not confirmed). → `visit.waikikiBus`
 - [ ] **"About 10 minutes from Waikiki"** is from the brief. Fine as a rough guide, but confirm.
@@ -22,6 +22,6 @@ Each item below shows on the site as a yellow **"To confirm"** placeholder (or i
 ## Photos and branding
 
 - [ ] **Real food photos**: all gallery entries are "Photo coming soon" placeholders (stock-photo sites were blocked from this build environment, and photos from Google/Yelp must not be copied). See the README for how to add them.
-- [ ] **Logo file**: the header uses a text wordmark (유천 in a red square). Drop in the real logo (see README).
+- [ ] **Logo file**: the header uses a text wordmark (유천 in a red square) for now. Ask the owner for the original logo file (better quality than a copy from Google). See the README to drop it in.
 - [ ] **Hero image** is an original illustration. Replace with a real photo of the black naengmyeon when available.
-- [ ] Confirm the "original location / 本店" wording is how the owner wants to describe it.
+- [x] ~~Original location~~: confirmed, this is the original, main location.

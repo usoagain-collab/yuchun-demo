@@ -37,7 +37,7 @@
     "setLabel": "Set",
     "setsNote": "Raw fish naengmyeon is +$3.00 each in sets.",
     "visitTitle": "Find us",
-    "visitText": "1159 Kapiolani Blvd, near Ala Moana. About 10 minutes from Waikiki."
+    "visitText": "1159 Kapiolani Blvd, near Ala Moana. Open daily 11 AM – 9 PM. About 10 minutes from Waikiki."
   },
   "menu": {
     "title": "Menu",
@@ -73,17 +73,17 @@
     "address": "Address",
     "phone": "Phone",
     "hours": "Hours",
-    "hoursPlaceholder": "Hours are being confirmed. Please call before visiting.",
     "closed": "Closed days",
-    "closedPlaceholder": "Being confirmed.",
     "reservations": "Reservations",
-    "reservationsPlaceholder": "Policy being confirmed. Please call ahead for large groups.",
     "payment": "Payment",
     "paymentPlaceholder": "Accepted payment methods are being confirmed.",
     "waikikiTitle": "From Waikiki",
     "waikikiTaxi": "Taxi or rideshare: about 10 minutes.",
     "waikikiBus": "TheBus: Route 13 runs along Kapiolani Blvd. Check the DaBus2 app for the nearest stop and times.",
-    "mapTitle": "Map showing Yu Chun Korean Restaurant at 1159 Kapiolani Blvd"
+    "mapTitle": "Map showing Yu Chun Korean Restaurant at 1159 Kapiolani Blvd",
+    "hoursText": "11:00 AM – 9:00 PM, every day",
+    "closedText": "Open every day.",
+    "reservationsText": "We don't take reservations. Just come on in."
   },
   "gallery": {
     "title": "Gallery",

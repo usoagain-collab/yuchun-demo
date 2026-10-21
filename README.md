@@ -43,9 +43,9 @@ Open `content/menu.json` and find the dish. Each one looks like this:
 - Set A / Set B are under `"sets"`, drinks under `"drinks"`.
 
 ### Change hours, address notes, or any text
-Open `lang/en.json` (and the matching line in `ja.json` and `ko.json`). For example, to replace the hours placeholder, change `"hoursPlaceholder"` under `"visit"` to something like `"Mon–Sat 11:00 AM – 9:00 PM · Closed Sunday"`.
+Open `lang/en.json` (and the matching line in `ja.json` and `ko.json`). For example, to change the hours, edit `"hoursText"` under `"visit"` (currently `"11:00 AM – 9:00 PM, every day"`) in each language file.
 
-To remove the yellow **"To confirm"** badge once a fact is confirmed: open `visit.html`, find the card (search for `visit.hours`), delete `is-placeholder` from its `class="..."` and delete the `<span class="placeholder" ...>` tag next to the heading.
+To remove the yellow **"To confirm"** badge once a fact is confirmed: open `visit.html`, find the card (search for `visit.payment`), delete `is-placeholder` from its `class="..."` and delete the `<span class="placeholder" ...>` tag next to the heading.
 
 The phone number and address appear directly in the HTML pages and footer. Search and replace them in all five `.html` files if they ever change.
 

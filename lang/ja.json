@@ -37,7 +37,7 @@
     "setLabel": "セット",
     "setsNote": "セットのフェ冷麺(刺身入り)は1つにつき+$3.00です。",
     "visitTitle": "アクセス",
-    "visitText": "カピオラニ通り1159番地、アラモアナ近く。ワイキキから約10分です。"
+    "visitText": "カピオラニ通り1159番地、アラモアナ近く。毎日11:00~21:00営業。ワイキキから約10分です。"
   },
   "menu": {
     "title": "メニュー",
@@ -73,17 +73,17 @@
     "address": "住所",
     "phone": "電話番号",
     "hours": "営業時間",
-    "hoursPlaceholder": "営業時間は確認中です。ご来店前にお電話でご確認ください。",
     "closed": "定休日",
-    "closedPlaceholder": "確認中です。",
     "reservations": "ご予約",
-    "reservationsPlaceholder": "ご予約の方針は確認中です。団体でのご来店は事前にお電話ください。",
     "payment": "お支払い",
     "paymentPlaceholder": "ご利用いただけるお支払い方法は確認中です。",
     "waikikiTitle": "ワイキキから",
     "waikikiTaxi": "タクシー・配車アプリ:約10分です。",
     "waikikiBus": "ザ・バス:13番がカピオラニ通りを走っています。最寄りの停留所と時刻は「DaBus2」アプリでご確認ください。",
-    "mapTitle": "カピオラニ通り1159番地のユッチャン・コリアン・レストランの地図"
+    "mapTitle": "カピオラニ通り1159番地のユッチャン・コリアン・レストランの地図",
+    "hoursText": "毎日 11:00~21:00",
+    "closedText": "毎日営業しています。",
+    "reservationsText": "ご予約は承っておりません。お気軽にお越しください。"
   },
   "gallery": {
     "title": "ギャラリー",
