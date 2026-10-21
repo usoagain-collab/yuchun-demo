@@ -32,6 +32,19 @@
     document.head.appendChild(link);
   }
 
+  // Opening hours in Hawaii time (24-hour clock). Hawaii has no daylight saving, so it is always UTC-10.
+  var OPEN_HOUR = 11, CLOSE_HOUR = 21;
+  function showOpenStatus(t) {
+    var hawaii = new Date(Date.now() - 10 * 3600 * 1000);
+    var hour = hawaii.getUTCHours() + hawaii.getUTCMinutes() / 60;
+    var open = hour >= OPEN_HOUR && hour < CLOSE_HOUR;
+    document.querySelectorAll('[data-open-status]').forEach(function (el) {
+      el.textContent = t(open ? 'status.open' : 'status.closed');
+      el.classList.toggle('is-open', open);
+      el.classList.add('ready');
+    });
+  }
+
   function apply(l) {
     loadFont(l);
     return Promise.all([load('en'), load(l)]).then(function (res) {
@@ -53,6 +66,7 @@
       document.querySelectorAll('.lang-switch button').forEach(function (b) {
         b.setAttribute('aria-pressed', String(b.getAttribute('data-lang') === l));
       });
+      showOpenStatus(t);
       window.YC = { lang: l, t: t };
       document.dispatchEvent(new CustomEvent('yc:lang', { detail: { lang: l, t: t } }));
     }).catch(function () {

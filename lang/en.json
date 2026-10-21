@@ -102,5 +102,9 @@
     "prices": "Prices do not include tax and service charge. A 20% gratuity will be added to parties of 5 or more.",
     "credits": "Bowl illustration: original artwork for this demo. Map data © Google.",
     "rights": "Yu Chun Korean Restaurant"
+  },
+  "status": {
+    "open": "Open now · until 9:00 PM",
+    "closed": "Closed now · opens at 11:00 AM"
   }
 }
