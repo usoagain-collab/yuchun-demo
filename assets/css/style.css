@@ -206,6 +206,17 @@ html[lang="ja"] .eyebrow, html[lang="ko"] .eyebrow { letter-spacing: .02em; }
 .fine-print { margin-top: 28px; padding: 16px; border-radius: var(--radius); background: #f3ede4; font-size: .88rem; color: var(--ink-soft); }
 .fine-print p:last-child { margin: 0; }
 
+/* ---------- Open now / Closed now ---------- */
+.open-status {
+  display: inline-flex; align-items: center; gap: 8px; margin: 0 0 12px;
+  font-weight: 700; font-size: .9rem; color: var(--ink-soft);
+}
+.open-status::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: #9a9188; }
+.open-status.is-open { color: #1f7a45; }
+.open-status.is-open::before { background: #22a85a; box-shadow: 0 0 0 4px rgba(34, 168, 90, .18); }
+.open-status:not(.ready) { visibility: hidden; }
+.info .open-status { margin: 8px 0 0; }
+
 /* ---------- Placeholders ---------- */
 .placeholder {
   display: inline-flex; align-items: center; gap: 6px; font-size: .74rem; font-weight: 800;
