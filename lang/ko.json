@@ -76,14 +76,14 @@
     "closed": "휴무일",
     "reservations": "예약",
     "payment": "결제",
-    "paymentPlaceholder": "결제 수단을 확인 중입니다.",
     "waikikiTitle": "와이키키에서 오시는 길",
     "waikikiTaxi": "택시 · 차량 호출 앱: 약 10분.",
-    "waikikiBus": "더버스(TheBus): 13번 버스가 카피올라니 블러바드를 지납니다. 가까운 정류장과 시간은 DaBus2 앱에서 확인해 주세요.",
+    "waikikiBus": "더버스(TheBus): 13번 버스를 타고 Kapiolani Bl + Piikoi St 또는 Kapiolani Bl + Kamakee St 정류장에서 내리세요. 식당은 두 정류장 사이에 있으며 걸어서 몇 분 거리입니다. 시간은 DaBus2 앱에서 확인해 주세요.",
     "mapTitle": "카피올라니 블러바드 1159 유천 칡냉면 위치 지도",
     "hoursText": "매일 오전 11시 ~ 오후 9시",
-    "closedText": "매일 영업합니다.",
-    "reservationsText": "예약은 받지 않습니다. 편하게 방문해 주세요."
+    "closedText": "연중무휴 (공휴일에도 영업합니다).",
+    "reservationsText": "예약은 받지 않습니다. 편하게 방문해 주세요.",
+    "paymentText": "현금과 신용카드 모두 가능합니다."
   },
   "gallery": {
     "title": "갤러리",
@@ -100,7 +100,7 @@
   },
   "footer": {
     "prices": "위 금액은 세금과 봉사료가 포함되지 않은 금액입니다. 5인 이상의 단체에는 20% 봉사료가 추가됩니다.",
-    "credits": "냉면 일러스트: 이 데모를 위한 오리지널 작품입니다. 지도 데이터 © Google",
+    "credits": "지도 데이터 © Google",
     "rights": "유천 칡냉면"
   },
   "status": {

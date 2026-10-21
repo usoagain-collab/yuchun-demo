@@ -76,14 +76,14 @@
     "closed": "Closed days",
     "reservations": "Reservations",
     "payment": "Payment",
-    "paymentPlaceholder": "Accepted payment methods are being confirmed.",
     "waikikiTitle": "From Waikiki",
     "waikikiTaxi": "Taxi or rideshare: about 10 minutes.",
-    "waikikiBus": "TheBus: Route 13 runs along Kapiolani Blvd. Check the DaBus2 app for the nearest stop and times.",
+    "waikikiBus": "TheBus: Route 13 stops at Kapiolani Blvd + Piikoi St and Kapiolani Blvd + Kamakee St. The restaurant is between them, a few minutes' walk. Check the DaBus2 app for times.",
     "mapTitle": "Map showing Yu Chun Korean Restaurant at 1159 Kapiolani Blvd",
     "hoursText": "11:00 AM – 9:00 PM, every day",
-    "closedText": "Open every day.",
-    "reservationsText": "We don't take reservations. Just come on in."
+    "closedText": "Open every day, including holidays.",
+    "reservationsText": "We don't take reservations. Just come on in.",
+    "paymentText": "Cash and credit cards."
   },
   "gallery": {
     "title": "Gallery",
@@ -100,7 +100,7 @@
   },
   "footer": {
     "prices": "Prices do not include tax and service charge. A 20% gratuity will be added to parties of 5 or more.",
-    "credits": "Bowl illustration: original artwork for this demo. Map data © Google.",
+    "credits": "Map data © Google.",
     "rights": "Yu Chun Korean Restaurant"
   },
   "status": {

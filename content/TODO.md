@@ -5,10 +5,10 @@ Each item below shows on the site as a yellow **"To confirm"** placeholder (or i
 ## Must confirm before this goes beyond a demo
 
 - [x] ~~Business hours~~: **11:00 AM – 9:00 PM daily** (confirmed Oct 21, 2026). On the site.
-- [x] ~~Closed days~~: open every day. Still worth asking about holiday closures (Thanksgiving, New Year).
+- [x] ~~Closed days~~: open every day, **no holiday closures** (confirmed Oct 21, 2026).
 - [x] ~~Reservation policy~~: **no reservations**. On the site.
-- [ ] **Payment methods**: cards? Which ones? Cash only? → `visit.paymentPlaceholder`
-- [ ] **Bus directions**: confirm the nearest TheBus stop and route from Waikiki (Route 13 runs along Kapiolani Blvd, stop not confirmed). → `visit.waikikiBus`
+- [x] ~~Payment methods~~: **cash and credit cards** (confirmed Oct 21, 2026). Optional: ask which card brands (Visa, Mastercard, JCB, AmEx). JCB matters for Japanese visitors.
+- [x] ~~Bus directions~~: Route 13 stops at Kapiolani Bl + Piikoi St and Kapiolani Bl + Kamakee St, on either side of the restaurant (TheBus stop listings, see research notes).
 - [ ] **"About 10 minutes from Waikiki"** is from the brief. Fine as a rough guide, but confirm.
 
 ## Menu
@@ -21,7 +21,8 @@ Each item below shows on the site as a yellow **"To confirm"** placeholder (or i
 
 ## Photos and branding
 
-- [ ] **Real food photos**: all gallery entries are "Photo coming soon" placeholders (stock-photo sites were blocked from this build environment, and photos from Google/Yelp must not be copied). See the README for how to add them.
-- [ ] **Logo file**: the header uses a text wordmark (유천 in a red square) for now. Ask the owner for the original logo file (better quality than a copy from Google). See the README to drop it in.
-- [ ] **Hero image** is an original illustration. Replace with a real photo of the black naengmyeon when available.
+- [ ] **Food photos**: two real photos of the spicy black noodles are in (hero, signature section, gallery). Still needed: iced-soup naengmyeon, kalbi, seafood pancake, mandoo.
+- [ ] **Photo rights**: if the two noodle photos came from Yelp or Google, they belong to whoever posted them. Fine for showing the owner, but swap in the owner's own photos (or get permission) before this becomes the real site. Add a credit in `content/gallery.json` if needed.
+- [ ] **Logo file**: the real logo is in the header now, but the copy is small (146×122 px) and soft. Ask the owner for the original file and replace `assets/img/logo.png`.
+- [x] ~~Hero image~~: now a real photo of the spicy black noodles.
 - [x] ~~Original location~~: confirmed, this is the original, main location.

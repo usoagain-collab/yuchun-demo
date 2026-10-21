@@ -45,29 +45,19 @@ Open `content/menu.json` and find the dish. Each one looks like this:
 ### Change hours, address notes, or any text
 Open `lang/en.json` (and the matching line in `ja.json` and `ko.json`). For example, to change the hours, edit `"hoursText"` under `"visit"` (currently `"11:00 AM – 9:00 PM, every day"`) in each language file.
 
-To remove the yellow **"To confirm"** badge once a fact is confirmed: open `visit.html`, find the card (search for `visit.payment`), delete `is-placeholder` from its `class="..."` and delete the `<span class="placeholder" ...>` tag next to the heading.
+All the facts on the Visit page are now confirmed, so no yellow "To confirm" badges are left.
 
 The phone number and address appear directly in the HTML pages and footer. Search and replace them in all five `.html` files if they ever change.
 
 ### Add real photos
 1. Upload the photo to `assets/img/` (GitHub: open the folder → **Add file → Upload files**). Use a JPG about 1200 px wide.
 2. Open `content/gallery.json` and set that entry's `"src"` to the file path, for example `"assets/img/kalbi.jpg"`, and `"credit"` to the photographer (e.g., `"Unsplash / Jane Doe"`). Credits appear automatically in the footer.
-3. To replace the **hero illustration** on the home page, upload the photo and change `assets/img/hero-naengmyeon.svg` to its path in `index.html` (it appears twice).
+3. The big photo on the home page is `assets/img/naengmyeon-spicy.jpg` and the one in the "signature" section is `assets/img/naengmyeon-kalbi.jpg`. Upload a new photo with the same name to replace either one.
 
 Only use photos you own, that the restaurant gives you, or that are royalty-free (Unsplash, Pexels). **Don't** copy photos from Google, Yelp or Tripadvisor.
 
-### Add the real logo
-Upload it as `assets/img/logo.png` (a square image works best), then in each `.html` file replace
-
-```html
-<span class="brand-mark" aria-hidden="true">유천</span>
-```
-
-with
-
-```html
-<span class="brand-mark"><img src="assets/img/logo.png" alt=""></span>
-```
+### Replace the logo
+The logo is `assets/img/logo.png`. Upload a sharper version with the same name (GitHub: open `assets/img` → **Add file → Upload files**) and it updates on every page.
 
 ### Change colors
 At the top of `assets/css/style.css`, `--red: #a3161f;` is the accent color. Change it once and it updates everywhere.
@@ -83,6 +73,6 @@ python3 -m http.server 8000
 and open http://localhost:8000.
 
 ## Credits
-- Bowl illustration: original artwork made for this demo.
+- Food photos and logo: supplied by the project owner.
 - Fonts: Inter, Noto Sans JP, Noto Sans KR (Google Fonts).
 - Map: Google Maps embed.

@@ -63,12 +63,11 @@ p { margin: 0 0 1em; }
 .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); min-width: 0; }
 /* Logo slot: put a logo file in assets/img/logo.png and add <img> here (see README) */
 .brand-mark {
-  flex: none; width: 38px; height: 38px; border-radius: 8px;
+  flex: none; width: 46px; height: 38px; border-radius: 6px;
   background: var(--red); color: #fff; display: grid; place-items: center;
-  font-family: var(--font-ko); font-weight: 700; font-size: 17px; letter-spacing: -.04em;
-  transform: rotate(-4deg);
+  overflow: hidden;
 }
-.brand-mark img { width: 100%; height: 100%; object-fit: contain; border-radius: inherit; }
+.brand-mark img { width: 100%; height: 100%; object-fit: cover; }
 .brand-text { display: flex; flex-direction: column; line-height: 1.1; min-width: 0; }
 .brand-name { font-weight: 800; font-size: 1.05rem; letter-spacing: -.01em; white-space: nowrap; }
 .brand-sub { font-size: .72rem; color: var(--ink-soft); white-space: nowrap; font-family: var(--font-ko); }
@@ -134,8 +133,8 @@ html[lang="ja"] .eyebrow, html[lang="ko"] .eyebrow { letter-spacing: .02em; }
 .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
 
 .feature { display: grid; gap: 18px; align-items: center; }
-.feature-img { border-radius: var(--radius); overflow: hidden; aspect-ratio: 4/3; background: #efe6d9; }
-.feature-img img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.9); transform-origin: 52% 52%; }
+.feature-img { border-radius: var(--radius); overflow: hidden; aspect-ratio: 4/5; background: #efe6d9; }
+.feature-img img { width: 100%; height: 100%; object-fit: cover; }
 
 .sets { display: grid; gap: 14px; }
 .set-card { padding: 20px; position: relative; overflow: hidden; }

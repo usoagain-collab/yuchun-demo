@@ -76,14 +76,14 @@
     "closed": "定休日",
     "reservations": "ご予約",
     "payment": "お支払い",
-    "paymentPlaceholder": "ご利用いただけるお支払い方法は確認中です。",
     "waikikiTitle": "ワイキキから",
     "waikikiTaxi": "タクシー・配車アプリ:約10分です。",
-    "waikikiBus": "ザ・バス:13番がカピオラニ通りを走っています。最寄りの停留所と時刻は「DaBus2」アプリでご確認ください。",
+    "waikikiBus": "ザ・バス:13番で「Kapiolani Bl + Piikoi St」または「Kapiolani Bl + Kamakee St」で下車。お店は2つの停留所の間にあり、徒歩数分です。時刻は「DaBus2」アプリでご確認ください。",
     "mapTitle": "カピオラニ通り1159番地のユッチャン・コリアン・レストランの地図",
     "hoursText": "毎日 11:00~21:00",
-    "closedText": "毎日営業しています。",
-    "reservationsText": "ご予約は承っておりません。お気軽にお越しください。"
+    "closedText": "年中無休(祝日も営業)です。",
+    "reservationsText": "ご予約は承っておりません。お気軽にお越しください。",
+    "paymentText": "現金・クレジットカードがご利用いただけます。"
   },
   "gallery": {
     "title": "ギャラリー",
@@ -100,7 +100,7 @@
   },
   "footer": {
     "prices": "表示価格には税金とサービス料は含まれておりません。 5名様以上のグループには20%のサービス料(チップ)を加算いたします。",
-    "credits": "冷麺のイラスト:このデモ用のオリジナル作品です。地図データ © Google",
+    "credits": "地図データ © Google",
     "rights": "ユッチャン・コリアン・レストラン"
   },
   "status": {

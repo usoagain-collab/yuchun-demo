@@ -23,6 +23,9 @@ Menu photo link (Yelp): https://www.yelp.com/biz_photos/yu-chun-korean-restauran
 - Hours: 11:00 AM – 9:00 PM, every day.
 - No reservations.
 - This is the original, main location.
+- Payment: cash and credit cards.
+- No holiday closures.
+- Photos of the spicy black noodles and the logo image were supplied by the project owner.
 
 These replace the conflicting online hours below.
 
@@ -56,7 +59,10 @@ Nothing found in any source. All three are placeholders.
   Sources: https://transitapp.com/en/region/oahu/thebus/bus-13 and https://www.honolulu.gov/csd/thebus-route-modifications-and-updates-effective-sunday-dec-5/
 - Route 8 was extended in 2021 and uses Kapiolani Blvd / Piikoi St on part of its loop.
   Source: https://www.aol.com/news/thebus-extends-route-8-waikiki-050100826.html
-- The exact nearest stop wasn't confirmed, so the site points riders to the DaBus2 app and marks the bus line "To confirm".
+- Nearest stops on Route 13 (from TheBus's own stop pages):
+  - Kapiolani Bl + Piikoi St, stop 602 (eastbound) and stop 4404 (westbound). Sources: http://hea.thebus.org/nextbus.asp?s=602 and http://hea.thebus.org/nextbus.asp?s=4404
+  - Kapiolani Bl + Kamakee St, stop 600 (1101 Kapiolani Blvd; routes 3, 7, 13, 51, A, C). Source: https://moovitapp.com/index/en/public_transit-Kapiolani_Bl_Kamakee_St-Honolulu_HI-stop_4139793-1144
+  - 1159 Kapiolani sits between these two intersections, a few minutes' walk from either.
 - "About 10 minutes by taxi" is from the project brief, not independently measured.
 
 ## Brand
