@@ -33,6 +33,10 @@ html[lang="ja"] body { line-height: 1.8; }
 html[lang="ko"] body { font-family: var(--font-en), var(--font-ko); }
 [lang="ja"] { font-family: var(--font-ja); }
 [lang="ko"] { font-family: var(--font-ko); }
+/* Korean wraps between words, not mid-word (호놀룰 / 루) */
+html[lang="ko"] body, [lang="ko"] { word-break: keep-all; overflow-wrap: break-word; }
+/* Japanese: keep phrases like 5名様 together where the browser supports it */
+html[lang="ja"] body, [lang="ja"] { line-break: strict; word-break: auto-phrase; }
 [lang="en"] { font-family: var(--font-en); }
 
 img, svg { max-width: 100%; display: block; }

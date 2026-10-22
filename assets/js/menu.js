@@ -71,9 +71,14 @@
       var o = ORDER[lang] || ORDER.en;
       return '<div class="card drink-group"><h3>' + esc(t('menu.drinkGroups.' + g.id)) + '</h3><ul>' +
         g.items.map(function (d) {
-          var alts = o.slice(1).map(function (k) { return d[k]; }).filter(function (v, i, a) { return v !== d[o[0]] && a.indexOf(v) === i; });
+          var seen = [d[o[0]]];
+          var alts = o.slice(1).filter(function (k) {
+            if (seen.indexOf(d[k]) >= 0) return false;
+            seen.push(d[k]);
+            return true;
+          }).map(function (k) { return '<span lang="' + k + '">' + esc(d[k]) + '</span>'; });
           return '<li><span lang="' + o[0] + '">' + esc(d[o[0]]) + '</span><span class="price">$' + esc(d.price) + '</span>' +
-            (alts.length ? '<span class="alt">' + esc(alts.join(' · ')) + '</span>' : '') + '</li>';
+            (alts.length ? '<span class="alt">' + alts.join(' · ') + '</span>' : '') + '</li>';
         }).join('') + '</ul></div>';
     }).join('') + '</div>';
     html += section('drinks', drinks, t);

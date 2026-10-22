@@ -16,9 +16,12 @@
         var media = it.src
           ? '<img src="' + esc(it.src) + '" alt="' + esc(it.alt[lang] || it.alt.en) + '" loading="lazy" width="600" height="600">'
           : '<div class="ph-inner">' + ICON + '<span>' + esc(t('gallery.soon')) + '</span></div>';
-        var alt = ['en', 'ko', 'ja'].filter(function (k) { return k !== lang; }).map(function (k) { return it.caption[k]; }).join(' · ');
+        // Each name gets its own lang tag so Japanese and Korean use the right font
+        var alt = ['en', 'ko', 'ja'].filter(function (k) { return k !== lang; }).map(function (k) {
+          return '<span lang="' + k + '">' + esc(it.caption[k]) + '</span>';
+        }).join(' · ');
         return '<figure><div class="ph">' + media + '</div><figcaption><strong>' + esc(it.caption[lang] || it.caption.en) +
-          '</strong>' + esc(alt) + '</figcaption></figure>';
+          '</strong>' + alt + '</figcaption></figure>';
       }).join('');
     }
     if (creditsEl) {
