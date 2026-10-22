@@ -21,7 +21,7 @@ Menu photo link (Yelp): https://www.yelp.com/biz_photos/yu-chun-korean-restauran
 ## Confirmed by the project owner (Oct 21, 2026)
 
 - Hours: 11:00 AM – 9:00 PM, every day.
-- No reservations.
+- Reservations: for parties of 5 or more. Parties of 4 or fewer can be seated on arrival (owner, Oct 22, 2026; replaces the earlier "no reservations").
 - This is the original, main location.
 - Payment: cash and credit cards.
 - No holiday closures.
