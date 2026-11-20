@@ -16,7 +16,7 @@ It is **not the official website**. It says so in the footer in three languages,
 | `lang/en.json`, `lang/ja.json`, `lang/ko.json` | **All the words on the site**, one file per language |
 | `content/gallery.json` | **The photo list** for the Gallery page |
 | `assets/css/style.css` | Colors, fonts, layout |
-| `assets/img/` | Images (hero illustration, favicon; put new photos here) |
+| `assets/img/` | Images (logo, favicon, link-preview image, photos; put new photos here) |
 | `content/TODO.md` | What still needs confirming with the owner |
 | `content/research-notes.md` | What was found online, with sources |
 | `content/menu-photo.jpg` | Photo of the printed menu (the source of truth for prices) |
@@ -57,7 +57,7 @@ The phone number and address appear directly in the HTML pages and footer. Searc
 Only use photos you own, that the restaurant gives you, or that are royalty-free (Unsplash, Pexels). **Don't** copy photos from Google, Yelp or Tripadvisor.
 
 ### Replace the logo
-The logo is `assets/img/logo.png`. Upload a sharper version with the same name (GitHub: open `assets/img` → **Add file → Upload files**) and it updates on every page.
+The logo is `assets/img/logo.svg`, a vector file, so it stays sharp on every screen. To change it, upload a new SVG with the same name (GitHub: open `assets/img` → **Add file → Upload files**) and it updates on every page. The browser-tab icon is `assets/img/favicon.svg` (currently the same logo), and the link-preview picture is `assets/img/og-image.png`.
 
 ### Change colors
 At the top of `assets/css/style.css`, `--red: #a3161f;` is the accent color. Change it once and it updates everywhere.

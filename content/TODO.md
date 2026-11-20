@@ -24,6 +24,6 @@ Each item below shows on the site as a yellow **"To confirm"** placeholder (or i
 
 - [ ] **Food photos**: two real photos of the spicy black noodles are in (hero, signature section, gallery). Still needed: iced-soup naengmyeon, kalbi, seafood pancake, mandoo.
 - [ ] **Photo rights**: if the two noodle photos came from Yelp or Google, they belong to whoever posted them. Fine for showing the owner, but swap in the owner's own photos (or get permission) before this becomes the real site. Add a credit in `content/gallery.json` if needed.
-- [ ] **Logo file**: the real logo is in the header now, but the copy is small (146×122 px) and soft. Ask the owner for the original file and replace `assets/img/logo.png`.
+- [x] ~~Logo file~~: replaced with a vector version (`assets/img/logo.svg`), also used for the favicon and the link-preview image.
 - [x] ~~Hero image~~: now a real photo of the spicy black noodles.
 - [x] ~~Original location~~: confirmed, this is the original, main location.
