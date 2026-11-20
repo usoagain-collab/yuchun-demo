@@ -31,10 +31,9 @@
     if (item.signature) tags += '<span class="tag tag-sig">' + STAR + esc(t('menu.signature')) + '</span>';
     if (item.spicy) tags += '<span class="tag tag-spicy">' + CHILI + esc(t('menu.spicy')) + '</span>';
     var desc = item.desc && item.desc[lang];
-    return '<li class="item card' + (item.signature ? ' is-signature' : '') + '">' +
-      '<div class="item-names">' +
-      (item.no ? '<span class="item-no">' + esc(t('menu.number')) + ' ' + item.no + '</span>' : '') +
-      names(item, lang) + '</div>' +
+    return '<li class="item' + (item.signature ? ' is-signature' : '') + (item.no ? '' : ' no-num') + '">' +
+      (item.no ? '<span class="item-no"><span class="lbl">' + esc(t('menu.number')) + ' </span>' + item.no + '</span>' : '') +
+      '<div class="item-names">' + names(item, lang) + '</div>' +
       '<div class="item-price">' + price(item) + '</div>' +
       (desc ? '<p class="item-desc">' + esc(desc) + '</p>' : '') +
       (tags ? '<div class="item-tags">' + tags + '</div>' : '') +
@@ -43,7 +42,7 @@
 
   function setsHTML(lang, t) {
     return data.sets.map(function (s) {
-      return '<article class="card set-card">' +
+      return '<article class="set-card">' +
         '<div class="set-top"><span class="set-name">' + esc(t('home.setLabel')) + ' <span>' + esc(s.id) + '</span></span>' +
         '<span class="set-price">$' + esc(s.price) + '</span></div>' +
         '<p class="set-desc">' + esc(s.desc[lang]) + '</p></article>';

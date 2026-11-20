@@ -21,14 +21,15 @@
     }).then(function (d) { cache[l] = d; return d; });
   }
 
-  // Noto Sans JP / KR are large, so load them only when that language is chosen
-  var FONTS = { ja: 'Noto+Sans+JP', ko: 'Noto+Sans+KR' };
+  // Japanese fonts are large, so load them only when Japanese is chosen.
+  // Korean needs nothing extra: Black Han Sans and Gothic A1 (loaded on every page) include Hangul.
+  var FONTS = { ja: 'family=Dela+Gothic+One&family=Noto+Sans+JP:wght@400;700' };
   function loadFont(l) {
     if (!FONTS[l] || document.getElementById('font-' + l)) return;
     var link = document.createElement('link');
     link.id = 'font-' + l;
     link.rel = 'stylesheet';
-    link.href = 'https://fonts.googleapis.com/css2?family=' + FONTS[l] + ':wght@400;700&display=swap';
+    link.href = 'https://fonts.googleapis.com/css2?' + FONTS[l] + '&display=swap';
     document.head.appendChild(link);
   }
 

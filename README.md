@@ -60,7 +60,12 @@ Only use photos you own, that the restaurant gives you, or that are royalty-free
 The logo is `assets/img/logo.svg`, a vector file, so it stays sharp on every screen. To change it, upload a new SVG with the same name (GitHub: open `assets/img` → **Add file → Upload files**) and it updates on every page. The browser-tab icon is `assets/img/favicon.svg` (currently the same logo), and the link-preview picture is `assets/img/og-image.png`.
 
 ### Change colors
-At the top of `assets/css/style.css`, `--red: #a3161f;` is the accent color. Change it once and it updates everywhere.
+The colors are named at the top of `assets/css/style.css`. Change one there and it updates everywhere:
+
+- `--steel` (page background) and `--frost` (panels): the steel noodle bowl
+- `--chik`: the brown-black of the arrowroot noodles, used for text and the dark bands
+- `--stamp`: the logo's red, used only for big shapes like 칡냉면 on the home page
+- `--gochu`: a deeper red for buttons, links and prices, dark enough to read easily
 
 ## Previewing on your own computer
 
@@ -74,5 +79,5 @@ and open http://localhost:8000.
 
 ## Credits
 - Food photos and logo: supplied by the project owner.
-- Fonts: Inter, Noto Sans JP, Noto Sans KR (Google Fonts).
+- Fonts: Black Han Sans and Gothic A1 (English and Korean), Dela Gothic One and Noto Sans JP (Japanese), all from Google Fonts.
 - Map: Google Maps embed.
