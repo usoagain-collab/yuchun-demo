@@ -6,7 +6,7 @@
       "items": [
         {
           "no": 1,
-          "price": "20.95",
+          "price": "18.95",
           "signature": true,
           "ko": "칡물냉면",
           "en": "Black Noodle in Iced Soup",
@@ -19,7 +19,7 @@
         },
         {
           "no": 2,
-          "price": "20.95",
+          "price": "18.95",
           "signature": true,
           "spicy": true,
           "ko": "칡비빔냉면",
@@ -33,7 +33,7 @@
         },
         {
           "no": 3,
-          "price": "23.95",
+          "price": "21.95",
           "spicy": true,
           "ko": "칡회냉면",
           "en": "Black Noodle with Spicy Sauce & Raw Fish",
@@ -46,7 +46,7 @@
         },
         {
           "no": 4,
-          "price": "20.95",
+          "price": "18.95",
           "ko": "칡온면",
           "en": "Black Noodle in Warm Soup",
           "ja": "葛温麺(温かいスープ)",
