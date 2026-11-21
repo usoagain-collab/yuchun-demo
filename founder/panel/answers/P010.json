@@ -1,0 +1,13 @@
+{
+  "id": "P010",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "price",
+  "reason": "It's right by Ala Moana where I already am on weekends, and chik naengmyeon isn't something every place does, so I'd try it once if the Yelp photos look good. But at $18.95 plus tax and tip it's not becoming my regular when Keeaumoku is right there for less.",
+  "objection": "Nineteen bucks for a bowl of cold noodles before tax and tip is steep when I can get naengmyeon cheaper a few blocks away on Keeaumoku, and nothing here tells me it's actually better.",
+  "would_change_my_mind": "Recent reviews and photos showing the arrowroot noodles and broth are clearly better than the Keeaumoku spots, or a lunch combo with something like mandoo under $20.",
+  "price_too_cheap": 9,
+  "price_cheap": 13,
+  "price_expensive": 18,
+  "price_too_expensive": 24
+}

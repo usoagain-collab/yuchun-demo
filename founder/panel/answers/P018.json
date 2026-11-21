@@ -1,0 +1,13 @@
+{
+  "id": "P018",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "quality",
+  "reason": "I know the Yu Chun name and my family wants the real chik naengmyeon, so for one dinner on this trip I will take them, order kalbi to share and noodles for everyone. It is a treat night, not a regular place for me.",
+  "objection": "With my family we are five or more, so the 20% gratuity on top of $38.95 kalbi and $19 noodles makes the bill heavy, and I know I can get naengmyeon cheaper on Keeaumoku St.",
+  "would_change_my_mind": "If a quick look showed the bill for my group would be over about $60 a person after the gratuity, I would take them to a cheaper place on Keeaumoku instead.",
+  "price_too_cheap": 9,
+  "price_cheap": 14,
+  "price_expensive": 20,
+  "price_too_expensive": 26
+}

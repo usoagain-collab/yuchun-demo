@@ -1,0 +1,13 @@
+{
+  "id": "P012",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "need",
+  "reason": "Chik naengmyeon is hard to find done well, and if the Google and Yelp reviews and recent photos hold up, I'd go once while I'm in town. But I'd be ordering the noodles plus mandoo or bulgogi, so it's a $55-60 lunch for one before tax and tip, and that keeps it to one visit, not a habit.",
+  "objection": "Cold noodles alone won't fill me up, so the real price is $18.95 plus a $20-36 main. Spending that much on noodles only makes sense if the reviews say the broth and the noodles are actually great.",
+  "would_change_my_mind": "A lunch combo of naengmyeon with a small kalbi or mandoo side for around $28 would make me come back two or three times instead of once.",
+  "price_too_cheap": 9,
+  "price_cheap": 14,
+  "price_expensive": 20,
+  "price_too_expensive": 26
+}

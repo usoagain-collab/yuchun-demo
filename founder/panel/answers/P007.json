@@ -1,0 +1,13 @@
+{
+  "id": "P007",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Ice-cold noodles sound great on a hot day, but $18.95 for a bowl that won't fill me up means adding mandoo or a stew, and with tax and tip I'm near $50 for one person. On a week in Waikiki where every meal already costs too much, I'd pick somewhere I can eat a full meal for less.",
+  "objection": "Cold noodles alone won't fill me up, so the real price is the noodles plus a main, not $18.95, and the mains at $36 to $39 are out of my range for a casual lunch.",
+  "would_change_my_mind": "A lunch combo of the cold noodles with a small side of kalbi or a few mandoo for around $25 before tax.",
+  "price_too_cheap": 8,
+  "price_cheap": 13,
+  "price_expensive": 17,
+  "price_too_expensive": 23
+}

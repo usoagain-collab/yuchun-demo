@@ -1,0 +1,13 @@
+{
+  "id": "P001",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "I already have my Korean place on Keeaumoku and I eat Yu Chun-style naengmyeon back home in Japan, so on a short trip I'd rather go where I know or try something I can't get at home.",
+  "objection": "I've heard the Japanese branches are just as good, so why spend a vacation meal on the same noodles here, at nearly $19 a bowl plus tax.",
+  "would_change_my_mind": "Hearing that this Honolulu shop is the original or serves something the Japanese branches don't, like a Hawaii-only dish.",
+  "price_too_cheap": 9,
+  "price_cheap": 13,
+  "price_expensive": 20,
+  "price_too_expensive": 26
+}

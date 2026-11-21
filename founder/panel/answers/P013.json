@@ -1,0 +1,13 @@
+{
+  "id": "P013",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "When I book dinner for the family, kalbi at $38.95 a plate plus the automatic 20% tip for five or more adds up quickly. I can get naengmyeon and BBQ for the group cheaper on Keeaumoku St, where we already go.",
+  "objection": "Nineteen bucks for cold noodles and close to forty for kalbi, before tax and the 20% gratuity, is a lot for a group dinner when I don't know this place is any better than my usual spots.",
+  "would_change_my_mind": "A family set or BBQ combo for 4 to 6 people at a fixed price that comes out cheaper per head than ordering à la carte.",
+  "price_too_cheap": 9,
+  "price_cheap": 13,
+  "price_expensive": 17,
+  "price_too_expensive": 22
+}

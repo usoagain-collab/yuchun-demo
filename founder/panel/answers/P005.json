@@ -1,0 +1,13 @@
+{
+  "id": "P005",
+  "buys": true,
+  "purchases_first_month": 2,
+  "reason_code": "need",
+  "reason": "I'm in Honolulu, it's hot, and real chik naengmyeon with arrowroot noodles is exactly what I go looking for. I'd grumble about the price, but I'd go, and probably go back once more before I fly home.",
+  "objection": "Almost $19 for a bowl of cold noodles feels high, and with tax and tip it's well over $20. If the broth isn't properly icy and tangy, I'll feel ripped off.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 9,
+  "price_cheap": 14,
+  "price_expensive": 19,
+  "price_too_expensive": 25
+}

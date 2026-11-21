@@ -1,0 +1,181 @@
+{
+ "business": "Yu Chun Korean Restaurant (sit-down Korean restaurant known for chik naengmyeon, arrowroot black noodles)",
+ "seed": 40318,
+ "dealt": 20,
+ "answered": 20,
+ "skipped": [],
+ "buys": 13,
+ "passes": 7,
+ "buy_rate": 0.65,
+ "by_segment": [
+  [
+   "Honolulu local (Korean / Asian)",
+   5,
+   1.0
+  ],
+  [
+   "Japanese tourist",
+   7,
+   0.7142857142857143
+  ],
+  [
+   "US mainland tourist",
+   4,
+   0.5
+  ],
+  [
+   "Honolulu local (other)",
+   4,
+   0.25
+  ]
+ ],
+ "by_behaviour": [
+  [
+   "Reads every review",
+   3,
+   1.0
+  ],
+  [
+   "Guidebook follower",
+   4,
+   1.0
+  ],
+  [
+   "Naengmyeon regular",
+   3,
+   1.0
+  ],
+  [
+   "Adventurous eater",
+   2,
+   0.5
+  ],
+  [
+   "Group dinner organiser",
+   2,
+   0.5
+  ],
+  [
+   "Price-conscious",
+   3,
+   0.3333333333333333
+  ],
+  [
+   "Loyal to another Korean spot",
+   3,
+   0.0
+  ]
+ ],
+ "by_income": [
+  [
+   "$120,000 and up",
+   7,
+   0.8571428571428571
+  ],
+  [
+   "$82,000 to $120,000",
+   7,
+   0.5714285714285714
+  ],
+  [
+   "under $82,000",
+   6,
+   0.5
+  ]
+ ],
+ "why_not": [
+  [
+   "price",
+   4,
+   [
+    "Ice-cold noodles sound great on a hot day, but $18.95 for a bowl that won't fill me up means adding mandoo or a stew, and with tax and tip I'm near $50 for one person. On a week in Waikiki where every meal already costs too much, I'd pick somewhere I can eat a full meal for less.",
+    "When I book dinner for the family, kalbi at $38.95 a plate plus the automatic 20% tip for five or more adds up quickly. I can get naengmyeon and BBQ for the group cheaper on Keeaumoku St, where we already go."
+   ],
+   [
+    "P007",
+    "P013"
+   ]
+  ],
+  [
+   "habit",
+   3,
+   [
+    "I already have my Korean place on Keeaumoku and I eat Yu Chun-style naengmyeon back home in Japan, so on a short trip I'd rather go where I know or try something I can't get at home.",
+    "When family's in town I take them to my usual Korean place on Keeaumoku, they know me there and I know what I'm getting. Nineteen bucks for cold noodles isn't going to pull me off that."
+   ],
+   [
+    "P001",
+    "P009"
+   ]
+  ]
+ ],
+ "why_yes": [
+  [
+   "quality",
+   5,
+   [
+    "I know the Yu Chun name and chik naengmyeon in cold broth is exactly what I want on a hot Honolulu day near Ala Moana, so I would go once on this trip if the recent Google and Yelp reviews and photos hold up. I am only here for a short stay, so one visit, maybe two at most.",
+    "I know the Yu Chun name, and black arrowroot chik naengmyeon is exactly the kind of dish I cannot get easily at home, so I would go once during my five days. I would order the spicy raw fish version and add mandoo or bulgogi so I leave full."
+   ],
+   [
+    "P002",
+    "P004"
+   ]
+  ],
+  [
+   "need",
+   4,
+   [
+    "I'm in Honolulu, it's hot, and real chik naengmyeon with arrowroot noodles is exactly what I go looking for. I'd grumble about the price, but I'd go, and probably go back once more before I fly home.",
+    "When family comes in from out of town I need somewhere close to Ala Moana for a real Korean meal, and a bowl of naengmyeon under twenty dollars is fair for Honolulu. I would go once, but I would steer everyone to the noodles and share one kalbi, not order kalbi for everybody."
+   ],
+   [
+    "P005",
+    "P011"
+   ]
+  ],
+  [
+   "habit",
+   2,
+   [
+    "I know the Yu Chun name and I crave cold naengmyeon on a hot day, so I would go once on this trip. I would order the $18.95 bowl and maybe mandoo, not the kalbi.",
+    "Chewy arrowroot naengmyeon in ice-cold broth is exactly what I crave on a hot day, and it's an easy place to take visiting family near Ala Moana. $18.95 is a bit much for noodles, but for the real thing I'll pay it."
+   ],
+   [
+    "P006",
+    "P008"
+   ]
+  ],
+  [
+   "trust",
+   1,
+   [
+    "Yu Chun is in my guidebook and all over the Instagram posts I saved, and ice-cold naengmyeon on a hot Honolulu afternoon is exactly what I want. It is near Ala Moana, where I am shopping anyway, so I will go once on this trip."
+   ],
+   [
+    "P003"
+   ]
+  ],
+  [
+   "price",
+   1,
+   [
+    "It's right by Ala Moana where I already am on weekends, and chik naengmyeon isn't something every place does, so I'd try it once if the Yelp photos look good. But at $18.95 plus tax and tip it's not becoming my regular when Keeaumoku is right there for less."
+   ],
+   [
+    "P010"
+   ]
+  ]
+ ],
+ "flip": [
+  "Hearing that this Honolulu shop is the original or serves something the Japanese branches don't, like a Hawaii-only dish.",
+  "A lunch combo of the cold noodles with a small side of kalbi or a few mandoo for around $25 before tax.",
+  "If my visiting family specifically asked for naengmyeon, or a friend I trust told me this place does it better than anywhere on Keeaumoku.",
+  "A family set or BBQ combo for 4 to 6 people at a fixed price that comes out cheaper per head than ordering à la carte.",
+  "Something only this Honolulu location has, like a Hawaii-only dish, that I can't get at the Japanese branches.",
+  "A friend I trust telling me the chik naengmyeon is noticeably better or unlike anything else on Keeaumoku, or the raw fish version being something I can't get anywhere else nearby.",
+  "A lunch special around $14 to $15 with a side, or a friend telling me the noodles are clearly better than anything I can get on the mainland."
+ ],
+ "purchases_first_month_per_buyer": 1.1538461538461537,
+ "price_answers": 20
+}

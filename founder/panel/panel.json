@@ -1,0 +1,102 @@
+{
+ "n": 20,
+ "seed": 40318,
+ "customer": {
+  "business": "Yu Chun Korean Restaurant (sit-down Korean restaurant known for chik naengmyeon, arrowroot black noodles)",
+  "target": "Diners near Ala Moana and Waikiki looking for a Korean meal: Japanese tourists who know the Yu Chun name, Honolulu locals, and mainland visitors",
+  "where": "Honolulu, 1159 Kapiolani Blvd, near Ala Moana Center",
+  "age": [
+   22,
+   70
+  ],
+  "segments": [
+   {
+    "name": "Japanese tourist",
+    "share": 0.35,
+    "income": [
+     45000,
+     140000
+    ]
+   },
+   {
+    "name": "Honolulu local (Korean / Asian)",
+    "share": 0.25,
+    "income": [
+     40000,
+     130000
+    ]
+   },
+   {
+    "name": "Honolulu local (other)",
+    "share": 0.2,
+    "income": [
+     40000,
+     150000
+    ]
+   },
+   {
+    "name": "US mainland tourist",
+    "share": 0.2,
+    "income": [
+     60000,
+     200000
+    ]
+   }
+  ],
+  "behaviours": [
+   {
+    "name": "Guidebook follower",
+    "share": 0.2,
+    "how": "Picks restaurants from Japanese guidebooks, blogs and Instagram; Yu Chun is a known name."
+   },
+   {
+    "name": "Naengmyeon regular",
+    "share": 0.15,
+    "how": "Craves cold noodles, comes back every few weeks, especially on hot days."
+   },
+   {
+    "name": "Reads every review",
+    "share": 0.15,
+    "how": "Checks Google and Yelp ratings and recent photos before going anywhere."
+   },
+   {
+    "name": "Price-conscious",
+    "share": 0.15,
+    "how": "Compares menu prices, feels Hawaii prices plus tax and tip add up fast."
+   },
+   {
+    "name": "Group dinner organiser",
+    "share": 0.12,
+    "how": "Books for family or friends, orders sets and BBQ to share."
+   },
+   {
+    "name": "Loyal to another Korean spot",
+    "share": 0.13,
+    "how": "Has a go-to Korean place on Keeaumoku St and rarely switches."
+   },
+   {
+    "name": "Adventurous eater",
+    "share": 0.1,
+    "how": "Wants the dish they cannot get at home, will try the unusual item."
+   }
+  ],
+  "objections": [
+   "Almost $19 for a bowl of cold noodles feels high, before tax and tip",
+   "I can get naengmyeon cheaper on Keeaumoku St",
+   "Is black arrowroot noodle really different from regular naengmyeon?",
+   "Cold noodles alone won't fill me up, I'd need to add a main",
+   "Parking near Kapiolani is a hassle",
+   "I've heard the Japanese branches are just as good, so why go here",
+   "Service charge on bigger groups makes it pricier"
+  ],
+  "habits": [
+   "you are staying in Waikiki for five days",
+   "you shop at Ala Moana Center on weekends",
+   "you eat Korean food at least twice a month",
+   "you look for cold dishes when it is hot out",
+   "you are on a budget trip and track every meal",
+   "you take visiting family out for dinner"
+  ]
+ },
+ "pitch": "Yu Chun Korean Restaurant, 1159 Kapiolani Blvd, Honolulu, near Ala Moana Center. Open 11 AM to 9 PM daily.\nSignature: chik naengmyeon, chewy black arrowroot noodles. In ice-cold tangy broth, with spicy sauce, or in warm soup: $18.95. With spicy sauce and raw fish: $21.95.\nExtra noodles $7. Also kalbi ($38.95), bulgogi ($35.95), mandoo and stews ($20.95 to $24.95).\nPrices before tax. 20% gratuity added for parties of 5 or more.\nWalk in for 4 or fewer; call to reserve for 5+. Cash and credit cards."
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P008",
+  "buys": true,
+  "purchases_first_month": 2,
+  "reason_code": "habit",
+  "reason": "Chewy arrowroot naengmyeon in ice-cold broth is exactly what I crave on a hot day, and it's an easy place to take visiting family near Ala Moana. $18.95 is a bit much for noodles, but for the real thing I'll pay it.",
+  "objection": "Parking near Kapiolani is a hassle, and with family along we're often five or more, so that 20% gratuity on top of tax adds up fast.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 9,
+  "price_cheap": 14,
+  "price_expensive": 20,
+  "price_too_expensive": 25
+}

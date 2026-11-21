@@ -1,0 +1,13 @@
+{
+  "id": "P009",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "When family's in town I take them to my usual Korean place on Keeaumoku, they know me there and I know what I'm getting. Nineteen bucks for cold noodles isn't going to pull me off that.",
+  "objection": "I've heard the Japanese branches are just as good, so I don't see what's special about this one, and my go-to place already does me fine. Plus with family it's easy to hit 5 people and get stuck with the 20% gratuity.",
+  "would_change_my_mind": "If my visiting family specifically asked for naengmyeon, or a friend I trust told me this place does it better than anywhere on Keeaumoku.",
+  "price_too_cheap": 10,
+  "price_cheap": 14,
+  "price_expensive": 19,
+  "price_too_expensive": 24
+}

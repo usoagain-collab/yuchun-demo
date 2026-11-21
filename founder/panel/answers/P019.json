@@ -1,0 +1,13 @@
+{
+  "id": "P019",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "I live here, so naengmyeon isn't the dish I can't get at home, and I already have my spots on Keeaumoku that do a good bowl for less. Nineteen bucks before tax and tip for cold noodles doesn't pull me away from those, and on a Waikiki staycation I'd rather spend on something I really can't find in town.",
+  "objection": "I can get naengmyeon cheaper a few blocks away, and nothing here tells me the arrowroot noodles are different enough to be worth the extra few dollars.",
+  "would_change_my_mind": "A friend I trust telling me the chik naengmyeon is noticeably better or unlike anything else on Keeaumoku, or the raw fish version being something I can't get anywhere else nearby.",
+  "price_too_cheap": 9,
+  "price_cheap": 13,
+  "price_expensive": 17,
+  "price_too_expensive": 22
+}

@@ -1,0 +1,222 @@
+[
+ {
+  "id": "P001",
+  "name": "Chloe",
+  "age": 59,
+  "segment": "Japanese tourist",
+  "income": 120000,
+  "behaviour": "Loyal to another Korean spot",
+  "behaviour_how": "Has a go-to Korean place on Keeaumoku St and rarely switches.",
+  "objection": "I've heard the Japanese branches are just as good, so why go here",
+  "habit": "you eat Korean food at least twice a month"
+ },
+ {
+  "id": "P002",
+  "name": "Marcus",
+  "age": 38,
+  "segment": "Japanese tourist",
+  "income": 124000,
+  "behaviour": "Reads every review",
+  "behaviour_how": "Checks Google and Yelp ratings and recent photos before going anywhere.",
+  "objection": "Service charge on bigger groups makes it pricier",
+  "habit": "you eat Korean food at least twice a month"
+ },
+ {
+  "id": "P003",
+  "name": "Priya",
+  "age": 28,
+  "segment": "Japanese tourist",
+  "income": 71000,
+  "behaviour": "Guidebook follower",
+  "behaviour_how": "Picks restaurants from Japanese guidebooks, blogs and Instagram; Yu Chun is a known name.",
+  "objection": "I can get naengmyeon cheaper on Keeaumoku St",
+  "habit": "you look for cold dishes when it is hot out"
+ },
+ {
+  "id": "P004",
+  "name": "Oscar",
+  "age": 56,
+  "segment": "Japanese tourist",
+  "income": 101000,
+  "behaviour": "Adventurous eater",
+  "behaviour_how": "Wants the dish they cannot get at home, will try the unusual item.",
+  "objection": "Cold noodles alone won't fill me up, I'd need to add a main",
+  "habit": "you are staying in Waikiki for five days"
+ },
+ {
+  "id": "P005",
+  "name": "Jonah",
+  "age": 56,
+  "segment": "US mainland tourist",
+  "income": 96000,
+  "behaviour": "Naengmyeon regular",
+  "behaviour_how": "Craves cold noodles, comes back every few weeks, especially on hot days.",
+  "objection": "Almost $19 for a bowl of cold noodles feels high, before tax and tip",
+  "habit": "you eat Korean food at least twice a month"
+ },
+ {
+  "id": "P006",
+  "name": "Noah",
+  "age": 39,
+  "segment": "Japanese tourist",
+  "income": 130000,
+  "behaviour": "Naengmyeon regular",
+  "behaviour_how": "Craves cold noodles, comes back every few weeks, especially on hot days.",
+  "objection": "Cold noodles alone won't fill me up, I'd need to add a main",
+  "habit": "you are on a budget trip and track every meal"
+ },
+ {
+  "id": "P007",
+  "name": "Nico",
+  "age": 38,
+  "segment": "US mainland tourist",
+  "income": 76000,
+  "behaviour": "Price-conscious",
+  "behaviour_how": "Compares menu prices, feels Hawaii prices plus tax and tip add up fast.",
+  "objection": "Cold noodles alone won't fill me up, I'd need to add a main",
+  "habit": "you look for cold dishes when it is hot out"
+ },
+ {
+  "id": "P008",
+  "name": "Grace",
+  "age": 54,
+  "segment": "Honolulu local (Korean / Asian)",
+  "income": 82000,
+  "behaviour": "Naengmyeon regular",
+  "behaviour_how": "Craves cold noodles, comes back every few weeks, especially on hot days.",
+  "objection": "Parking near Kapiolani is a hassle",
+  "habit": "you take visiting family out for dinner"
+ },
+ {
+  "id": "P009",
+  "name": "Ben",
+  "age": 44,
+  "segment": "Honolulu local (other)",
+  "income": 69000,
+  "behaviour": "Loyal to another Korean spot",
+  "behaviour_how": "Has a go-to Korean place on Keeaumoku St and rarely switches.",
+  "objection": "I've heard the Japanese branches are just as good, so why go here",
+  "habit": "you take visiting family out for dinner"
+ },
+ {
+  "id": "P010",
+  "name": "Sana",
+  "age": 32,
+  "segment": "Honolulu local (Korean / Asian)",
+  "income": 120000,
+  "behaviour": "Reads every review",
+  "behaviour_how": "Checks Google and Yelp ratings and recent photos before going anywhere.",
+  "objection": "I can get naengmyeon cheaper on Keeaumoku St",
+  "habit": "you shop at Ala Moana Center on weekends"
+ },
+ {
+  "id": "P011",
+  "name": "Maya",
+  "age": 65,
+  "segment": "Honolulu local (Korean / Asian)",
+  "income": 119000,
+  "behaviour": "Price-conscious",
+  "behaviour_how": "Compares menu prices, feels Hawaii prices plus tax and tip add up fast.",
+  "objection": "Service charge on bigger groups makes it pricier",
+  "habit": "you take visiting family out for dinner"
+ },
+ {
+  "id": "P012",
+  "name": "Emma",
+  "age": 36,
+  "segment": "Honolulu local (Korean / Asian)",
+  "income": 125000,
+  "behaviour": "Reads every review",
+  "behaviour_how": "Checks Google and Yelp ratings and recent photos before going anywhere.",
+  "objection": "Cold noodles alone won't fill me up, I'd need to add a main",
+  "habit": "you are staying in Waikiki for five days"
+ },
+ {
+  "id": "P013",
+  "name": "Luis",
+  "age": 45,
+  "segment": "Honolulu local (other)",
+  "income": 84000,
+  "behaviour": "Group dinner organiser",
+  "behaviour_how": "Books for family or friends, orders sets and BBQ to share.",
+  "objection": "I can get naengmyeon cheaper on Keeaumoku St",
+  "habit": "you eat Korean food at least twice a month"
+ },
+ {
+  "id": "P014",
+  "name": "Levi",
+  "age": 23,
+  "segment": "Honolulu local (Korean / Asian)",
+  "income": 120000,
+  "behaviour": "Guidebook follower",
+  "behaviour_how": "Picks restaurants from Japanese guidebooks, blogs and Instagram; Yu Chun is a known name.",
+  "objection": "I've heard the Japanese branches are just as good, so why go here",
+  "habit": "you are staying in Waikiki for five days"
+ },
+ {
+  "id": "P015",
+  "name": "Elena",
+  "age": 22,
+  "segment": "Honolulu local (other)",
+  "income": 54000,
+  "behaviour": "Guidebook follower",
+  "behaviour_how": "Picks restaurants from Japanese guidebooks, blogs and Instagram; Yu Chun is a known name.",
+  "objection": "Service charge on bigger groups makes it pricier",
+  "habit": "you shop at Ala Moana Center on weekends"
+ },
+ {
+  "id": "P016",
+  "name": "Keisha",
+  "age": 63,
+  "segment": "US mainland tourist",
+  "income": 130000,
+  "behaviour": "Guidebook follower",
+  "behaviour_how": "Picks restaurants from Japanese guidebooks, blogs and Instagram; Yu Chun is a known name.",
+  "objection": "Is black arrowroot noodle really different from regular naengmyeon?",
+  "habit": "you look for cold dishes when it is hot out"
+ },
+ {
+  "id": "P017",
+  "name": "Clara",
+  "age": 25,
+  "segment": "Japanese tourist",
+  "income": 95000,
+  "behaviour": "Loyal to another Korean spot",
+  "behaviour_how": "Has a go-to Korean place on Keeaumoku St and rarely switches.",
+  "objection": "I've heard the Japanese branches are just as good, so why go here",
+  "habit": "you eat Korean food at least twice a month"
+ },
+ {
+  "id": "P018",
+  "name": "Kai",
+  "age": 39,
+  "segment": "Japanese tourist",
+  "income": 55000,
+  "behaviour": "Group dinner organiser",
+  "behaviour_how": "Books for family or friends, orders sets and BBQ to share.",
+  "objection": "I can get naengmyeon cheaper on Keeaumoku St",
+  "habit": "you take visiting family out for dinner"
+ },
+ {
+  "id": "P019",
+  "name": "Isla",
+  "age": 37,
+  "segment": "Honolulu local (other)",
+  "income": 117000,
+  "behaviour": "Adventurous eater",
+  "behaviour_how": "Wants the dish they cannot get at home, will try the unusual item.",
+  "objection": "I can get naengmyeon cheaper on Keeaumoku St",
+  "habit": "you are staying in Waikiki for five days"
+ },
+ {
+  "id": "P020",
+  "name": "Callum",
+  "age": 32,
+  "segment": "US mainland tourist",
+  "income": 66000,
+  "behaviour": "Price-conscious",
+  "behaviour_how": "Compares menu prices, feels Hawaii prices plus tax and tip add up fast.",
+  "objection": "I've heard the Japanese branches are just as good, so why go here",
+  "habit": "you eat Korean food at least twice a month"
+ }
+]
