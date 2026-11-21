@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Yu Chun Marketing Plan</title>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Gothic+A1:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --steel:#e6eaec; --frost:#f6f8f9; --rule:#c3cbd0;
+  --chik:#1e1817; --soft:#4d4542; --muted:#6f6764;
+  --on-chik:#f4efed; --on-chik-soft:#c9bfbc;
+  --stamp:#ed3237; --gochu:#b5121b; --bar:#4d4542;
+}
+@page{ size: Letter; margin: 0; }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:"Gothic A1",system-ui,sans-serif;color:var(--chik);background:#fff;font-size:10.5pt;line-height:1.5}
+.ja{font-family:"Noto Sans JP","IPAGothic",sans-serif}
+.page{width:8.5in;height:11in;padding:.6in .65in .55in;position:relative;overflow:hidden;page-break-after:always;background:#fff}
+.page:last-child{page-break-after:auto}
+.foot{position:absolute;left:.65in;right:.65in;bottom:.3in;display:flex;justify-content:space-between;font-size:7.5pt;color:var(--muted);border-top:1px solid var(--rule);padding-top:6px}
+h1,h2,.display{font-family:"Black Han Sans","Gothic A1",sans-serif;font-weight:400;letter-spacing:.01em;margin:0}
+h2{font-size:24pt;line-height:1.1;margin-bottom:4px}
+h3{font-size:11.5pt;margin:16px 0 6px;font-weight:800}
+.kicker{font-size:8pt;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--gochu);margin-bottom:6px}
+.lede{font-size:11.5pt;color:var(--soft);margin:6px 0 16px;max-width:6.4in}
+p{margin:0 0 8px}
+.muted{color:var(--muted)}
+.small{font-size:8.5pt}
+table{border-collapse:collapse;width:100%;font-size:9.2pt}
+th{text-align:left;font-weight:800;font-size:7.8pt;letter-spacing:.06em;text-transform:uppercase;color:var(--soft);border-bottom:1.5px solid var(--chik);padding:5px 6px}
+td{border-bottom:1px solid var(--rule);padding:6px;vertical-align:top}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.card{background:var(--frost);border:1px solid var(--rule);border-radius:6px;padding:12px 14px}
+.card.dark{background:var(--chik);color:var(--on-chik);border-color:var(--chik)}
+.card.dark .muted{color:var(--on-chik-soft)}
+.card.rec{border:2px solid var(--gochu);background:#fff}
+.tag{display:inline-block;font-size:7.2pt;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:10px;background:var(--gochu);color:#fff;vertical-align:middle}
+.tag.grey{background:var(--rule);color:var(--chik)}
+.num{font-family:"Black Han Sans",sans-serif;font-size:30pt;line-height:1}
+/* bars */
+.bars{display:flex;flex-direction:column;gap:7px}
+.bar-row{display:grid;grid-template-columns:1.55in 1fr .55in;align-items:center;gap:8px;font-size:9pt}
+.track{height:14px;background:var(--frost);border-radius:0 4px 4px 0;position:relative;border-left:1.5px solid var(--chik)}
+.fill{height:100%;background:var(--bar);border-radius:0 4px 4px 0}
+.fill.hi{background:var(--gochu)}
+.bar-val{font-weight:700;text-align:right}
+.bar-n{font-weight:400;color:var(--muted);font-size:7.8pt}
+.quote{border-left:3px solid var(--gochu);padding:4px 0 4px 10px;margin:6px 0;font-size:9.2pt;color:var(--soft);font-style:italic}
+/* price strip */
+.strip{position:relative;height:76px;margin:28px 6px 8px}
+.strip .axis{position:absolute;left:0;right:0;top:34px;height:2px;background:var(--rule)}
+.strip .ok{position:absolute;top:26px;height:18px;background:#d9dee1;border-radius:4px}
+.strip .sweet{position:absolute;top:26px;height:18px;background:var(--bar);border-radius:4px}
+.strip .mark{position:absolute;top:14px;width:2px;height:42px;background:var(--gochu)}
+.strip .mlabel{position:absolute;top:-16px;transform:translateX(-50%);font-size:8.2pt;font-weight:800;color:var(--gochu);white-space:nowrap}
+.strip .tick{position:absolute;top:50px;transform:translateX(-50%);font-size:8pt;color:var(--soft);text-align:center;white-space:nowrap}
+/* timeline */
+.tl{position:relative;margin:8px 0 0}
+.wk{display:grid;grid-template-columns:1.05in 1fr;gap:10px;margin-bottom:10px}
+.wk-h{font-weight:800;font-size:9pt}
+.wk-h span{display:block;font-weight:400;color:var(--muted);font-size:8pt}
+.ev{display:grid;grid-template-columns:.75in .95in 1fr;gap:6px;font-size:8.8pt;padding:3px 0;border-bottom:1px dotted var(--rule)}
+.ev:last-child{border-bottom:0}
+.ev .d{font-weight:700}
+.ev .c{color:var(--soft)}
+.ev.launch{background:#fbeaea;border-radius:4px;padding:4px;border-bottom:0}
+.chk{list-style:none;padding:0;margin:0}
+.chk li{padding:5px 0 5px 22px;position:relative;border-bottom:1px solid var(--rule);font-size:9.4pt}
+.chk li:before{content:"";position:absolute;left:0;top:7px;width:12px;height:12px;border:1.5px solid var(--chik);border-radius:2px}
+ol.steps{padding-left:18px;margin:0}
+ol.steps li{margin-bottom:6px}
+/* cover */
+.cover{padding:0;background:var(--chik);color:var(--on-chik)}
+.cover .hero{height:5.4in;background:url(../../assets/img/naengmyeon-spicy.jpg) center/cover}
+.cover .body{padding:.5in .65in}
+.cover h1{font-size:40pt;line-height:1.05;margin:10px 0 12px}
+.cover .sub{font-size:13pt;color:var(--on-chik-soft);max-width:6in}
+.cover .meta{margin-top:28px;font-size:9pt;color:var(--on-chik-soft);display:flex;gap:28px}
+.cover .meta b{display:block;color:var(--on-chik);font-size:10pt}
+.cover .logo{position:absolute;top:.45in;left:.65in;width:1.1in;background:#fff;border-radius:6px;padding:6px}
+/* sign mock */
+.sign{background:var(--chik);color:var(--on-chik);border-radius:6px;padding:10px 12px;text-align:center}
+.sign .big{font-family:"Noto Sans JP",sans-serif;font-weight:700;font-size:15pt;line-height:1.2;color:#fff}
+.sign .red{color:var(--stamp)}
+.tablecard{background:#fff;border:1.5px dashed var(--chik);border-radius:6px;padding:10px;text-align:center;font-size:9.5pt}
+.ch .card h3{margin:6px 0 4px}.ch .card p{margin-bottom:5px}
+.photo{border-radius:6px;background:center/cover;height:1.9in}
+</style>
+</head>
+<body>
+
+<!-- 1 COVER -->
+<section class="page cover">
+  <div class="hero"></div>
+  <img class="logo" src="../../assets/img/logo.svg" alt="Yu Chun logo">
+  <div class="body">
+    <div class="kicker" style="color:var(--stamp)">Marketing plan · Draft for discussion</div>
+    <h1>Getting Yu Chun onto<br>every visitor's list</h1>
+    <p class="sub">A 30-day plan to bring in more first-time guests, built from a test of how 20 typical customers react to Yu Chun today.</p>
+    <div class="meta">
+      <div><b>Prepared for</b>Yu Chun Korean Restaurant<br>1159 Kapiolani Blvd, Honolulu</div>
+      <div><b>Date</b>November 21, 2026</div>
+      <div><b>Campaign</b>Nov 21 to Dec 21, 2026<br>Relaunch Sat, Dec 5</div>
+    </div>
+  </div>
+</section>
+
+<!-- 2 SUMMARY -->
+<section class="page">
+  <div class="kicker">The short version</div>
+  <h2>One page summary</h2>
+  <p class="lede">The food and the prices are not what's holding Yu Chun back. People just don't hear about it, and when they look it up, there isn't enough to convince them.</p>
+
+  <div class="grid3" style="margin-bottom:18px">
+    <div class="card dark"><div class="num">30%</div><p style="margin-top:6px">of test customers said they would come in. Treat this as a best case.</p></div>
+    <div class="card"><div class="num" style="color:var(--gochu)">50%</div><p style="margin-top:6px">of <b>Japanese visitors</b> said yes, the best group by far.</p></div>
+    <div class="card"><div class="num">$18.95</div><p style="margin-top:6px">naengmyeon price is <b>inside</b> what people will pay ($9 to $20). No price cut needed.</p></div>
+  </div>
+
+  <h3>What we found</h3>
+  <table>
+    <tr><th style="width:34%">Finding</th><th>What it means for Yu Chun</th></tr>
+    <tr><td><b>"I don't know if it's good"</b> was the #1 reason to say no</td><td>People check Google and Japanese travel blogs before they go. Yu Chun doesn't show up strongly enough in either.</td></tr>
+    <tr><td><b>Guidebook planners said no 100% of the time</b></td><td>Not because they disliked it. It simply wasn't on their list. Getting onto those lists is the biggest opportunity.</td></tr>
+    <tr><td><b>Price complaints were mostly about the total bill</b></td><td>Kalbi at $38.95, tax, and the 20% for groups of 5+ add up. A family set with one clear price would help.</td></tr>
+    <tr><td><b>Parking and wait</b> came up again and again</td><td>Simply telling people where to park and how long the wait is removes a reason to say no.</td></tr>
+  </table>
+
+  <h3>What we recommend</h3>
+  <div class="grid3">
+    <div class="card rec"><span class="tag">1</span><p style="margin-top:6px"><b>Fix Google.</b> Fresh photos, correct hours, parking info, and ask happy guests for a review.</p><p class="small muted">Free</p></div>
+    <div class="card rec"><span class="tag">2</span><p style="margin-top:6px"><b>Get featured in Japanese Hawaii media</b> before New Year travel season.</p><p class="small muted">Mostly free; about $280 in meals</p></div>
+    <div class="card rec"><span class="tag">3</span><p style="margin-top:6px"><b>Bilingual window and table signs</b> to catch Ala Moana shoppers walking by.</p><p class="small muted">About $130</p></div>
+  </div>
+
+  <h3>What we need from you</h3>
+  <p>Where guests should park · usual lunch wait · the year Yu Chun opened · whether Yu Chun is connected to the ユッチャン restaurants in Japan · rough food cost per bowl (to price a family set).</p>
+  <div class="foot"><span>Yu Chun · Marketing plan draft</span><span>2</span></div>
+</section>
+
+<!-- 3 THE TEST -->
+<section class="page">
+  <div class="kicker">What we learned</div>
+  <h2>Who says yes, and who doesn't</h2>
+  <p class="lede">We created 20 realistic customer profiles (locals, Japanese visitors, Korean-American locals, mainland tourists) and showed each the same short description of Yu Chun: the naengmyeon, the menu prices, hours, and the gratuity rule. Each one decided whether they'd come and explained why.</p>
+
+  <div class="grid2">
+    <div>
+      <h3>Said "yes" by type of customer</h3>
+      <div class="bars">
+        <div class="bar-row"><span>Japanese visitor</span><div class="track"><div class="fill hi" style="width:50%"></div></div><span class="bar-val">50% <span class="bar-n">of 6</span></span></div>
+        <div class="bar-row"><span>Honolulu local</span><div class="track"><div class="fill" style="width:33%"></div></div><span class="bar-val">33% <span class="bar-n">of 9</span></span></div>
+        <div class="bar-row"><span>Korean-American local</span><div class="track"><div class="fill" style="width:0%"></div></div><span class="bar-val">0% <span class="bar-n">of 3</span></span></div>
+        <div class="bar-row"><span>Mainland tourist</span><div class="track"><div class="fill" style="width:0%"></div></div><span class="bar-val">0% <span class="bar-n">of 2</span></span></div>
+      </div>
+    </div>
+    <div>
+      <h3>Said "yes" by how they choose</h3>
+      <div class="bars">
+        <div class="bar-row"><span>Naengmyeon regular</span><div class="track"><div class="fill hi" style="width:67%"></div></div><span class="bar-val">67% <span class="bar-n">of 3</span></span></div>
+        <div class="bar-row"><span>Watches the price</span><div class="track"><div class="fill" style="width:50%"></div></div><span class="bar-val">50% <span class="bar-n">of 4</span></span></div>
+        <div class="bar-row"><span>Reads reviews first</span><div class="track"><div class="fill" style="width:33%"></div></div><span class="bar-val">33% <span class="bar-n">of 3</span></span></div>
+        <div class="bar-row"><span>Eats in groups</span><div class="track"><div class="fill" style="width:33%"></div></div><span class="bar-val">33% <span class="bar-n">of 3</span></span></div>
+        <div class="bar-row"><span>Plans from guidebooks</span><div class="track"><div class="fill" style="width:0%"></div></div><span class="bar-val">0% <span class="bar-n">of 4</span></span></div>
+        <div class="bar-row"><span>Goes wherever is easy</span><div class="track"><div class="fill" style="width:0%"></div></div><span class="bar-val">0% <span class="bar-n">of 3</span></span></div>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="margin-top:22px">Why the other 14 said no</h3>
+  <div class="bars" style="max-width:5.6in">
+    <div class="bar-row"><span>Not sure it's good</span><div class="track"><div class="fill hi" style="width:71.4%"></div></div><span class="bar-val">5</span></div>
+    <div class="bar-row"><span>Total bill too high</span><div class="track"><div class="fill hi" style="width:71.4%"></div></div><span class="bar-val">5</span></div>
+    <div class="bar-row"><span>Parking / wait / distance</span><div class="track"><div class="fill" style="width:28.6%"></div></div><span class="bar-val">2</span></div>
+    <div class="bar-row"><span>Has a usual spot</span><div class="track"><div class="fill" style="width:14.3%"></div></div><span class="bar-val">1</span></div>
+    <div class="bar-row"><span>Can get it at home</span><div class="track"><div class="fill" style="width:14.3%"></div></div><span class="bar-val">1</span></div>
+  </div>
+
+  <div class="grid2" style="margin-top:16px">
+    <div>
+      <div class="quote">"I don't try anywhere new without checking the Google and Yelp ratings and photos first, and nothing here tells me what other people think."</div>
+      <div class="quote">"I plan my meals before the trip from Japanese guidebooks and blogs, and this place is not on my list."</div>
+    </div>
+    <div>
+      <div class="quote">"At $38.95 for kalbi plus tax, and 20% added if we're five, that's way over what I spend."</div>
+      <div class="quote">"Nothing here tells me if there's parking or how long the wait is on Kapiolani."</div>
+    </div>
+  </div>
+  <p class="small muted" style="margin-top:8px">Quotes are from the simulated customers, not real guests. They show the kinds of doubts to answer. Small groups (2 to 9 people each), so read these as direction, not exact numbers.</p>
+  <div class="foot"><span>Yu Chun · Marketing plan draft</span><span>3</span></div>
+</section>
+
+<!-- 4 PRICE + FLIP -->
+<section class="page">
+  <div class="kicker">What we learned</div>
+  <h2>Price is fine. Proof is missing.</h2>
+  <p class="lede">Every test customer told us four prices for a bowl of naengmyeon: too cheap to trust, a bargain, getting expensive, and too expensive to buy. Put together, they show the range people accept.</p>
+
+  <div class="strip">
+    <!-- scale $5 to $30 => left% = (p-5)/25*100 -->
+    <div class="axis"></div>
+    <div class="ok" style="left:16.2%;width:43.9%"></div>
+    <div class="sweet" style="left:16.2%;width:19.9%;opacity:.35"></div>
+    <div class="mark" style="left:55.8%"></div><div class="mlabel" style="left:55.8%">Yu Chun today: $18.95</div>
+    <div class="tick" style="left:16.2%">$9<br>too cheap below</div>
+    <div class="tick" style="left:36%">$14<br>sweet spot</div>
+    <div class="tick" style="left:60%">$20<br>too much above</div>
+    <div class="tick" style="left:0%">$5</div>
+    <div class="tick" style="left:100%">$30</div>
+  </div>
+  <p class="small muted" style="margin-top:24px">Shaded bar = the accepted range ($9 to $20). The darker part on the left is where most people call it a bargain.</p>
+
+  <div class="grid2" style="margin-top:10px">
+    <div class="card"><h3 style="margin-top:0">What this tells us</h3>
+      <p>$18.95 is accepted, but it's near the top. The typical customer starts to feel it's expensive at about $19.</p>
+      <p><b>Don't raise the naengmyeon price right now.</b> There's also no need to cut it.</p>
+      <p>A <b>lunch special around $14</b> came up several times. That could bring in price-watchers and locals at lunch. We need your food cost before we can say if it pays.</p></div>
+    <div class="card"><h3 style="margin-top:0">What would turn a "no" into a "yes"</h3>
+      <ol class="steps">
+        <li><b>Good Google reviews with real photos</b></li>
+        <li><b>A feature on a Japanese blog or Instagram</b></li>
+        <li><b>Clear parking info and a short wait</b></li>
+        <li><b>A family set for 4 at one price</b>, around $80 to $100</li>
+        <li><b>A lunch special around $14</b></li>
+      </ol></div>
+  </div>
+
+  <h3>The takeaway</h3>
+  <div class="card dark"><p style="margin:0;font-size:11.5pt">The first three fixes cost almost nothing. They're about <b>showing</b> people what Yu Chun is, not changing what it is. Do those first. Set prices like the family set and lunch special only after we know food costs.</p></div>
+
+  <div class="grid2" style="margin-top:16px">
+    <div class="photo" style="background-image:url(../../assets/img/naengmyeon-kalbi.jpg)"></div>
+    <div class="photo" style="background-image:url(../../assets/img/naengmyeon-spicy.jpg)"></div>
+  </div>
+  <div class="foot"><span>Yu Chun · Marketing plan draft</span><span>4</span></div>
+</section>
+
+<!-- 5 POSITIONING -->
+<section class="page">
+  <div class="kicker">Positioning</div>
+  <h2>What Yu Chun should be known for</h2>
+  <p class="lede">"Positioning" is the one idea you want people to remember. Every sign, post and pitch should repeat it. We looked at three options.</p>
+
+  <div class="card rec" style="margin-bottom:12px">
+    <span class="tag">Recommended</span> <b style="margin-left:6px">Option A · The original kudzu naengmyeon shop near Ala Moana</b>
+    <p style="margin-top:8px;font-size:11pt">"For Japanese visitors who plan every meal from guides and Instagram, Yu Chun is <b>the original Honolulu kudzu naengmyeon shop near Ala Moana</b>, not just another Korean BBQ spot."</p>
+    <div class="grid2" style="gap:12px">
+      <div><b class="small">Why</b><p class="small">Japanese visitors were the best group (50% yes). Guidebook planners only said no because Yu Chun wasn't on their list. Japanese sites already call it the 本店 (main shop).</p></div>
+      <div><b class="small">Watch out</b><p class="small">"Original" and "本店" must be true. Please confirm before we use them in print.</p></div>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <div class="card"><span class="tag grey">Run alongside</span>
+      <p style="margin-top:8px"><b>Option B · The naengmyeon specialist</b></p>
+      <p class="small">"For Honolulu naengmyeon lovers, Yu Chun is where black arrowroot noodles are the main event, not a side dish."</p>
+      <p class="small"><b>Why:</b> naengmyeon regulars said yes 67% of the time. Best used on Google, where locals search "naengmyeon near me."</p>
+      <p class="small"><b>Watch out:</b> regulars compare with their usual spot, so photos and reviews have to show the noodles are worth the switch.</p></div>
+    <div class="card"><span class="tag grey">Later</span>
+      <p style="margin-top:8px"><b>Option C · The easy family dinner</b></p>
+      <p class="small">"For local families who share, Yu Chun is a Korean dinner with one clear price for the table."</p>
+      <p class="small"><b>Why:</b> families and price-watchers asked for a set for 4 at $80 to $100.</p>
+      <p class="small"><b>Watch out:</b> only works once that set exists and is priced. Hold until food costs are known.</p></div>
+  </div>
+
+  <h3>Where each one goes</h3>
+  <table>
+    <tr><th>Place</th><th>Main message</th></tr>
+    <tr><td>Japanese blogs, Instagram, window sign</td><td>A · the original kudzu naengmyeon shop</td></tr>
+    <tr><td>Google profile and posts</td><td>B · naengmyeon specialist, plus parking and wait info</td></tr>
+    <tr><td>Table cards, future family set posts</td><td>C · once the set is priced</td></tr>
+  </table>
+  <div class="foot"><span>Yu Chun · Marketing plan draft</span><span>5</span></div>
+</section>
+
+<!-- 6 CHANNELS -->
+<section class="page ch">
+  <div class="kicker">Where to spend time</div>
+  <h2>Three channels to start</h2>
+  <p class="lede">We picked the places where the best customers already look before they choose a restaurant. Each one answers a specific "no" from the test.</p>
+
+  <div class="grid3">
+    <div class="card"><span class="tag">1</span><h3>Google Maps profile and reviews</h3>
+      <p class="small"><b>Why:</b> the #1 reason to say no was "I can't tell if it's good." Locals and visitors both check Google Maps.</p>
+      <p class="small"><b>Do:</b> correct hours and phone, 20+ real photos, parking and wait info, reply to every review, table cards asking for a review.</p>
+      <p class="small"><b>Cost:</b> free (cards about $30)</p>
+      <p class="small"><b>It's working if:</b> 20+ new reviews in 30 days, and calls and direction requests go up.</p></div>
+    <div class="card"><span class="tag">2</span><h3>Japanese Hawaii media and Instagram</h3>
+      <p class="small"><b>Why:</b> Japanese visitors are the best group, and they plan from these before they fly. New Year is peak travel.</p>
+      <p class="small"><b>Do:</b> pitch 5 Japanese Hawaii guide sites and food accounts (for example Aloha Street, LaniLani, allhawaii). Invite creators for a meal.</p>
+      <p class="small"><b>Cost:</b> pitches are free; about $70 a creator meal; paid features vary</p>
+      <p class="small"><b>It's working if:</b> 2+ features go live and Japanese guests say "I saw it online."</p></div>
+    <div class="card"><span class="tag">3</span><h3>Window and table signs</h3>
+      <p class="small"><b>Why:</b> shoppers near Ala Moana are already close. One test customer said they'd stop in if they saw it on the way.</p>
+      <p class="small"><b>Do:</b> one bilingual window sign, table cards in English, Japanese and Korean.</p>
+      <p class="small"><b>Cost:</b> about $130</p>
+      <p class="small"><b>It's working if:</b> more lunch walk-ins week over week.</p></div>
+  </div>
+
+  <h3 style="margin-top:12px">What we're not doing yet, and why</h3>
+  <table>
+    <tr><th style="width:28%">Not now</th><th>Reason</th></tr>
+    <tr><td>Paid Facebook / Instagram ads</td><td>Ads send people to Google, so reviews and photos need to be strong first. Revisit in January.</td></tr>
+    <tr><td>TikTok</td><td>The best customers plan on Instagram and blogs, not TikTok.</td></tr>
+    <tr><td>Discount apps and coupons</td><td>They teach people to wait for deals and cut margin before we know costs.</td></tr>
+    <tr><td>Targeting mainland tourists</td><td>0 of 2 said yes, and what they want (reviews, a guide pick) is covered by steps 1 and 2 anyway.</td></tr>
+  </table>
+
+  <h3>Example signs</h3>
+  <div class="grid2">
+    <div class="sign"><div class="small" style="color:var(--on-chik-soft);margin-bottom:6px">Window sign (Japanese + English)</div>
+      <div class="big">元祖・<span class="red">葛冷麺</span><br>ホノルル本店</div>
+      <div style="margin-top:6px;font-size:10pt">The original black-noodle naengmyeon · Since [year]</div>
+      <div class="small" style="color:var(--on-chik-soft);margin-top:4px">Wording pending your confirmation</div></div>
+    <div class="tablecard"><div class="small muted" style="margin-bottom:6px">Table card</div>
+      <b style="font-size:12pt">Enjoyed your naengmyeon?</b><br>A Google review helps other people find us.
+      <div class="ja" style="margin-top:6px">お食事はいかがでしたか?Googleレビューで教えてください。</div>
+      <div style="margin-top:4px">맛있게 드셨나요? 구글 리뷰를 남겨 주세요.</div>
+      <div class="small muted" style="margin-top:6px">[QR code to Google review link]</div></div>
+  </div>
+  <div class="foot"><span>Yu Chun · Marketing plan draft</span><span>6</span></div>
+</section>
+
+<!-- 7 HOOKS -->
+<section class="page">
+  <div class="kicker">The messages</div>
+  <h2>Ten opening lines</h2>
+  <p class="lede">A "hook" is the first line someone sees: the start of a video, a post headline, the words on a sign. Each one answers a doubt from the test.</p>
+  <table>
+    <tr><th style="width:4%">#</th><th style="width:19%">Where</th><th>Message</th><th style="width:22%">Answers the doubt</th></tr>
+    <tr><td>1</td><td>Instagram video (JA)</td><td><span class="ja">「ホノルルで葛冷麺、食べたことある?」</span><br><span class="small muted">Ever had kudzu naengmyeon in Honolulu?</span></td><td>"Not on my list"</td></tr>
+    <tr><td>2</td><td>Instagram video</td><td>Slow-motion noodle pull: "These are made from arrowroot."</td><td>"Not sure I'd like cold noodles"</td></tr>
+    <tr><td>3</td><td>Google post</td><td>"Hot afternoon? Ice-cold naengmyeon, 5 minutes from Ala Moana."</td><td>Convenience</td></tr>
+    <tr><td>4</td><td>Table card</td><td>"Liked it? A Google review helps other people find us." (EN / JA / KO)</td><td>"Can't tell if it's good"</td></tr>
+    <tr><td>5</td><td>Window sign</td><td><span class="ja">「元祖・葛冷麺 ホノルル本店」</span> / "The original black-noodle naengmyeon. Since [year]."</td><td>"Why this one?"</td></tr>
+    <tr><td>6</td><td>Google post</td><td>"Where to park: [your answer]. Usual lunch wait: [X] minutes."</td><td>Parking, wait</td></tr>
+    <tr><td>7</td><td>Email to Japanese media</td><td><span class="ja">「アラモアナ近く、地元で愛される葛冷麺の本店」</span><br><span class="small muted">The original kudzu naengmyeon shop near Ala Moana, loved by locals</span></td><td>"Not on my list"</td></tr>
+    <tr><td>8</td><td>Instagram carousel</td><td>"Water or spicy? How to order naengmyeon your first time."</td><td>"Not sure I'd like it"</td></tr>
+    <tr><td>9</td><td>Instagram post</td><td>"Set B: 1 naengmyeon + 1 kalbi, bulgogi or spicy pork. $45.95. Made for two."</td><td>"Kalbi alone feels steep"</td></tr>
+    <tr><td>10</td><td>Google / Instagram</td><td>Family set for 4 at one clear price <span class="tag grey">price TBD</span></td><td>"Group bill adds up"</td></tr>
+  </table>
+
+  <h3>When there's nothing new to post</h3>
+  <div class="grid3">
+    <div class="card small">The kitchen at opening, the noodle press, broth being made</div>
+    <div class="card small">A staff member's favourite order, a regular's go-to dish (with permission)</div>
+    <div class="card small">The weather: "90°F today. The broth is ice cold."</div>
+  </div>
+  <div class="foot"><span>Yu Chun · Marketing plan draft</span><span>7</span></div>
+</section>
+
+<!-- 8 CALENDAR -->
+<section class="page">
+  <div class="kicker">The 30 days</div>
+  <h2>Calendar: Nov 21 to Dec 21</h2>
+  <p class="lede">Two weeks to get ready, a relaunch on <b>Saturday, December 5</b> (new photos, Google profile and website all go live together), then two weeks of steady posting before New Year travel peaks.</p>
+
+  <div class="tl">
+    <div class="wk"><div class="wk-h">Week 1<span>Nov 21 to 27 · Prepare</span></div><div>
+      <div class="ev"><span class="d">Sat Nov 21</span><span class="c">Owner</span><span>Confirm parking, lunch wait, founding year, Japan connection</span></div>
+      <div class="ev"><span class="d">Mon Nov 23</span><span class="c">Google, Yelp</span><span>Claim and check listings. Fix hours (11 AM to 9 PM daily), phone, menu link</span></div>
+      <div class="ev"><span class="d">Tue Nov 24</span><span class="c">Photos</span><span>Shoot both naengmyeon, kalbi, pancake, mandoo, dining room, entrance, parking</span></div>
+      <div class="ev"><span class="d">Wed Nov 25</span><span class="c">Print</span><span>Order table cards and window sign</span></div>
+      <div class="ev"><span class="d">Fri Nov 27</span><span class="c">Japanese media</span><span>Pitch 5 Japanese Hawaii sites and creators, offer a meal</span></div>
+    </div></div>
+    <div class="wk"><div class="wk-h">Week 2<span>Nov 28 to Dec 4 · Set up</span></div><div>
+      <div class="ev"><span class="d">Mon Nov 30</span><span class="c">Google</span><span>Upload 20+ photos. Post parking and wait info (hook 6)</span></div>
+      <div class="ev"><span class="d">Tue Dec 1</span><span class="c">In store</span><span>Table cards out. Staff ask happy tables for a Google review (no rewards)</span></div>
+      <div class="ev"><span class="d">Thu Dec 3</span><span class="c">Instagram</span><span>First video: the noodle pull (hook 2)</span></div>
+    </div></div>
+    <div class="wk"><div class="wk-h" style="color:var(--gochu)">Week 3<span>Dec 5 to 11 · Relaunch</span></div><div>
+      <div class="ev launch"><span class="d">Sat Dec 5</span><span class="c">Everything</span><span><b>Relaunch:</b> website live, Google post (hook 3), Instagram (hook 1), window sign up</span></div>
+      <div class="ev"><span class="d">Mon Dec 7</span><span class="c">Instagram</span><span>"How to order your first naengmyeon" (hook 8)</span></div>
+      <div class="ev"><span class="d">Wed Dec 9</span><span class="c">Google</span><span>Set B post (hook 9)</span></div>
+      <div class="ev"><span class="d">Fri Dec 11</span><span class="c">Japanese media</span><span>Follow up on pitches. Host creator meals, paid posts marked #PR</span></div>
+    </div></div>
+    <div class="wk"><div class="wk-h">Weeks 4 to 5<span>Dec 12 to 21 · Keep going</span></div><div>
+      <div class="ev"><span class="d">Sat Dec 12</span><span class="c">Instagram</span><span>Behind the scenes: broth or noodles being made</span></div>
+      <div class="ev"><span class="d">Mon Dec 14</span><span class="c">Google</span><span>Reply to every review so far</span></div>
+      <div class="ev"><span class="d">Wed Dec 16</span><span class="c">Instagram</span><span>Water vs spicy, side by side</span></div>
+      <div class="ev"><span class="d">Fri Dec 18</span><span class="c">Offer</span><span>Announce family set or lunch special, <i>if priced by then</i>, with an end date</span></div>
+      <div class="ev"><span class="d">Sat Dec 19</span><span class="c">Instagram</span><span>Share creator features (with credit)</span></div>
+      <div class="ev"><span class="d">Mon Dec 21</span><span class="c">Review</span><span>Check the three numbers on the next page, plan January</span></div>
+    </div></div>
+  </div>
+  <div class="foot"><span>Yu Chun · Marketing plan draft</span><span>8</span></div>
+</section>
+
+<!-- 9 BUDGET + NUMBERS + NEXT -->
+<section class="page">
+  <div class="kicker">Money and results</div>
+  <h2>Budget, what to track, next steps</h2>
+
+  <div class="grid2">
+    <div>
+      <h3>Suggested budget: $500 for 30 days</h3>
+      <div class="bars">
+        <div class="bar-row"><span>Creator meals (4)</span><div class="track"><div class="fill hi" style="width:100%"></div></div><span class="bar-val">$280</span></div>
+        <div class="bar-row"><span>Signs + table cards</span><div class="track"><div class="fill" style="width:46.4%"></div></div><span class="bar-val">$130</span></div>
+        <div class="bar-row"><span>Printing reserve</span><div class="track"><div class="fill" style="width:32.1%"></div></div><span class="bar-val">$90</span></div>
+        <div class="bar-row"><span>Paid ads</span><div class="track"><div class="fill" style="width:0"></div></div><span class="bar-val">$0</span></div>
+      </div>
+      <p class="small muted" style="margin-top:8px">$500 is our assumption. Adjust to what you're comfortable with. Most of the plan is your time, not money.</p>
+    </div>
+    <div>
+      <h3>How much a new customer is worth</h3>
+      <div class="card"><p class="small" style="margin:0">Most you should spend to win one customer =<br><b>profit per visit × visits</b>.</p>
+      <p class="small" style="margin:6px 0 0">The test suggests about <b>1.2 visits</b> in the first month. We need your food and labor cost per meal to put a dollar figure on it.</p></div>
+    </div>
+  </div>
+
+  <h3>Three numbers to check every week</h3>
+  <table>
+    <tr><th style="width:28%">Number</th><th style="width:24%">Where to find it</th><th>Change something if…</th></tr>
+    <tr><td><b>New Google reviews</b></td><td>Google Business Profile</td><td>Fewer than 4 a week by week 2. Staff may not be asking, or cards aren't on tables.</td></tr>
+    <tr><td><b>Calls and direction requests</b></td><td>Google Business Profile → Performance</td><td>Not higher than the week before launch by week 3. Photos or posts aren't landing.</td></tr>
+    <tr><td><b>"How did you hear about us?"</b> from Japanese guests</td><td>Ask at the register, tally on paper</td><td>No mentions of a blog or Instagram by Dec 21. Pitch more sites or pay for one feature.</td></tr>
+  </table>
+
+  <div class="grid2" style="margin-top:6px">
+    <div>
+      <h3>Please confirm before anything goes out</h3>
+      <ul class="chk">
+        <li>Where guests should park (and any validation)</li>
+        <li>Usual wait at lunch and dinner</li>
+        <li>The year Yu Chun opened</li>
+        <li>Is Yu Chun the "本店" of the ユッチャン restaurants in Japan?</li>
+        <li>Rough food cost per naengmyeon and per kalbi plate</li>
+        <li>OK to use the two noodle photos (or we shoot new ones)</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Ground rules we follow</h3>
+      <ul style="padding-left:16px;margin:0" class="small">
+        <li>No fake or paid-for reviews. Google and Yelp both ban rewarding reviews, and Yelp bans asking for them, so we only ask for Google reviews.</li>
+        <li>No claims we can't back up ("best in Hawaii", "famous").</li>
+        <li>Paid creator posts are marked as ads (#PR / #提供).</li>
+        <li>The test customer quotes are research only. They never appear in ads.</li>
+      </ul>
+      <h3>After this</h3>
+      <p class="small">With your costs, we can price the family set and lunch special, and work out how much you can afford to spend per new customer.</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:12px;background:var(--steel)"><p class="small" style="margin:0"><b>About the test:</b> the 20 customers were AI-simulated profiles, not real guests. They're good at surfacing doubts and wording, and they tend to be more positive than real people, so 30% is a best case. Groups are small. The real test is the three numbers above.</p></div>
+  <div class="foot"><span>Yu Chun · Marketing plan draft</span><span>9</span></div>
+</section>
+
+</body>
+</html>
