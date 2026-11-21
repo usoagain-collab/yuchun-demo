@@ -1,0 +1,35 @@
+{
+  "business": "Yu Chun Korean Restaurant, 1159 Kapiolani Blvd, Honolulu. Known for black arrowroot (kudzu) naengmyeon.",
+  "target": "Adults in or visiting Honolulu who eat out for a sit-down lunch or dinner near Ala Moana, 22 to 70",
+  "where": "Honolulu, Kapiolani Blvd near Ala Moana Center, about 10 minutes from Waikiki",
+  "age": [22, 70],
+  "segments": [
+    {"name": "Local Honolulu resident", "share": 0.45, "income": [40000, 140000]},
+    {"name": "Japanese tourist", "share": 0.30, "income": [45000, 160000]},
+    {"name": "Korean or Korean-American local", "share": 0.15, "income": [35000, 150000]},
+    {"name": "US mainland tourist", "share": 0.10, "income": [60000, 200000]}
+  ],
+  "behaviours": [
+    {"name": "Regular for naengmyeon", "share": 0.15, "how": "Has a favourite naengmyeon spot and goes back often, especially on hot days."},
+    {"name": "Guidebook follower", "share": 0.20, "how": "Picks restaurants from Japanese guidebooks, blogs or Instagram before the trip."},
+    {"name": "Reads every review", "share": 0.15, "how": "Checks Yelp or Google ratings and photos before trying anywhere."},
+    {"name": "Value-conscious", "share": 0.20, "how": "Feels Honolulu prices keep climbing, compares plate prices, notices tax and tip."},
+    {"name": "Group diner", "share": 0.15, "how": "Usually eats with family or friends, orders to share."},
+    {"name": "Convenience-first", "share": 0.15, "how": "Eats wherever is close and has parking or a short wait."}
+  ],
+  "objections": [
+    "$18.95 for a bowl of cold noodles, plus tax and tip, is a lot",
+    "Other Korean places nearby are cheaper or bigger portions",
+    "I am not sure I will like cold noodle soup or arrowroot noodles",
+    "Parking on Kapiolani is a hassle",
+    "The 20% gratuity for parties of 5 or more feels like a lot",
+    "Korean food is everywhere in Honolulu, why this one"
+  ],
+  "habits": [
+    "you shop at Ala Moana Center now and then",
+    "you are staying in Waikiki for a week",
+    "hot afternoons make you want something cold",
+    "you eat out about twice a week",
+    "you usually pay by credit card"
+  ]
+}
