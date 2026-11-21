@@ -80,13 +80,13 @@ main .wrap{display:grid;gap:18px;padding-block:28px 48px}
 .sec .sub{color:var(--ink-soft);max-width:68ch}
 .takeaway{border-left:4px solid var(--stamp);padding:2px 0 2px 14px;font-weight:600;max-width:70ch}
 .two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
-.fig{display:grid;gap:10px;min-width:0}
+.fig{display:grid;gap:10px;min-width:0;align-content:start}
 .fig h3{font-family:var(--body);font-weight:800;font-size:1rem}
 .fig .note{font-size:.84rem;color:var(--ink-soft)}
 
 /* bar charts */
 .bars{display:grid;gap:8px}
-.row{display:grid;grid-template-columns:minmax(0,10.5rem) minmax(0,1fr) 4.6rem;gap:10px;align-items:center}
+.row{display:grid;grid-template-columns:minmax(0,10.5rem) minmax(0,1fr) 5.6rem;gap:10px;align-items:center}
 .row .lbl{font-size:.9rem;line-height:1.25;min-width:0}
 .row .lbl small{display:block;color:var(--ink-soft);font-size:.76rem}
 .track{position:relative;height:22px;background-image:linear-gradient(to right,var(--rule) 1px,transparent 1px);background-size:20% 100%;border-right:1px solid var(--rule)}
@@ -94,8 +94,8 @@ main .wrap{display:grid;gap:18px;padding-block:28px 48px}
 .bar.dash{background:repeating-linear-gradient(135deg,var(--bar) 0 6px,transparent 6px 10px);outline:1px solid var(--bar);outline-offset:-1px}
 .row.us .bar{background:var(--bar-us)}
 .row.us .lbl,.row.us .val{font-weight:800;color:var(--accent)}
-.val{font-weight:600;font-size:.95rem;text-align:right}
-.axis{display:grid;grid-template-columns:minmax(0,10.5rem) minmax(0,1fr) 4.6rem;gap:10px}
+.val{font-weight:600;font-size:.95rem;text-align:right;white-space:nowrap}
+.axis{display:grid;grid-template-columns:minmax(0,10.5rem) minmax(0,1fr) 5.6rem;gap:10px}
 .ticks{position:relative;height:16px;font-size:.72rem;color:var(--ink-soft)}
 .ticks span{position:absolute;transform:translateX(-50%)}
 .ticks span:first-child{transform:none}
@@ -149,10 +149,14 @@ footer .wrap{padding-block:0 32px}
   .sec{padding:18px}
 }
 @media (max-width:520px){
-  .row,.axis{grid-template-columns:minmax(0,1fr) 4.2rem}
+  .row,.axis{grid-template-columns:minmax(0,1fr) 5.4rem}
   .row .lbl{grid-column:1 / -1}
   .axis .sp{display:none}
 }
+.grp{font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);font-weight:800;padding-top:4px}
+.grp:not(:first-child){padding-top:10px}
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:720px){.three{grid-template-columns:minmax(0,1fr)}}
 </style>
 
 <div class="topbar"><div class="wrap">
@@ -168,17 +172,17 @@ footer .wrap{padding-block:0 32px}
 <header class="hero"><div class="wrap">
   <p class="eyebrow">Market check · Honolulu Korean restaurants · November 21, 2026</p>
   <h1>Guests still come for the noodles. They leave unhappy about <em>value and service</em>.</h1>
-  <p class="lede">Yu Chun's black noodles are still called the best on the island. But guests rate Yu Chun lower than Hangang, the closest rival. The noodle bowl is fairly priced. The noodle-and-meat set is not: it costs much more than the lunch combos nearby. Service is the lowest score Yu Chun gets.</p>
+  <p class="lede">Yu Chun's black noodles are still called the best on the island. But guests rate Yu Chun below Hangang, a nearby rival, on both Yelp and Google. Price and service are the two complaints that come up most. Nearby rivals sell a noodle-and-kalbi lunch for about $25–30. Yu Chun has no lunch deal.</p>
   <div class="tiles">
-    <div class="tile us"><span class="big num">3.5 <small>vs 4.5</small></span><span class="cap">Yelp stars: Yu Chun vs both Hangang locations</span></div>
-    <div class="tile us"><span class="big num">$45.95 <small>vs $25–30</small></span><span class="cap">Set B (noodle + meat) vs lunch combos at three nearby rivals</span></div>
-    <div class="tile us"><span class="big num">2.9 <small>/ 5</small></span><span class="cap">Service score on Tripadvisor, Yu Chun's lowest. Food scores 4.0.</span></div>
+    <div class="tile us"><span class="big num">3.5 <small>vs 4.5</small></span><span class="cap">Yelp stars: Yu Chun vs both Hangang locations. On Google: 3.8 vs 4.4.</span></div>
+    <div class="tile us"><span class="big num">$45.95 <small>vs $25–27</small></span><span class="cap">Noodle + meat: Yu Chun's Set B vs the lunch combos at Korea Garden and MooBongRi</span></div>
+    <div class="tile us"><span class="big num">2.9 <small>/ 5</small></span><span class="cap">Service and atmosphere on Tripadvisor, tied for lowest. Food scores 4.0.</span></div>
   </div>
   <div class="do">
     <h2>Review these three first</h2>
     <ol>
-      <li><b>Add a lunch combo</b> at about $26–30: one naengmyeon with a small kalbi or bulgogi.</li>
-      <li><b>Fix the service basics:</b> water refills, checking on tables, and how the tip screen is handed over.</li>
+      <li><b>Add a lunch combo</b> at about $26–30: one naengmyeon with a small plate of kalbi or bulgogi.</li>
+      <li><b>Fix the service basics:</b> water refills, checking on tables, and how the card machine is handed over for the tip.</li>
       <li><b>Check the kalbi and Set B:</b> portion size, tenderness and sweetness.</li>
     </ol>
   </div>
@@ -187,18 +191,22 @@ footer .wrap{padding-block:0 32px}
 <main><div class="wrap">
 
 <section class="sec" aria-labelledby="en-ratings">
-  <div class="sec-head"><span class="k">1 · Ratings</span><h2 id="en-ratings">Guests rate Yu Chun a full star below Hangang</h2>
-  <p class="sub">On Yelp, the one site where both can be compared, Hangang scores 4.5 at both locations. Yu Chun scores 3.5. Google and Tripadvisor both put Yu Chun at 3.8.</p></div>
+  <div class="sec-head"><span class="k">1 · Ratings</span><h2 id="en-ratings">On Yelp, Yu Chun sits a full star below Hangang</h2>
+  <p class="sub">On Yelp, Hangang scores 4.5 at both locations and Yu Chun scores 3.5. On Google the gap is smaller: 4.4 for Hangang's Kakaʻako shop, 3.8 for Yu Chun.</p></div>
   <div class="two">
     <div class="fig">
-      <h3>Yelp stars (number of reviews)</h3>
-      <div class="bars" role="img" aria-label="Yelp: Hangang Kaka'ako 4.5 from 399 reviews, Hangang Niu Valley 4.5 from 141, Yu Chun 3.5 from 359.">
+      <h3>Stars (number of reviews)</h3>
+      <div class="bars" role="img" aria-label="Yelp: Hangang Kaka'ako 4.5 from 399 reviews, Hangang Niu Valley 4.5 from 141, Yu Chun 3.5 from 359. Google: Hangang Kaka'ako 4.4 from 351, Yu Chun 3.8 from 512.">
+        <div class="grp">Yelp</div>
         <div class="row"><span class="lbl">Hangang, Kakaʻako<small>399 reviews</small></span><span class="track"><span class="bar" style="--w:90%"></span></span><span class="val num">4.5</span></div>
         <div class="row"><span class="lbl">Hangang, Niu Valley<small>141 reviews</small></span><span class="track"><span class="bar" style="--w:90%"></span></span><span class="val num">4.5</span></div>
         <div class="row us"><span class="lbl">Yu Chun<small>359 reviews</small></span><span class="track"><span class="bar" style="--w:70%"></span></span><span class="val num">3.5</span></div>
+        <div class="grp">Google</div>
+        <div class="row"><span class="lbl">Hangang, Kakaʻako<small>351 reviews</small></span><span class="track"><span class="bar" style="--w:88%"></span></span><span class="val num">4.4</span></div>
+        <div class="row us"><span class="lbl">Yu Chun<small>512 reviews</small></span><span class="track"><span class="bar" style="--w:76%"></span></span><span class="val num">3.8</span></div>
         <div class="axis"><span class="sp"></span><span class="ticks num"><span style="left:0">0</span><span style="left:20%">1</span><span style="left:40%">2</span><span style="left:60%">3</span><span style="left:80%">4</span><span style="left:100%">5</span></span><span class="sp"></span></div>
       </div>
-      <p class="note">Sources 1, 2, 3 †</p>
+      <p class="note">Sources 1, 2, 3 †, 5, 15</p>
     </div>
     <div class="fig">
       <h3>Yu Chun on Tripadvisor, by category</h3>
@@ -209,7 +217,7 @@ footer .wrap{padding-block:0 32px}
         <div class="row us"><span class="lbl">Atmosphere</span><span class="track"><span class="bar" style="--w:58%"></span></span><span class="val num">2.9</span></div>
         <div class="axis"><span class="sp"></span><span class="ticks num"><span style="left:0">0</span><span style="left:20%">1</span><span style="left:40%">2</span><span style="left:60%">3</span><span style="left:80%">4</span><span style="left:100%">5</span></span><span class="sp"></span></div>
       </div>
-      <p class="note">131 reviews, overall 3.8. Source 4 †</p>
+      <p class="note">131 reviews collected over many years, overall 3.8. Source 4 †</p>
     </div>
   </div>
   <div class="fig">
@@ -218,128 +226,128 @@ footer .wrap{padding-block:0 32px}
       <span style="width:39.0%;background:var(--seg5)"></span><span style="width:30.1%;background:var(--seg4)"></span><span style="width:12.5%;background:var(--seg3)"></span><span style="width:4.9%;background:var(--seg2)"></span><span style="width:13.5%;background:var(--seg1)"></span>
     </div>
     <div class="legend num"><span><i style="background:var(--seg5)"></i>5★ 200</span><span><i style="background:var(--seg4)"></i>4★ 154</span><span><i style="background:var(--seg3)"></i>3★ 64</span><span><i style="background:var(--seg2)"></i>2★ 25</span><span><i style="background:var(--seg1)"></i>1★ 69</span></div>
-    <p class="note">Average 3.8. Most guests are happy, but 69 one-star reviews (13%) pull the average down. Source 5</p>
+    <p class="note">Average 3.8. Most guests are happy, but 69 one-star reviews (13%) pull the average down. Counts as listed on Wanderlog; Google now shows about 514 reviews. Source 5</p>
   </div>
-  <p class="takeaway">Food is Yu Chun's strength. Service and atmosphere are what drag the score down.</p>
+  <p class="takeaway">Food is Yu Chun's strength. Service and atmosphere pull the score down.</p>
 </section>
 
 <section class="sec" aria-labelledby="en-price">
-  <div class="sec-head"><span class="k">2 · Prices</span><h2 id="en-price">The noodle bowl is fairly priced. The set is not.</h2>
-  <p class="sub">The No. 1 Black Noodle in Iced Soup costs less than the arrowroot noodles at Hangang or Korea Garden. The gap is in noodle-and-meat meals. Nearby rivals sell them as lunch combos for $25–30. Yu Chun's Set B is $45.95, and there is no lunch deal.</p></div>
+  <div class="sec-head"><span class="k">2 · Prices</span><h2 id="en-price">Rivals have a noodle-and-kalbi lunch. Yu Chun doesn't.</h2>
+  <p class="sub">The No. 1 Black Noodle in Iced Soup ($18.95) costs less than Korea Garden's arrowroot noodles ($20.99). The gap is in noodles with meat. Korea Garden and MooBongRi sell noodles with a small portion of kalbi at lunch for $25–27. At Yu Chun, one guest who wants noodles and meat pays $45.95 for Set B, at any time of day.</p></div>
   <div class="two">
     <div class="fig">
       <h3>Cold noodle bowl, on its own</h3>
-      <div class="bars" role="img" aria-label="Cold noodle bowl prices: Choi's Garden 16.95, Yu Chun 18.95, Korea Garden 20.99, Hangang 25.95.">
+      <div class="bars" role="img" aria-label="Cold noodle bowl prices: Choi's Garden 16.95, Yu Chun 18.95, Korea Garden 20.99, Hangang online menu 25.95.">
         <div class="row"><span class="lbl">Choi's Garden<small>regular price, Nov 2025</small></span><span class="track"><span class="bar" style="--w:33.9%"></span></span><span class="val num">$16.95</span></div>
         <div class="row us"><span class="lbl">Yu Chun<small>No. 1, current menu</small></span><span class="track"><span class="bar" style="--w:37.9%"></span></span><span class="val num">$18.95</span></div>
         <div class="row"><span class="lbl">Korea Garden<small>arrowroot noodles, Jul 2025</small></span><span class="track"><span class="bar" style="--w:42%"></span></span><span class="val num">$20.99</span></div>
-        <div class="row"><span class="lbl">Hangang<small>arrowroot noodles, online menu</small></span><span class="track"><span class="bar" style="--w:51.9%"></span></span><span class="val num">$25.95</span></div>
+        <div class="row"><span class="lbl">Hangang<small>arrowroot noodles, online-order menu</small></span><span class="track"><span class="bar dash" style="--w:51.9%"></span></span><span class="val num">$25.95</span></div>
         <div class="axis"><span class="sp"></span><span class="ticks num"><span style="left:0">$0</span><span style="left:20%">10</span><span style="left:40%">20</span><span style="left:60%">30</span><span style="left:80%">40</span><span style="left:100%">50</span></span><span class="sp"></span></div>
       </div>
-      <p class="note">Sources 6, 7, 8</p>
+      <p class="note">Striped bars are online-ordering prices, which may be higher than in the restaurant. Sources 6, 7, 8</p>
     </div>
     <div class="fig">
       <h3>Cold noodle + meat</h3>
-      <div class="bars" role="img" aria-label="Noodle and meat combos: MooBongRi lunch 25, Korea Garden lunch 26.99, Hangang lunch about 29 to 30, Hangang online menu 37.95, Yu Chun Set B 45.95.">
+      <div class="bars" role="img" aria-label="Noodle and meat: MooBongRi lunch 25, Korea Garden lunch 26.99, Hangang lunch about 29 to 30, Yu Chun Set A per person 32.98, Hangang online combo 37.95, Yu Chun Set B 45.95.">
         <div class="row"><span class="lbl">MooBongRi<small>lunch, Apr 2025</small></span><span class="track"><span class="bar" style="--w:50%"></span></span><span class="val num">$25</span></div>
-        <div class="row"><span class="lbl">Korea Garden<small>lunch, Apr 2024</small></span><span class="track"><span class="bar" style="--w:54%"></span></span><span class="val num">$26.99</span></div>
+        <div class="row"><span class="lbl">Korea Garden<small>lunch, Jul 2025</small></span><span class="track"><span class="bar" style="--w:54%"></span></span><span class="val num">$26.99</span></div>
         <div class="row"><span class="lbl">Hangang<small>lunch, Apr 2025</small></span><span class="track"><span class="bar" style="--w:59%"></span></span><span class="val num">~$29–30</span></div>
-        <div class="row"><span class="lbl">Hangang<small>online menu, any time</small></span><span class="track"><span class="bar dash" style="--w:75.9%"></span></span><span class="val num">$37.95</span></div>
-        <div class="row us"><span class="lbl">Yu Chun Set B<small>any time</small></span><span class="track"><span class="bar" style="--w:91.9%"></span></span><span class="val num">$45.95</span></div>
+        <div class="row us"><span class="lbl">Yu Chun Set A<small>per person, shared by 2</small></span><span class="track"><span class="bar" style="--w:66%"></span></span><span class="val num">$32.98</span></div>
+        <div class="row"><span class="lbl">Hangang<small>combo, online-order menu</small></span><span class="track"><span class="bar dash" style="--w:75.9%"></span></span><span class="val num">$37.95</span></div>
+        <div class="row us"><span class="lbl">Yu Chun Set B<small>one person, any time</small></span><span class="track"><span class="bar" style="--w:91.9%"></span></span><span class="val num">$45.95</span></div>
         <div class="axis"><span class="sp"></span><span class="ticks num"><span style="left:0">$0</span><span style="left:20%">10</span><span style="left:40%">20</span><span style="left:60%">30</span><span style="left:80%">40</span><span style="left:100%">50</span></span><span class="sp"></span></div>
       </div>
-      <p class="note">Rival combos are lunch-only and their portions may be smaller. Hangang's lunch combo is "a dollar or two more" than its $28 lunch special. Its online menu does not say which meat comes with the $37.95 combo. Sources 9, 10, 8</p>
+      <p class="note">Rival lunch combos come with a small meat portion, lunch only. Yu Chun's sets are full portions, and reviewers say they are often shared. Hangang's lunch combo was "a dollar or two more" than its $28 lunch special; its online menu doesn't say what meat comes with the $37.95 combo. Sources 7, 8, 10</p>
     </div>
   </div>
-  <p class="takeaway">Guests notice. Price is the most common complaint in 2024–2026 reviews. When Choi's Garden ran a $5.99 cold noodle lunch, the restaurant "was packed during lunch time" (source 11).</p>
+  <p class="takeaway">Guests feel it. In the 19 Yelp reviews from 2024–2026 on Yu Chun's kalbi page, price and service each come up about 7 times. When Choi's Garden ran a $5.99 cold noodle lunch, the restaurant "was packed during lunch time" (source 6).</p>
 </section>
 
 <section class="sec" aria-labelledby="en-voice">
   <div class="sec-head"><span class="k">3 · What guests say</span><h2 id="en-voice">The same complaints come up again and again</h2>
-  <p class="sub">Exact quotes from public reviews, newest first. Each one links to the page where it can be read.</p></div>
+  <p class="sub">Exact quotes from public reviews, grouped by topic. The source number shows where each one can be read.</p></div>
   <div class="themes">
-    <div class="theme"><h3>Price and portions <span class="pill bad">Most common</span></h3>
-      <blockquote><p>"Cold noodles and a half order of kalbi came out to over $40 after tax and tip"</p><cite>Hitomi O., Yelp, Aug 21, 2026 · <a href="https://www.yelp.com/menu/yu-chun-korean-restaurant-honolulu/item/kalbi" target="_blank" rel="noopener">source 12</a></cite></blockquote>
-      <blockquote><p>"Very expensive for average quality food and small portions"</p><cite>Jamie T., Yelp, May 15, 2026 · source 12</cite></blockquote>
-      <blockquote><p>"definitely overpriced with a price tag of $66 for the combo"</p><cite>John C., Yelp, May 19, 2026 · source 12</cite></blockquote>
+    <div class="theme"><h3>Price and portions <span class="pill bad">Frequent</span></h3>
+      <blockquote><p>“Cold noodles and a half order of kalbi came out to over $40 after tax and tip”</p><cite>Hitomi O., Yelp, Aug 21, 2026 · <a href="https://www.yelp.com/menu/yu-chun-korean-restaurant-honolulu/item/kalbi" target="_blank" rel="noopener">source 12</a></cite></blockquote>
+      <blockquote><p>“definitely overpriced with a price tag of $66 for the combo”</p><cite>John C., Yelp, May 19, 2026 · source 12</cite></blockquote>
+      <blockquote><p>“Very expensive for average quality food and small portions”</p><cite>Jamie T., Yelp, May 15, 2026 · source 12</cite></blockquote>
     </div>
     <div class="theme"><h3>Service and tipping <span class="pill bad">Frequent</span></h3>
-      <blockquote><p>"Service was bad, staff came to get our order and would leave to pick up food for others"</p><cite>John C., Yelp, May 19, 2026 · source 12</cite></blockquote>
-      <blockquote><p>About the card machine: staff "positioned it in a way where they could watch while I selected the tip"</p><cite>Hitomi O., Yelp, Aug 21, 2026 · source 12</cite></blockquote>
-      <blockquote><p>"rarely refilled our waters or asked if we needed anything else"</p><cite>Janelle N., Yelp, Dec 30, 2024 · source 12</cite></blockquote>
+      <blockquote><p>About the card machine: staff “positioned it in a way where they could watch while I selected the tip”</p><cite>Hitomi O., Yelp, Aug 21, 2026 · source 12</cite></blockquote>
+      <blockquote><p>“Service was bad, staff came to get our order and would leave to pick up food for others”</p><cite>John C., Yelp, May 19, 2026 · source 12</cite></blockquote>
+      <blockquote><p>“rarely refilled our waters or asked if we needed anything else”</p><cite>Janelle N., Yelp, Dec 30, 2024 · source 12</cite></blockquote>
     </div>
     <div class="theme"><h3>Kalbi <span class="pill mid">Mixed</span></h3>
-      <blockquote><p>"Kalbi was way too sweet"</p><cite>Jamie T., Yelp, May 15, 2026 · source 12</cite></blockquote>
-      <blockquote><p>"the kalbi is always tough and overcooked and the portions are still outrageously small"</p><cite>Sharon L., Yelp, Feb 27, 2025 · source 12</cite></blockquote>
-      <blockquote><p>Others disagree: "finger licking good"</p><cite>Amy L., Yelp, Oct 24, 2025 · source 12</cite></blockquote>
+      <blockquote><p>“Kalbi was way too sweet”</p><cite>Jamie T., Yelp, May 15, 2026 · source 12</cite></blockquote>
+      <blockquote><p>“the kalbi is always tough and overcooked and the portions are still outrageously small”</p><cite>Sharon L., Yelp, Feb 27, 2025 · source 12</cite></blockquote>
+      <blockquote><p>Others disagree: “finger licking good”</p><cite>Amy L., Yelp, Oct 24, 2025 · source 12</cite></blockquote>
     </div>
     <div class="theme"><h3>Room, parking, broth <span class="pill mid">Occasional</span></h3>
-      <blockquote><p>"The place was super smoky from all the Kalbi plates"</p><cite>Joy H., Yelp, Jul 29, 2026 · <a href="https://www.mapquest.com/us/hawaii/yu-chun-korean-restaurant-273014339" target="_blank" rel="noopener">source 3</a></cite></blockquote>
-      <blockquote><p>"parking stalls are quite tight"</p><cite>Janelle N., Yelp, Dec 30, 2024 · source 12</cite></blockquote>
-      <blockquote><p>On the iced-soup naengmyeon: "somehow I felt something was missing"</p><cite>Janelle N., Yelp, Dec 30, 2024 · source 12</cite></blockquote>
+      <blockquote><p>“The place was super smoky from all the Kalbi plates”</p><cite>Joy H., Yelp, Jul 29, 2026 · <a href="https://www.mapquest.com/us/hawaii/yu-chun-korean-restaurant-273014339" target="_blank" rel="noopener">source 3</a></cite></blockquote>
+      <blockquote><p>“parking stalls are quite tight”</p><cite>Janelle N., Yelp, Dec 30, 2024 · source 12</cite></blockquote>
+      <blockquote><p>On the iced-soup naengmyeon: “somehow I felt something was missing”</p><cite>Janelle N., Yelp, Dec 30, 2024 · source 12</cite></blockquote>
     </div>
     <div class="theme pos"><h3>The signature noodles <span class="pill ok">Strength</span></h3>
-      <div class="two">
-        <blockquote><p>"The best naengmyeon on island and it's not even close!!"</p><cite>Tyler M., Yelp, Sep 25, 2026 · source 12</cite></blockquote>
-        <blockquote><p>"chewy noodles and ice cold vinegary broth"</p><cite>Amy L., Yelp, Oct 24, 2025 · source 12</cite></blockquote>
-        <blockquote><p>"Tastes just like the one I had in Seoul"</p><cite>Trip.com, Sep 12, 2025 · <a href="https://us.trip.com/restaurant/united-states/honolulu/detail/yu-chun-korean-restaurant-18865130/" target="_blank" rel="noopener">source 13</a></cite></blockquote>
-        <blockquote><p>"Walked in on a Friday night and didn't have to wait at all"</p><cite>Elizabeth L., Yelp, Oct 2026 · source 3</cite></blockquote>
+      <div class="three">
+        <blockquote><p>“The best naengmyeon on island and it's not even close!!”</p><cite>Tyler M., Yelp, Sep 25, 2026 · source 12</cite></blockquote>
+        <blockquote><p>“chewy noodles and ice cold vinegary broth”</p><cite>Amy L., Yelp, Oct 24, 2025 · source 12</cite></blockquote>
+        <blockquote><p>On the spicy noodles: “Tastes just like the one I had in Seoul”</p><cite>Trip.com, Sep 2025 · <a href="https://us.trip.com/restaurant/united-states/honolulu/detail/yu-chun-korean-restaurant-18865130/" target="_blank" rel="noopener">source 13</a></cite></blockquote>
       </div>
     </div>
   </div>
-  <p class="takeaway">One 2026 reviewer wrote, "This place used to be good." The noodles are not the problem. The experience around them is.</p>
+  <p class="takeaway">“This place used to be good,” one guest wrote in 2026 (Jamie T., source 12). The noodles are not the problem. Price, service and the room are.</p>
 </section>
 
 <section class="sec" aria-labelledby="en-rivals">
-  <div class="sec-head"><span class="k">4 · Competitors</span><h2 id="en-rivals">Two rivals now sell arrowroot noodles too</h2>
-  <p class="sub">Black arrowroot noodles used to set Yu Chun apart. Hangang and Korea Garden now both list chewy arrowroot cold noodles. Both pair them with kalbi in a lunch set and serve many side dishes.</p></div>
+  <div class="sec-head"><span class="k">4 · Competitors</span><h2 id="en-rivals">Two rivals also sell arrowroot noodles</h2>
+  <p class="sub">Hangang and Korea Garden both list arrowroot cold noodles, Yu Chun's specialty. Both also sell lunch sets that pair noodles or kalbi with many side dishes.</p></div>
   <div class="tablebox"><table>
     <thead><tr><th>Restaurant</th><th>Where</th><th>Cold noodles</th><th>Noodle + meat</th><th>What stands out</th></tr></thead>
     <tbody>
-      <tr class="us"><td><b>Yu Chun</b></td><td>1159 Kapiolani Blvd</td><td class="num">$18.95 (No. 1)</td><td class="num">Set B $45.95, Set A $65.95</td><td>Yelp 3.5, Google 3.8. Known for its noodles since the 1990s. Reservations for 5+ only.</td></tr>
-      <tr><td><b>Hangang Korean Grill House</b></td><td>1236 Waimanu St (Kakaʻako) and 5730 Kalanianaʻole Hwy (Niu Valley, opened Mar 2025)</td><td class="num">Arrowroot, $25.95 on its online menu</td><td class="num">Lunch combo ~$29–30 (2025)</td><td>Yelp 4.5 at both. Lunch set with stone-pot rice, stew and many banchan. Parking behind the Kakaʻako shop.</td></tr>
-      <tr><td><b>Korea Garden</b></td><td>1683 Kalākaua Ave</td><td class="num">Arrowroot, $20.99 (2025)</td><td class="num">Kalbi + naengmyeon $26.99 lunch</td><td>8–9 banchan, refilled at the table.</td></tr>
-      <tr><td><b>MooBongRi</b></td><td>930 McCully St</td><td>Naengmyeon</td><td class="num">Kalbi + naengmyeon $25 lunch</td><td>Opened Mar 2025. Part of a mainland chain.</td></tr>
-      <tr><td><b>Choi's Garden</b></td><td>1303 Rycroft St</td><td class="num">$16.95 / spicy $17.95</td><td>n/a</td><td>Ran $5.99 cold noodle lunch deals in Aug and Nov 2025.</td></tr>
+      <tr class="us"><td><b>Yu Chun</b></td><td>1159 Kapiolani Blvd</td><td class="num">$18.95 (No. 1)</td><td class="num">Set B $45.95; Set A $65.95 (2 noodles + 1 meat)</td><td>Yelp 3.5, Google 3.8. Serving black noodles since the 1990s (sources 16, 17). Reservations for 5+ only.</td></tr>
+      <tr><td><b>Hangang Korean Grill House</b></td><td>1236 Waimanu St (Kakaʻako) and 5730 Kalanianaʻole Hwy (Niu Valley, opened Mar 2025)</td><td class="num">Arrowroot, $25.95 on its online-order menu</td><td class="num">Lunch combo ~$29–30 (Apr 2025). Online menu now: combo $37.95, lunch set $37.95</td><td>Yelp 4.5 at both; Google 4.4 (Kakaʻako). Lunch set with stone-pot rice, stew and many banchan. Parking behind the Kakaʻako shop.</td></tr>
+      <tr><td><b>Korea Garden</b></td><td>1683 Kalākaua Ave</td><td class="num">Arrowroot, $20.99 (Jul 2025)</td><td class="num">Noodles + small kalbi, $26.99 lunch</td><td>8–9 banchan, refilled at the table.</td></tr>
+      <tr><td><b>MooBongRi</b></td><td>930 McCully St</td><td>Naengmyeon</td><td class="num">Kalbi + naengmyeon, $25 lunch (Apr 2025)</td><td>Opened Mar 2025. Part of a mainland chain.</td></tr>
+      <tr><td><b>Choi's Garden</b></td><td>1303 Rycroft St</td><td class="num">$16.95 / spicy $17.95 (Nov 2025)</td><td>n/a</td><td>Ran $5.99 cold noodle lunch deals in summer and November 2025.</td></tr>
     </tbody>
   </table></div>
-  <p class="note" style="font-size:.84rem;color:var(--ink-soft)">Sources 6–11, 14–15. Rival prices come from dated articles and an online-ordering menu. Call or visit to confirm before setting prices.</p>
-  <p class="takeaway">Yu Chun has history its rivals don't. It started on Keeaumoku Street and moved to Kapiolani; local papers called it the "home of the black noodle" (sources 16, 17). Tell that story on the menu and online.</p>
+  <p class="note" style="font-size:.84rem;color:var(--ink-soft)">Sources 2, 5–11, 14, 15. Rival prices come from dated articles (2024–2025) and an online-ordering menu. Call or visit to confirm before setting prices.</p>
+  <p class="takeaway">Yu Chun has history its rivals don't. A 2006 MidWeek column called it the “Home of the Black Noodle” (source 16). It started on Keeaumoku Street and moved to Kapiolani (source 17). Tell that story on the menu and online.</p>
 </section>
 
 <section class="sec" aria-labelledby="en-acts">
   <div class="sec-head"><span class="k">5 · What to review</span><h2 id="en-acts">Seven things to look at, most important first</h2></div>
   <div class="acts">
-    <div class="act"><span class="n">1</span><div><h3>Add a lunch combo</h3><p>One naengmyeon plus a small kalbi or bulgogi, about $26–30, from 11 to 3.</p><p class="why">Why: Korea Garden, MooBongRi and Hangang all sell this for $25–30. Yu Chun's closest option is $45.95.</p></div></div>
-    <div class="act"><span class="n">2</span><div><h3>Check Set B and the kalbi</h3><p>Taste and weigh a few kalbi plates. Check tenderness, sweetness and portion size against the price.</p><p class="why">Why: reviews call the kalbi tough, too sweet or small. Guests paying $45.95 to $65.95 expect more.</p></div></div>
-    <div class="act"><span class="n">3</span><div><h3>Fix service basics</h3><p>Take orders promptly, refill water without being asked, and check on each table once after the food arrives.</p><p class="why">Why: service scores 2.9, the lowest of any category.</p></div></div>
-    <div class="act"><span class="n">4</span><div><h3>Change how the tip screen is handled</h3><p>Hand the card machine to the guest and step away while they choose.</p><p class="why">Why: a 2026 reviewer said staff watched while they picked the tip. This kind of complaint stays online for years.</p></div></div>
+    <div class="act"><span class="n">1</span><div><h3>Add a lunch combo</h3><p>One naengmyeon with a small plate of kalbi or bulgogi, about $26–30, from 11 to 3.</p><p class="why">Why: Korea Garden and MooBongRi sell this for $25–27, and Hangang's was about $29–30 in 2025. A solo guest at Yu Chun pays $45.95 for noodles with meat.</p></div></div>
+    <div class="act"><span class="n">2</span><div><h3>Check Set B and the kalbi</h3><p>Taste and weigh a few kalbi plates. Check tenderness and sweetness, and whether the portion fits the price.</p><p class="why">Why: reviews call the kalbi tough, too sweet or small. Guests paying $45.95 to $65.95 expect better meat.</p></div></div>
+    <div class="act"><span class="n">3</span><div><h3>Fix service basics</h3><p>Take orders promptly, refill water before guests ask, and check on each table once after the food arrives.</p><p class="why">Why: service scores 2.9 on Tripadvisor, tied with atmosphere for lowest.</p></div></div>
+    <div class="act"><span class="n">4</span><div><h3>Change how the card machine is handed over</h3><p>Hand the machine to the guest and step back while they choose the tip.</p><p class="why">Why: a 2026 reviewer said staff placed the machine where they could watch the tip being chosen. Complaints like this stay online for years.</p></div></div>
     <div class="act"><span class="n">5</span><div><h3>Reply to reviews</h3><p>Answer new Google and Yelp reviews, starting with the 1- and 2-star ones. Ask happy regulars to post a review.</p><p class="why">Why: 94 of 512 Google reviews are 1 or 2 stars. A short, polite reply shows future guests that the owner cares.</p></div></div>
-    <div class="act"><span class="n">6</span><div><h3>Taste-check the iced soup</h3><p>Compare today's No. 1 broth with how it used to taste. Keep the recipe the same every day.</p><p class="why">Why: reviewers in 2018 and 2024 both said "something was missing." The noodles are why people come, so they must be right every time.</p></div></div>
-    <div class="act"><span class="n">7</span><div><h3>Smoke and parking</h3><p>Check the vents over the kalbi grills. Put up a sign about the small lot and nearby street parking.</p><p class="why">Why: guests mention smoke in the dining room and tight parking stalls.</p></div></div>
+    <div class="act"><span class="n">6</span><div><h3>Taste-check the iced soup</h3><p>Compare today's No. 1 broth with how it used to taste, and check that it tastes the same every day.</p><p class="why">Why: reviewers in 2018 and 2024 both said something was missing (source 12). The noodles are why people come.</p></div></div>
+    <div class="act"><span class="n">7</span><div><h3>Smoke and parking</h3><p>Check the vent hoods over the kalbi grills. Put up a sign about the small lot and nearby street parking.</p><p class="why">Why: guests mention smoke in the dining room and tight parking stalls.</p></div></div>
   </div>
 </section>
 
 <section class="sec src" aria-labelledby="en-src">
   <div class="sec-head"><span class="k">Sources</span><h2 id="en-src">Where each fact comes from</h2>
-  <p class="sub">Checked November 21, 2026. Sites marked † block automated reading. For those, the figure was taken from their search-result listing or from a site that republishes their data. Open the link in a browser to confirm. Yelp review pages show newest reviews first, so older quotes may sit further down the page.</p></div>
+  <p class="sub">Checked November 21, 2026. Sites marked † block automated reading, so those figures were taken from their search-result listing or from a site that republishes their data. Open the link in a browser to confirm. Yelp review pages show newest reviews first, so older quotes may sit further down the page.</p></div>
   <ol>
-    <li>Yelp, Hangang (Kakaʻako): <a href="https://www.mapquest.com/us/hawaii/hangang-519950117" target="_blank" rel="noopener">mapquest.com/us/hawaii/hangang-519950117</a><span class="flag">†</span></li>
-    <li>Yelp, Hangang (Niu Valley): <a href="https://www.mapquest.com/us/hawaii/hangang-hawaii-kai-niu-valley-777127926" target="_blank" rel="noopener">mapquest.com/us/hawaii/hangang-hawaii-kai-niu-valley-777127926</a><span class="flag">†</span></li>
-    <li>Yelp, Yu Chun, 359 reviews: <a href="https://www.yelp.com/biz/yu-chun-korean-restaurant-honolulu" target="_blank" rel="noopener">yelp.com/biz/yu-chun-korean-restaurant-honolulu</a> and <a href="https://www.mapquest.com/us/hawaii/yu-chun-korean-restaurant-273014339" target="_blank" rel="noopener">mapquest.com</a><span class="flag">†</span></li>
-    <li>Tripadvisor, Yuchun: <a href="https://www.tripadvisor.com/Restaurant_Review-g60982-d1480573-Reviews-Yuchun_Korean_Restaurant-Honolulu_Oahu_Hawaii.html" target="_blank" rel="noopener">tripadvisor.com</a><span class="flag">†</span>. Overall 3.8 from 131 reviews also shown on <a href="https://restaurantguru.com/Yu-Chun-Korean-Restaurant-Honolulu" target="_blank" rel="noopener">Restaurant Guru</a>.</li>
-    <li>Google reviews, Yu Chun (512, with star breakdown), via Wanderlog: <a href="https://wanderlog.com/place/details/1071345/yu-chun-korean-restaurant" target="_blank" rel="noopener">wanderlog.com/place/details/1071345</a></li>
-    <li>Choi's Garden regular noodle prices: Aloha State Daily, Nov 4, 2025. <a href="https://alohastatedaily.com/2025/11/04/budget-bites-chois-gardens-5-99-cold-noodle-lunch-special" target="_blank" rel="noopener">alohastatedaily.com</a></li>
-    <li>Korea Garden arrowroot noodles $20.99, kalbi lunch $26.99: Honolulu Magazine, "Our Favorite Cold Noodles," Jul 31, 2025. <a href="https://www.honolulumagazine.com/our-favorite-cold-noodles-honolulu/" target="_blank" rel="noopener">honolulumagazine.com</a></li>
-    <li>Hangang online menu (Arrowroot Cold Noodles $25.95, Cold Noodle Combo $37.95): <a href="https://hangangkoreangrillhouse.com/menu/" target="_blank" rel="noopener">hangangkoreangrillhouse.com/menu</a>. This is an online-ordering site. Dine-in prices may differ.</li>
-    <li>Korea Garden kalbi + naengmyeon $26.99: Honolulu Magazine, Apr 22, 2024. <a href="https://www.honolulumagazine.com/korea-garden-lunch-specials/" target="_blank" rel="noopener">honolulumagazine.com</a></li>
-    <li>MooBongRi $25 lunch; Hangang Niu Valley opening and $28 lunch special: Honolulu Magazine, Apr 16, 2025. <a href="https://www.honolulumagazine.com/4-new-korean-restaurants-opened-honolulu-12-days/" target="_blank" rel="noopener">honolulumagazine.com</a></li>
-    <li>Choi's Garden $5.99 deal, "packed during lunch time": Aloha State Daily, Nov 4, 2025 (source 6) and Aug 18, 2025. <a href="https://alohastatedaily.com/2025/08/18/budget-bites-5-99-cold-noodle-lunch-special-at-chois-garden" target="_blank" rel="noopener">alohastatedaily.com</a></li>
-    <li>Yelp reviews of Yu Chun, shown on its menu-item pages: <a href="https://www.yelp.com/menu/yu-chun-korean-restaurant-honolulu/item/kalbi" target="_blank" rel="noopener">Kalbi page</a>, <a href="https://www.yelp.com/menu/yu-chun-korean-restaurant-honolulu/item/bulgogi" target="_blank" rel="noopener">Bulgogi page</a>, <a href="https://www.yelp.com/menu/yu-chun-korean-restaurant-honolulu/item/black-noodle-in-iced-soup" target="_blank" rel="noopener">Black Noodle in Iced Soup page</a></li>
-    <li>Trip.com, Yu Chun: <a href="https://us.trip.com/restaurant/united-states/honolulu/detail/yu-chun-korean-restaurant-18865130/" target="_blank" rel="noopener">trip.com</a></li>
+    <li>Yelp rating, Hangang (Kakaʻako), shown on MapQuest: <a href="https://www.mapquest.com/us/hawaii/hangang-519950117" target="_blank" rel="noopener">mapquest.com/us/hawaii/hangang-519950117</a><span class="flag">†</span></li>
+    <li>Yelp rating and address, Hangang (Niu Valley), shown on MapQuest: <a href="https://www.mapquest.com/us/hawaii/hangang-hawaii-kai-niu-valley-777127926" target="_blank" rel="noopener">mapquest.com/us/hawaii/hangang-hawaii-kai-niu-valley-777127926</a><span class="flag">†</span></li>
+    <li>Yelp rating and reviews, Yu Chun (359 reviews): <a href="https://www.yelp.com/biz/yu-chun-korean-restaurant-honolulu" target="_blank" rel="noopener">yelp.com/biz/yu-chun-korean-restaurant-honolulu</a> and <a href="https://www.mapquest.com/us/hawaii/yu-chun-korean-restaurant-273014339" target="_blank" rel="noopener">mapquest.com</a><span class="flag">†</span></li>
+    <li>Tripadvisor, Yuchun: <a href="https://www.tripadvisor.com/Restaurant_Review-g60982-d1480573-Reviews-Yuchun_Korean_Restaurant-Honolulu_Oahu_Hawaii.html" target="_blank" rel="noopener">tripadvisor.com</a><span class="flag">†</span>. The overall 3.8 from 131 reviews also appears on <a href="https://restaurantguru.com/Yu-Chun-Korean-Restaurant-Honolulu" target="_blank" rel="noopener">Restaurant Guru</a><span class="flag">†</span>.</li>
+    <li>Google reviews, Yu Chun (512, with star breakdown), shown on Wanderlog: <a href="https://wanderlog.com/place/details/1071345/yu-chun-korean-restaurant" target="_blank" rel="noopener">wanderlog.com/place/details/1071345</a></li>
+    <li>Choi's Garden: regular prices, $5.99 deal brought back, “packed during lunch time.” Aloha State Daily, Nov 4, 2025. <a href="https://alohastatedaily.com/2025/11/04/budget-bites-chois-gardens-5-99-cold-noodle-lunch-special" target="_blank" rel="noopener">alohastatedaily.com</a></li>
+    <li>Korea Garden arrowroot noodles $20.99, noodles + small kalbi lunch $26.99: Honolulu Magazine, “All Our Favorite Cold Noodles in Honolulu,” Jul 31, 2025. <a href="https://www.honolulumagazine.com/our-favorite-cold-noodles-honolulu/" target="_blank" rel="noopener">honolulumagazine.com</a></li>
+    <li>Hangang online-order menu (Arrowroot Cold Noodles $25.95, Cold Noodle Combo $37.95, Lunch Special Set $37.95): <a href="https://hangangkoreangrillhouse.com/menu/" target="_blank" rel="noopener">hangangkoreangrillhouse.com/menu</a>. Prices in the restaurant may differ.</li>
+    <li>Korea Garden kalbi + naengmyeon lunch $26.99: Honolulu Magazine, Apr 22, 2024. <a href="https://www.honolulumagazine.com/korea-garden-lunch-specials/" target="_blank" rel="noopener">honolulumagazine.com</a></li>
+    <li>MooBongRi $25 lunch; Hangang Niu Valley address, opening, $28 lunch special and noodle combos: Honolulu Magazine, Apr 16, 2025. <a href="https://www.honolulumagazine.com/4-new-korean-restaurants-opened-honolulu-12-days/" target="_blank" rel="noopener">honolulumagazine.com</a></li>
+    <li>Choi's Garden's first $5.99 cold noodle deal: Aloha State Daily, Aug 18, 2025. <a href="https://alohastatedaily.com/2025/08/18/budget-bites-5-99-cold-noodle-lunch-special-at-chois-garden" target="_blank" rel="noopener">alohastatedaily.com</a></li>
+    <li>Yelp reviews of Yu Chun, shown on its menu-item pages: <a href="https://www.yelp.com/menu/yu-chun-korean-restaurant-honolulu/item/kalbi" target="_blank" rel="noopener">Kalbi page</a> (most quotes) and <a href="https://www.yelp.com/menu/yu-chun-korean-restaurant-honolulu/item/black-noodle-in-iced-soup" target="_blank" rel="noopener">Black Noodle in Iced Soup page</a> (2018 review)</li>
+    <li>Trip.com review of Yu Chun: <a href="https://us.trip.com/restaurant/united-states/honolulu/detail/yu-chun-korean-restaurant-18865130/" target="_blank" rel="noopener">trip.com</a></li>
     <li>Hangang lunch set and parking: Honolulu Magazine, May 7, 2024. <a href="https://www.honolulumagazine.com/hangang-korean-lunch-sets/" target="_blank" rel="noopener">honolulumagazine.com</a></li>
-    <li>Hangang Niu Valley address: Aloha State Daily, Mar 26, 2025. <a href="https://alohastatedaily.com/2025/03/26/new-korean-barbecue-spot-in-east-oahu" target="_blank" rel="noopener">alohastatedaily.com</a></li>
-    <li>"Home of the Black Noodle," Yu Chun at 825 Keeaumoku St: MidWeek, Oct 18, 2006. <a href="https://archives-new.midweek.com/content/columns/tabletalk_article/home_of_the_black_noodle/index.html" target="_blank" rel="noopener">midweek.com archive</a></li>
+    <li>Google rating, Hangang (Kakaʻako, 351 reviews), shown on Wanderlog: <a href="https://wanderlog.com/place/details/6019822/hangang-korean-bbq" target="_blank" rel="noopener">wanderlog.com/place/details/6019822</a></li>
+    <li>“Home of the Black Noodle,” Yu Chun at 825 Keeaumoku St: MidWeek, Oct 18, 2006. <a href="https://archives-new.midweek.com/content/columns/tabletalk_article/home_of_the_black_noodle/index.html" target="_blank" rel="noopener">midweek.com archive</a></li>
     <li>Move from Keeaumoku to Kapiolani: Honolulu Star-Bulletin, Oct 28, 2009. <a href="https://archives.starbulletin.com/content/20091028_Seeing_the_light" target="_blank" rel="noopener">starbulletin.com archive</a></li>
   </ol>
 </section>
@@ -351,19 +359,19 @@ footer .wrap{padding-block:0 32px}
 <!-- ===================== KOREAN ===================== -->
 <div id="v-ko" lang="ko" hidden>
 <header class="hero"><div class="wrap">
-  <p class="eyebrow">시장 점검 · 호놀룰루 한식당 · 2026년 11월 21일</p>
-  <h1>손님들은 여전히 냉면 때문에 옵니다. 하지만 <em>가격과 서비스</em>에는 불만이 많습니다.</h1>
-  <p class="lede">유천의 칡냉면은 지금도 "하와이에서 제일 맛있다"는 평을 듣습니다. 그런데 가장 가까운 경쟁 업체인 한강보다 평점이 낮습니다. 냉면 한 그릇 가격은 적당합니다. 문제는 냉면과 고기가 함께 나오는 세트로, 근처 식당들의 점심 콤보보다 훨씬 비쌉니다. 서비스는 유천이 받는 점수 중 가장 낮습니다.</p>
+  <p class="eyebrow">경쟁 현황 점검 · 호놀룰루 한식당 · 2026년 11월 21일</p>
+  <h1>손님들은 여전히 냉면 때문에 옵니다. 하지만 <em>가성비와 서비스</em>에는 불만이 많습니다.</h1>
+  <p class="lede">유천의 칡냉면은 지금도 오아후에서 제일 맛있는 냉면이라는 평을 듣습니다. 그런데 손님 평점은 Yelp와 구글 모두에서 근처 경쟁 식당인 한강보다 낮습니다. 가장 자주 나오는 불만은 가격과 서비스입니다. 근처 경쟁 식당들은 냉면과 갈비를 곁들인 점심 메뉴를 $25~30 정도에 판매하지만, 유천에는 점심 특선이 없습니다.</p>
   <div class="tiles">
-    <div class="tile us"><span class="big num">3.5 <small>vs 4.5</small></span><span class="cap">Yelp 별점: 유천 vs 한강 두 지점</span></div>
-    <div class="tile us"><span class="big num">$45.95 <small>vs $25–30</small></span><span class="cap">세트 B(냉면 + 고기) vs 근처 경쟁 업체 세 곳의 점심 콤보</span></div>
-    <div class="tile us"><span class="big num">2.9 <small>/ 5</small></span><span class="cap">트립어드바이저 서비스 점수(유천의 최저 항목). 음식은 4.0점입니다.</span></div>
+    <div class="tile us"><span class="big num">3.5 <small>대 4.5</small></span><span class="cap">Yelp 별점: 유천 대 한강(두 지점 모두). 구글에서는 3.8 대 4.4입니다.</span></div>
+    <div class="tile us"><span class="big num">$45.95 <small>대 $25~27</small></span><span class="cap">냉면 + 고기: 유천 세트 B 대 코리아 가든과 무봉리의 점심 콤보</span></div>
+    <div class="tile us"><span class="big num">2.9 <small>/ 5</small></span><span class="cap">트립어드바이저의 서비스와 분위기 점수로, 항목 중 가장 낮습니다. 음식은 4.0점입니다.</span></div>
   </div>
   <div class="do">
-    <h2>먼저 검토할 세 가지</h2>
+    <h2>가장 먼저 검토하실 세 가지</h2>
     <ol>
-      <li><b>점심 콤보 추가:</b> 냉면 한 그릇과 작은 갈비 또는 불고기, $26–30 정도.</li>
-      <li><b>기본 서비스 개선:</b> 물 리필, 테이블 확인, 팁 화면을 건네는 방식.</li>
+      <li><b>점심 콤보 추가:</b> 냉면 한 그릇에 갈비나 불고기를 작은 접시로 곁들인 메뉴, $26~30 정도.</li>
+      <li><b>기본 서비스 개선:</b> 물 리필, 테이블 수시로 살피기, 팁 결제 때 카드 단말기를 건네는 방식.</li>
       <li><b>갈비와 세트 B 점검:</b> 양, 고기의 부드러움, 단맛.</li>
     </ol>
   </div>
@@ -372,18 +380,22 @@ footer .wrap{padding-block:0 32px}
 <main><div class="wrap">
 
 <section class="sec" aria-labelledby="ko-ratings">
-  <div class="sec-head"><span class="k">1 · 평점</span><h2 id="ko-ratings">유천의 평점은 한강보다 별 하나가 낮습니다</h2>
-  <p class="sub">두 식당을 비교할 수 있는 Yelp에서 한강은 두 지점 모두 4.5점, 유천은 3.5점입니다. 구글과 트립어드바이저에서는 유천이 모두 3.8점입니다.</p></div>
+  <div class="sec-head"><span class="k">1 · 평점</span><h2 id="ko-ratings">Yelp에서 유천의 평점은 한강보다 꼬박 1점 낮습니다</h2>
+  <p class="sub">Yelp에서 한강은 두 지점 모두 4.5점, 유천은 3.5점입니다. 구글에서는 차이가 조금 작아서 한강 카카아코 지점이 4.4점, 유천이 3.8점입니다.</p></div>
   <div class="two">
     <div class="fig">
-      <h3>Yelp 별점 (리뷰 수)</h3>
-      <div class="bars" role="img" aria-label="Yelp 별점: 한강 카카아코 4.5점(리뷰 399개), 한강 니우 밸리 4.5점(141개), 유천 3.5점(359개).">
+      <h3>별점(리뷰 수)</h3>
+      <div class="bars" role="img" aria-label="Yelp: 한강 카카아코 4.5점(리뷰 399개), 한강 니우 밸리 4.5점(141개), 유천 3.5점(359개). 구글: 한강 카카아코 4.4점(351개), 유천 3.8점(512개).">
+        <div class="grp">Yelp</div>
         <div class="row"><span class="lbl">한강, 카카아코<small>리뷰 399개</small></span><span class="track"><span class="bar" style="--w:90%"></span></span><span class="val num">4.5</span></div>
         <div class="row"><span class="lbl">한강, 니우 밸리<small>리뷰 141개</small></span><span class="track"><span class="bar" style="--w:90%"></span></span><span class="val num">4.5</span></div>
         <div class="row us"><span class="lbl">유천<small>리뷰 359개</small></span><span class="track"><span class="bar" style="--w:70%"></span></span><span class="val num">3.5</span></div>
+        <div class="grp">구글</div>
+        <div class="row"><span class="lbl">한강, 카카아코<small>리뷰 351개</small></span><span class="track"><span class="bar" style="--w:88%"></span></span><span class="val num">4.4</span></div>
+        <div class="row us"><span class="lbl">유천<small>리뷰 512개</small></span><span class="track"><span class="bar" style="--w:76%"></span></span><span class="val num">3.8</span></div>
         <div class="axis"><span class="sp"></span><span class="ticks num"><span style="left:0">0</span><span style="left:20%">1</span><span style="left:40%">2</span><span style="left:60%">3</span><span style="left:80%">4</span><span style="left:100%">5</span></span><span class="sp"></span></div>
       </div>
-      <p class="note">출처 1, 2, 3 †</p>
+      <p class="note">출처 1, 2, 3 †, 5, 15</p>
     </div>
     <div class="fig">
       <h3>트립어드바이저 항목별 유천 점수</h3>
@@ -394,7 +406,7 @@ footer .wrap{padding-block:0 32px}
         <div class="row us"><span class="lbl">분위기</span><span class="track"><span class="bar" style="--w:58%"></span></span><span class="val num">2.9</span></div>
         <div class="axis"><span class="sp"></span><span class="ticks num"><span style="left:0">0</span><span style="left:20%">1</span><span style="left:40%">2</span><span style="left:60%">3</span><span style="left:80%">4</span><span style="left:100%">5</span></span><span class="sp"></span></div>
       </div>
-      <p class="note">리뷰 131개, 종합 3.8점. 출처 4 †</p>
+      <p class="note">여러 해에 걸쳐 쌓인 리뷰 131개, 종합 3.8점. 출처 4 †</p>
     </div>
   </div>
   <div class="fig">
@@ -403,134 +415,134 @@ footer .wrap{padding-block:0 32px}
       <span style="width:39.0%;background:var(--seg5)"></span><span style="width:30.1%;background:var(--seg4)"></span><span style="width:12.5%;background:var(--seg3)"></span><span style="width:4.9%;background:var(--seg2)"></span><span style="width:13.5%;background:var(--seg1)"></span>
     </div>
     <div class="legend num"><span><i style="background:var(--seg5)"></i>5★ 200</span><span><i style="background:var(--seg4)"></i>4★ 154</span><span><i style="background:var(--seg3)"></i>3★ 64</span><span><i style="background:var(--seg2)"></i>2★ 25</span><span><i style="background:var(--seg1)"></i>1★ 69</span></div>
-    <p class="note">평균 3.8점. 대부분의 손님은 만족하지만, 별 1개 리뷰 69개(13%)가 평균을 끌어내립니다. 출처 5</p>
+    <p class="note">평균 3.8점. 대부분의 손님은 만족하지만, 별 1개 리뷰 69개(13%)가 평균을 끌어내립니다. Wanderlog에 나온 수치이며, 현재 구글에는 리뷰가 약 514개입니다. 출처 5</p>
   </div>
   <p class="takeaway">음식은 유천의 강점입니다. 점수를 끌어내리는 것은 서비스와 분위기입니다.</p>
 </section>
 
 <section class="sec" aria-labelledby="ko-price">
-  <div class="sec-head"><span class="k">2 · 가격</span><h2 id="ko-price">냉면 한 그릇 가격은 적당하지만, 세트는 비쌉니다</h2>
-  <p class="sub">1번 칡물냉면은 한강이나 코리아 가든의 칡냉면보다 저렴합니다. 차이는 냉면과 고기를 함께 먹는 메뉴에서 납니다. 근처 경쟁 업체들은 이를 $25–30의 점심 콤보로 팝니다. 유천의 세트 B는 $45.95이고, 점심 할인 메뉴는 없습니다.</p></div>
+  <div class="sec-head"><span class="k">2 · 가격</span><h2 id="ko-price">경쟁 식당에는 냉면 + 갈비 점심 메뉴가 있지만, 유천에는 없습니다</h2>
+  <p class="sub">1번 칡물냉면($18.95)은 코리아 가든의 칡냉면($20.99)보다 저렴합니다. 차이는 냉면과 고기를 함께 먹는 메뉴에서 납니다. 코리아 가든과 무봉리는 냉면에 작은 갈비 한 접시를 곁들인 점심 메뉴를 $25~27에 판매합니다. 유천에서는 손님 한 명이 냉면과 고기를 먹으려면 시간과 관계없이 세트 B를 $45.95에 주문해야 합니다.</p></div>
   <div class="two">
     <div class="fig">
       <h3>냉면 단품</h3>
-      <div class="bars" role="img" aria-label="냉면 단품 가격: 최스 가든 16.95, 유천 18.95, 코리아 가든 20.99, 한강 25.95 달러.">
-        <div class="row"><span class="lbl">최스 가든<small>정상가, 2025년 11월</small></span><span class="track"><span class="bar" style="--w:33.9%"></span></span><span class="val num">$16.95</span></div>
+      <div class="bars" role="img" aria-label="냉면 단품 가격: 초이스 가든 16.95, 유천 18.95, 코리아 가든 20.99, 한강 온라인 메뉴 25.95 달러.">
+        <div class="row"><span class="lbl">초이스 가든<small>정상가, 2025년 11월</small></span><span class="track"><span class="bar" style="--w:33.9%"></span></span><span class="val num">$16.95</span></div>
         <div class="row us"><span class="lbl">유천<small>1번, 현재 메뉴</small></span><span class="track"><span class="bar" style="--w:37.9%"></span></span><span class="val num">$18.95</span></div>
         <div class="row"><span class="lbl">코리아 가든<small>칡냉면, 2025년 7월</small></span><span class="track"><span class="bar" style="--w:42%"></span></span><span class="val num">$20.99</span></div>
-        <div class="row"><span class="lbl">한강<small>칡냉면, 온라인 메뉴</small></span><span class="track"><span class="bar" style="--w:51.9%"></span></span><span class="val num">$25.95</span></div>
+        <div class="row"><span class="lbl">한강<small>칡냉면, 온라인 주문 메뉴</small></span><span class="track"><span class="bar dash" style="--w:51.9%"></span></span><span class="val num">$25.95</span></div>
         <div class="axis"><span class="sp"></span><span class="ticks num"><span style="left:0">$0</span><span style="left:20%">10</span><span style="left:40%">20</span><span style="left:60%">30</span><span style="left:80%">40</span><span style="left:100%">50</span></span><span class="sp"></span></div>
       </div>
-      <p class="note">출처 6, 7, 8</p>
+      <p class="note">줄무늬 막대는 온라인 주문 가격으로, 매장 가격보다 높을 수 있습니다. 출처 6, 7, 8</p>
     </div>
     <div class="fig">
       <h3>냉면 + 고기</h3>
-      <div class="bars" role="img" aria-label="냉면과 고기 콤보: 무봉리 점심 25, 코리아 가든 점심 26.99, 한강 점심 약 29–30, 한강 온라인 메뉴 37.95, 유천 세트 B 45.95 달러.">
+      <div class="bars" role="img" aria-label="냉면과 고기: 무봉리 점심 25, 코리아 가든 점심 26.99, 한강 점심 약 29~30, 유천 세트 A 1인당 32.98, 한강 온라인 콤보 37.95, 유천 세트 B 45.95 달러.">
         <div class="row"><span class="lbl">무봉리<small>점심, 2025년 4월</small></span><span class="track"><span class="bar" style="--w:50%"></span></span><span class="val num">$25</span></div>
-        <div class="row"><span class="lbl">코리아 가든<small>점심, 2024년 4월</small></span><span class="track"><span class="bar" style="--w:54%"></span></span><span class="val num">$26.99</span></div>
-        <div class="row"><span class="lbl">한강<small>점심, 2025년 4월</small></span><span class="track"><span class="bar" style="--w:59%"></span></span><span class="val num">~$29–30</span></div>
-        <div class="row"><span class="lbl">한강<small>온라인 메뉴, 시간 무관</small></span><span class="track"><span class="bar dash" style="--w:75.9%"></span></span><span class="val num">$37.95</span></div>
-        <div class="row us"><span class="lbl">유천 세트 B<small>시간 무관</small></span><span class="track"><span class="bar" style="--w:91.9%"></span></span><span class="val num">$45.95</span></div>
+        <div class="row"><span class="lbl">코리아 가든<small>점심, 2025년 7월</small></span><span class="track"><span class="bar" style="--w:54%"></span></span><span class="val num">$26.99</span></div>
+        <div class="row"><span class="lbl">한강<small>점심, 2025년 4월</small></span><span class="track"><span class="bar" style="--w:59%"></span></span><span class="val num">약 $29~30</span></div>
+        <div class="row us"><span class="lbl">유천 세트 A<small>2인이 나눌 때 1인당</small></span><span class="track"><span class="bar" style="--w:66%"></span></span><span class="val num">$32.98</span></div>
+        <div class="row"><span class="lbl">한강<small>콤보, 온라인 주문 메뉴</small></span><span class="track"><span class="bar dash" style="--w:75.9%"></span></span><span class="val num">$37.95</span></div>
+        <div class="row us"><span class="lbl">유천 세트 B<small>1인, 종일 판매</small></span><span class="track"><span class="bar" style="--w:91.9%"></span></span><span class="val num">$45.95</span></div>
         <div class="axis"><span class="sp"></span><span class="ticks num"><span style="left:0">$0</span><span style="left:20%">10</span><span style="left:40%">20</span><span style="left:60%">30</span><span style="left:80%">40</span><span style="left:100%">50</span></span><span class="sp"></span></div>
       </div>
-      <p class="note">경쟁 업체 콤보는 점심에만 판매하며, 양이 더 적을 수 있습니다. 한강의 냉면 콤보는 $28 점심 특선보다 "1–2달러 더" 비쌉니다. 온라인 메뉴에는 $37.95 콤보에 어떤 고기가 나오는지 적혀 있지 않습니다. 출처 9, 10, 8</p>
+      <p class="note">경쟁 식당의 점심 콤보는 고기 양이 적고 점심에만 판매합니다. 유천의 세트는 정량이며, 리뷰를 보면 나눠 먹는 손님이 많습니다. 한강의 점심 냉면 콤보는 같은 가게의 $28 점심 특선보다 “1~2달러 더” 비쌌습니다. 한강 온라인 메뉴에는 $37.95 콤보에 어떤 고기가 나오는지 적혀 있지 않습니다. 출처 7, 8, 10</p>
     </div>
   </div>
-  <p class="takeaway">손님들도 이를 알아챕니다. 2024–2026년 리뷰에서 가장 많은 불만은 가격입니다. 최스 가든이 $5.99 냉면 점심 행사를 했을 때 식당은 "점심시간 내내 붐볐다"고 합니다(출처 11).</p>
+  <p class="takeaway">손님들도 이 차이를 느끼고 있습니다. 유천 갈비 페이지에 있는 2024~2026년 Yelp 리뷰 19개 중 가격과 서비스가 각각 7번 정도 언급됩니다. 초이스 가든이 $5.99 냉면 점심 행사를 했을 때는 “점심시간에 손님으로 꽉 찼다”고 합니다(출처 6).</p>
 </section>
 
 <section class="sec" aria-labelledby="ko-voice">
   <div class="sec-head"><span class="k">3 · 손님 리뷰</span><h2 id="ko-voice">같은 불만이 반복해서 나옵니다</h2>
-  <p class="sub">공개 리뷰를 최신순으로 인용했습니다. 원문은 영어이며 한국어로 옮겼습니다. 각 리뷰는 원문을 볼 수 있는 페이지로 연결됩니다.</p></div>
+  <p class="sub">공개 리뷰에서 주제별로 골라 인용했습니다. 원문은 영어이며 우리말로 옮겼습니다. 각 리뷰 옆의 출처 번호로 원문 페이지를 확인하실 수 있습니다.</p></div>
   <div class="themes">
-    <div class="theme"><h3>가격과 양 <span class="pill bad">가장 많음</span></h3>
-      <blockquote><p>"냉면에 갈비 반 인분을 시켰는데 세금과 팁을 포함해 40달러가 넘었다"</p><cite>Hitomi O., Yelp, 2026년 8월 21일 · <a href="https://www.yelp.com/menu/yu-chun-korean-restaurant-honolulu/item/kalbi" target="_blank" rel="noopener">출처 12</a></cite></blockquote>
-      <blockquote><p>"평범한 음식 맛에 양도 적은데 너무 비싸다"</p><cite>Jamie T., Yelp, 2026년 5월 15일 · 출처 12</cite></blockquote>
-      <blockquote><p>"세트 가격이 66달러라니 확실히 비싸다"</p><cite>John C., Yelp, 2026년 5월 19일 · 출처 12</cite></blockquote>
+    <div class="theme"><h3>가격과 양 <span class="pill bad">자주 나옴</span></h3>
+      <blockquote><p>“냉면에 갈비 반 인분을 시켰는데 세금과 팁을 포함해 40달러가 넘었다”</p><cite>Hitomi O., Yelp, 2026년 8월 21일 · <a href="https://www.yelp.com/menu/yu-chun-korean-restaurant-honolulu/item/kalbi" target="_blank" rel="noopener">출처 12</a></cite></blockquote>
+      <blockquote><p>“66달러짜리 세트는 확실히 값에 비해 비싸다”</p><cite>John C., Yelp, 2026년 5월 19일 · 출처 12</cite></blockquote>
+      <blockquote><p>“음식은 평범하고 양도 적은데 아주 비싸다”</p><cite>Jamie T., Yelp, 2026년 5월 15일 · 출처 12</cite></blockquote>
     </div>
     <div class="theme"><h3>서비스와 팁 <span class="pill bad">자주 나옴</span></h3>
-      <blockquote><p>"서비스가 나빴다. 직원이 주문을 받다 말고 다른 테이블 음식을 가지러 가 버렸다"</p><cite>John C., Yelp, 2026년 5월 19일 · 출처 12</cite></blockquote>
-      <blockquote><p>카드 단말기에 대해: 직원이 "내가 팁을 고르는 모습을 볼 수 있는 위치에 단말기를 두었다"</p><cite>Hitomi O., Yelp, 2026년 8월 21일 · 출처 12</cite></blockquote>
-      <blockquote><p>"물을 거의 채워 주지 않았고, 더 필요한 게 있는지도 묻지 않았다"</p><cite>Janelle N., Yelp, 2024년 12월 30일 · 출처 12</cite></blockquote>
+      <blockquote><p>카드 단말기 관련: 직원이 “내가 팁을 고르는 동안 자기들이 볼 수 있는 위치에 단말기를 두었다”</p><cite>Hitomi O., Yelp, 2026년 8월 21일 · 출처 12</cite></blockquote>
+      <blockquote><p>“서비스가 나빴다. 직원이 주문을 받다가도 자꾸 다른 테이블 음식을 가지러 가 버렸다”</p><cite>John C., Yelp, 2026년 5월 19일 · 출처 12</cite></blockquote>
+      <blockquote><p>“물도 거의 채워 주지 않았고, 더 필요한 게 있는지도 거의 묻지 않았다”</p><cite>Janelle N., Yelp, 2024년 12월 30일 · 출처 12</cite></blockquote>
     </div>
     <div class="theme"><h3>갈비 <span class="pill mid">의견이 갈림</span></h3>
-      <blockquote><p>"갈비가 너무 달았다"</p><cite>Jamie T., Yelp, 2026년 5월 15일 · 출처 12</cite></blockquote>
-      <blockquote><p>"갈비는 늘 질기고 너무 익혀 나오며, 양은 여전히 터무니없이 적다"</p><cite>Sharon L., Yelp, 2025년 2월 27일 · 출처 12</cite></blockquote>
-      <blockquote><p>반대 의견도 있습니다: "손가락까지 핥아 먹을 만큼 맛있다"</p><cite>Amy L., Yelp, 2025년 10월 24일 · 출처 12</cite></blockquote>
+      <blockquote><p>“갈비가 지나치게 달았다”</p><cite>Jamie T., Yelp, 2026년 5월 15일 · 출처 12</cite></blockquote>
+      <blockquote><p>“갈비는 늘 질기고 너무 익혀 나오며, 양은 여전히 터무니없이 적다”</p><cite>Sharon L., Yelp, 2025년 2월 27일 · 출처 12</cite></blockquote>
+      <blockquote><p>반대 의견도 있습니다: “정말 끝내주게 맛있다”</p><cite>Amy L., Yelp, 2025년 10월 24일 · 출처 12</cite></blockquote>
     </div>
     <div class="theme"><h3>실내, 주차, 육수 <span class="pill mid">가끔 나옴</span></h3>
-      <blockquote><p>"갈비 굽는 연기 때문에 가게 안이 너무 자욱했다"</p><cite>Joy H., Yelp, 2026년 7월 29일 · <a href="https://www.mapquest.com/us/hawaii/yu-chun-korean-restaurant-273014339" target="_blank" rel="noopener">출처 3</a></cite></blockquote>
-      <blockquote><p>"주차 공간이 꽤 좁다"</p><cite>Janelle N., Yelp, 2024년 12월 30일 · 출처 12</cite></blockquote>
-      <blockquote><p>물냉면에 대해: "왠지 뭔가 빠진 느낌이었다"</p><cite>Janelle N., Yelp, 2024년 12월 30일 · 출처 12</cite></blockquote>
+      <blockquote><p>“다들 갈비를 굽느라 가게 안에 연기가 엄청 자욱했다”</p><cite>Joy H., Yelp, 2026년 7월 29일 · <a href="https://www.mapquest.com/us/hawaii/yu-chun-korean-restaurant-273014339" target="_blank" rel="noopener">출처 3</a></cite></blockquote>
+      <blockquote><p>“주차 칸이 꽤 좁다”</p><cite>Janelle N., Yelp, 2024년 12월 30일 · 출처 12</cite></blockquote>
+      <blockquote><p>물냉면에 대해: “왠지 뭔가 빠진 느낌이었다”</p><cite>Janelle N., Yelp, 2024년 12월 30일 · 출처 12</cite></blockquote>
     </div>
     <div class="theme pos"><h3>대표 메뉴 칡냉면 <span class="pill ok">강점</span></h3>
-      <div class="two">
-        <blockquote><p>"하와이에서 제일 맛있는 냉면이다. 다른 곳과는 비교도 안 된다!!"</p><cite>Tyler M., Yelp, 2026년 9월 25일 · 출처 12</cite></blockquote>
-        <blockquote><p>"쫄깃한 면과 새콤하고 얼음처럼 차가운 육수"</p><cite>Amy L., Yelp, 2025년 10월 24일 · 출처 12</cite></blockquote>
-        <blockquote><p>"서울에서 먹었던 맛 그대로다"</p><cite>Trip.com, 2025년 9월 12일 · <a href="https://us.trip.com/restaurant/united-states/honolulu/detail/yu-chun-korean-restaurant-18865130/" target="_blank" rel="noopener">출처 13</a></cite></blockquote>
-        <blockquote><p>"금요일 저녁에 갔는데 전혀 기다리지 않았다"</p><cite>Elizabeth L., Yelp, 2026년 10월 · 출처 3</cite></blockquote>
+      <div class="three">
+        <blockquote><p>“오아후에서 제일 맛있는 냉면이다. 다른 곳과는 비교도 안 된다!!”</p><cite>Tyler M., Yelp, 2026년 9월 25일 · 출처 12</cite></blockquote>
+        <blockquote><p>“쫄깃한 면과 새콤하고 얼음처럼 차가운 육수”</p><cite>Amy L., Yelp, 2025년 10월 24일 · 출처 12</cite></blockquote>
+        <blockquote><p>비빔냉면에 대해: “서울에서 먹었던 맛 그대로다”</p><cite>Trip.com, 2025년 9월 · <a href="https://us.trip.com/restaurant/united-states/honolulu/detail/yu-chun-korean-restaurant-18865130/" target="_blank" rel="noopener">출처 13</a></cite></blockquote>
       </div>
     </div>
   </div>
-  <p class="takeaway">2026년의 한 손님은 "예전에는 좋았던 곳"이라고 썼습니다. 문제는 냉면이 아니라 냉면을 먹는 동안의 경험입니다.</p>
+  <p class="takeaway">2026년에 한 손님은 “여기 예전엔 좋았는데”라며 아쉬워했습니다(Jamie T., 출처 12). 문제는 냉면이 아니라 냉면 외의 부분, 즉 가격·서비스·매장 환경입니다.</p>
 </section>
 
 <section class="sec" aria-labelledby="ko-rivals">
-  <div class="sec-head"><span class="k">4 · 경쟁 업체</span><h2 id="ko-rivals">이제 경쟁 업체 두 곳도 칡냉면을 팝니다</h2>
-  <p class="sub">칡냉면은 유천만의 차별점이었습니다. 지금은 한강과 코리아 가든도 쫄깃한 칡냉면을 메뉴에 올렸습니다. 두 곳 모두 점심 세트에서 냉면을 갈비와 묶어 팔고, 반찬도 많이 냅니다.</p></div>
+  <div class="sec-head"><span class="k">4 · 경쟁 식당</span><h2 id="ko-rivals">경쟁 식당 두 곳도 칡냉면을 판매합니다</h2>
+  <p class="sub">한강과 코리아 가든은 유천의 대표 메뉴인 칡냉면을 메뉴에 올려 두었습니다. 두 곳 모두 냉면이나 갈비에 반찬을 넉넉히 곁들인 점심 세트도 판매합니다.</p></div>
   <div class="tablebox"><table>
     <thead><tr><th>식당</th><th>위치</th><th>냉면</th><th>냉면 + 고기</th><th>특징</th></tr></thead>
     <tbody>
-      <tr class="us"><td><b>유천</b></td><td>1159 Kapiolani Blvd</td><td class="num">$18.95 (1번)</td><td class="num">세트 B $45.95, 세트 A $65.95</td><td>Yelp 3.5, 구글 3.8. 1990년대부터 냉면으로 알려짐. 예약은 5인 이상만 가능.</td></tr>
-      <tr><td><b>한강 코리안 그릴 하우스</b></td><td>1236 Waimanu St (카카아코), 5730 Kalanianaʻole Hwy (니우 밸리, 2025년 3월 개점)</td><td class="num">칡냉면, 온라인 메뉴 $25.95</td><td class="num">점심 콤보 약 $29–30 (2025년)</td><td>두 지점 모두 Yelp 4.5. 돌솥밥, 찌개, 다양한 반찬이 나오는 점심 세트. 카카아코 지점은 가게 뒤에 주차장.</td></tr>
-      <tr><td><b>코리아 가든</b></td><td>1683 Kalākaua Ave</td><td class="num">칡냉면, $20.99 (2025년)</td><td class="num">갈비 + 냉면 점심 $26.99</td><td>반찬 8–9가지, 테이블에서 리필해 줌.</td></tr>
-      <tr><td><b>무봉리</b></td><td>930 McCully St</td><td>냉면</td><td class="num">갈비 + 냉면 점심 $25</td><td>2025년 3월 개점. 미국 본토 체인.</td></tr>
-      <tr><td><b>최스 가든</b></td><td>1303 Rycroft St</td><td class="num">$16.95 / 비빔 $17.95</td><td>해당 없음</td><td>2025년 8월과 11월에 $5.99 냉면 점심 행사.</td></tr>
+      <tr class="us"><td><b>유천</b></td><td>1159 Kapiolani Blvd</td><td class="num">$18.95(1번)</td><td class="num">세트 B $45.95, 세트 A $65.95(냉면 2 + 고기 1)</td><td>Yelp 3.5, 구글 3.8. 1990년대부터 칡냉면을 판매(출처 16, 17). 예약은 5인 이상만 가능.</td></tr>
+      <tr><td><b>한강 코리안 그릴 하우스</b></td><td>1236 Waimanu St(카카아코), 5730 Kalanianaʻole Hwy(니우 밸리, 2025년 3월 개점)</td><td class="num">칡냉면, 온라인 주문 메뉴 $25.95</td><td class="num">점심 콤보 약 $29~30(2025년 4월). 현재 온라인 메뉴: 콤보 $37.95, 점심 세트 $37.95</td><td>Yelp 두 지점 모두 4.5, 구글 4.4(카카아코). 돌솥밥, 찌개, 다양한 반찬이 나오는 점심 세트. 카카아코 지점은 가게 뒤편에 주차 가능.</td></tr>
+      <tr><td><b>코리아 가든</b></td><td>1683 Kalākaua Ave</td><td class="num">칡냉면, $20.99(2025년 7월)</td><td class="num">냉면 + 작은 갈비, 점심 $26.99</td><td>반찬 8~9가지, 리필 가능.</td></tr>
+      <tr><td><b>무봉리</b></td><td>930 McCully St</td><td>냉면</td><td class="num">갈비 + 냉면, 점심 $25(2025년 4월)</td><td>2025년 3월 개점. 미국 본토 체인.</td></tr>
+      <tr><td><b>초이스 가든</b> (Choi's Garden)</td><td>1303 Rycroft St</td><td class="num">$16.95 / 매운 냉면 $17.95(2025년 11월)</td><td>해당 없음</td><td>2025년 여름과 11월에 $5.99 냉면 점심 행사.</td></tr>
     </tbody>
   </table></div>
-  <p class="note" style="font-size:.84rem;color:var(--ink-soft)">출처 6–11, 14–15. 경쟁 업체 가격은 날짜가 표시된 기사와 온라인 주문 메뉴에서 가져왔습니다. 가격을 정하기 전에 전화나 방문으로 확인하세요.</p>
-  <p class="takeaway">유천에는 경쟁 업체에 없는 역사가 있습니다. 키아우모쿠 스트리트에서 시작해 카피올라니로 옮겼고, 현지 신문은 유천을 "검은 면의 본고장(Home of the Black Noodle)"이라고 불렀습니다(출처 16, 17). 이 이야기를 메뉴와 온라인에 알리세요.</p>
+  <p class="note" style="font-size:.84rem;color:var(--ink-soft)">출처 2, 5~11, 14, 15. 경쟁 식당 가격은 날짜가 표시된 기사(2024~2025년)와 온라인 주문 메뉴에서 가져왔습니다. 가격을 정하시기 전에 전화나 방문으로 확인해 보시기 바랍니다.</p>
+  <p class="takeaway">유천에는 경쟁 식당에 없는 역사가 있습니다. 2006년 MidWeek 칼럼은 유천을 “검은 냉면의 본고장(Home of the Black Noodle)”이라고 불렀습니다(출처 16). 유천은 키아모쿠 스트리트에서 시작해 카피올라니로 옮겼습니다(출처 17). 이 이야기를 메뉴판과 온라인에 소개해 보시면 좋겠습니다.</p>
 </section>
 
 <section class="sec" aria-labelledby="ko-acts">
-  <div class="sec-head"><span class="k">5 · 검토할 사항</span><h2 id="ko-acts">중요한 순서대로 일곱 가지</h2></div>
+  <div class="sec-head"><span class="k">5 · 검토할 사항</span><h2 id="ko-acts">검토하실 일곱 가지(중요한 순서대로)</h2></div>
   <div class="acts">
-    <div class="act"><span class="n">1</span><div><h3>점심 콤보 추가</h3><p>냉면 한 그릇과 작은 갈비 또는 불고기, $26–30 정도, 오전 11시부터 오후 3시까지.</p><p class="why">이유: 코리아 가든, 무봉리, 한강 모두 이런 메뉴를 $25–30에 팝니다. 유천에서 가장 비슷한 메뉴는 $45.95입니다.</p></div></div>
-    <div class="act"><span class="n">2</span><div><h3>세트 B와 갈비 점검</h3><p>갈비 몇 접시를 직접 맛보고 무게를 재 보세요. 가격에 비해 고기가 부드러운지, 너무 달지 않은지, 양이 충분한지 확인하세요.</p><p class="why">이유: 리뷰에서 갈비가 질기다, 너무 달다, 양이 적다는 말이 나옵니다. $45.95–65.95를 내는 손님은 그 이상을 기대합니다.</p></div></div>
-    <div class="act"><span class="n">3</span><div><h3>기본 서비스 개선</h3><p>주문은 바로 받고, 요청하기 전에 물을 채우고, 음식이 나온 뒤 테이블마다 한 번씩 확인하세요.</p><p class="why">이유: 서비스 점수가 2.9점으로 모든 항목 중 가장 낮습니다.</p></div></div>
-    <div class="act"><span class="n">4</span><div><h3>팁 화면 응대 방식 바꾸기</h3><p>카드 단말기를 손님에게 건넨 뒤, 손님이 팁을 고르는 동안 자리를 비켜 주세요.</p><p class="why">이유: 2026년 한 리뷰에서 직원이 팁 고르는 것을 지켜봤다고 했습니다. 이런 불만은 몇 년씩 온라인에 남습니다.</p></div></div>
-    <div class="act"><span class="n">5</span><div><h3>리뷰에 답글 달기</h3><p>구글과 Yelp의 새 리뷰에 답글을 다세요. 별 1–2개 리뷰부터 시작하세요. 만족한 단골손님에게 리뷰를 부탁하세요.</p><p class="why">이유: 구글 리뷰 512개 중 94개가 별 1–2개입니다. 짧고 정중한 답글은 앞으로 올 손님에게 사장님이 신경 쓰고 있다는 것을 보여 줍니다.</p></div></div>
-    <div class="act"><span class="n">6</span><div><h3>물냉면 육수 맛 점검</h3><p>지금의 1번 육수를 예전 맛과 비교해 보세요. 매일 같은 레시피를 지키세요.</p><p class="why">이유: 2018년과 2024년 리뷰 모두 "뭔가 빠졌다"고 했습니다. 손님들이 오는 이유가 냉면이니, 냉면은 언제나 제맛이어야 합니다.</p></div></div>
-    <div class="act"><span class="n">7</span><div><h3>연기와 주차</h3><p>갈비 굽는 곳의 환기 장치를 점검하세요. 좁은 주차장과 근처 길가 주차에 대한 안내판을 붙이세요.</p><p class="why">이유: 손님들이 실내 연기와 좁은 주차 공간을 언급합니다.</p></div></div>
+    <div class="act"><span class="n">1</span><div><h3>점심 콤보 추가</h3><p>냉면 한 그릇에 갈비나 불고기를 작은 접시로 곁들여 $26~30 정도에, 오전 11시부터 오후 3시까지 판매하는 방안입니다.</p><p class="why">이유: 코리아 가든과 무봉리는 이런 메뉴를 $25~27에 판매하고, 한강도 2025년에 약 $29~30이었습니다. 유천에서는 손님 한 명이 냉면과 고기를 먹으려면 $45.95를 내야 합니다.</p></div></div>
+    <div class="act"><span class="n">2</span><div><h3>세트 B와 갈비 점검</h3><p>갈비 몇 접시를 직접 맛보고 무게를 재 보세요. 고기가 부드러운지, 너무 달지 않은지, 그리고 가격에 비해 양이 충분한지 확인해 보세요.</p><p class="why">이유: 리뷰에서 갈비가 질기다, 너무 달다, 양이 적다는 말이 나옵니다. $45.95~$65.95를 내는 손님은 그만큼 더 좋은 고기를 기대합니다.</p></div></div>
+    <div class="act"><span class="n">3</span><div><h3>기본 서비스 개선</h3><p>주문은 바로 받고, 손님이 요청하기 전에 물을 채워 드리고, 음식이 나온 뒤에는 테이블마다 한 번씩 들러 불편한 점이 없는지 여쭤보세요.</p><p class="why">이유: 트립어드바이저 서비스 점수가 2.9점으로, 분위기와 함께 가장 낮습니다.</p></div></div>
+    <div class="act"><span class="n">4</span><div><h3>카드 단말기 건네는 방식 바꾸기</h3><p>직원이 카드 단말기를 손님에게 건넨 뒤, 손님이 팁을 고르는 동안 한 걸음 물러나 있도록 해 주세요.</p><p class="why">이유: 2026년 한 리뷰에서 직원이 팁 고르는 화면을 볼 수 있는 위치에 단말기를 두었다고 했습니다. 이런 불만은 몇 년씩 온라인에 남습니다.</p></div></div>
+    <div class="act"><span class="n">5</span><div><h3>리뷰에 답글 달기</h3><p>구글과 Yelp에 새로 올라오는 리뷰에 답글을 달아 주세요. 별 1~2개짜리 리뷰부터 시작하시고, 만족하신 단골손님께는 리뷰를 부탁해 보세요.</p><p class="why">이유: 구글 리뷰 512개 중 94개가 별 1~2개입니다. 짧고 정중한 답글은 앞으로 올 손님들에게 사장님께서 신경 쓰고 계신다는 것을 보여 줍니다.</p></div></div>
+    <div class="act"><span class="n">6</span><div><h3>물냉면 육수 맛 점검</h3><p>지금 1번 메뉴(칡물냉면)의 육수를 예전 맛과 비교해 보시고, 매일 같은 맛이 나는지 확인해 보시면 좋겠습니다.</p><p class="why">이유: 2018년과 2024년 리뷰 모두 “뭔가 빠진 느낌”이라고 했습니다(출처 12). 손님들이 오는 이유가 냉면이니, 냉면 맛만큼은 늘 한결같아야 합니다.</p></div></div>
+    <div class="act"><span class="n">7</span><div><h3>연기와 주차</h3><p>갈비 불판 위 환기 후드를 점검해 보세요. 좁은 주차장과 근처 길가 주차에 대한 안내판을 붙여 두시면 좋겠습니다.</p><p class="why">이유: 손님들이 실내 연기와 좁은 주차 칸을 언급합니다.</p></div></div>
   </div>
 </section>
 
 <section class="sec src" aria-labelledby="ko-src">
   <div class="sec-head"><span class="k">출처</span><h2 id="ko-src">각 내용의 출처</h2>
-  <p class="sub">2026년 11월 21일에 확인했습니다. † 표시된 사이트는 자동 확인을 막아 두었기 때문에, 검색 결과에 나온 정보나 해당 데이터를 다시 보여 주는 사이트에서 수치를 가져왔습니다. 브라우저에서 링크를 열어 확인하세요. Yelp 리뷰 페이지는 최신 리뷰가 먼저 나오므로, 오래된 인용은 페이지 아래쪽에 있을 수 있습니다.</p></div>
+  <p class="sub">2026년 11월 21일에 확인했습니다. † 표시된 사이트는 프로그램이 내용을 자동으로 읽어 오는 것을 막고 있어서, 검색 결과에 나온 정보나 해당 데이터를 다시 보여 주는 사이트에서 수치를 가져왔습니다. 브라우저에서 링크를 열어 확인해 보세요. Yelp 리뷰 페이지는 최신 리뷰가 먼저 나오므로, 오래된 인용은 페이지 아래쪽에 있을 수 있습니다.</p></div>
   <ol>
-    <li>Yelp, 한강 (카카아코): <a href="https://www.mapquest.com/us/hawaii/hangang-519950117" target="_blank" rel="noopener">mapquest.com/us/hawaii/hangang-519950117</a><span class="flag">†</span></li>
-    <li>Yelp, 한강 (니우 밸리): <a href="https://www.mapquest.com/us/hawaii/hangang-hawaii-kai-niu-valley-777127926" target="_blank" rel="noopener">mapquest.com/us/hawaii/hangang-hawaii-kai-niu-valley-777127926</a><span class="flag">†</span></li>
-    <li>Yelp, 유천, 리뷰 359개: <a href="https://www.yelp.com/biz/yu-chun-korean-restaurant-honolulu" target="_blank" rel="noopener">yelp.com/biz/yu-chun-korean-restaurant-honolulu</a>, <a href="https://www.mapquest.com/us/hawaii/yu-chun-korean-restaurant-273014339" target="_blank" rel="noopener">mapquest.com</a><span class="flag">†</span></li>
-    <li>트립어드바이저, 유천: <a href="https://www.tripadvisor.com/Restaurant_Review-g60982-d1480573-Reviews-Yuchun_Korean_Restaurant-Honolulu_Oahu_Hawaii.html" target="_blank" rel="noopener">tripadvisor.com</a><span class="flag">†</span>. 리뷰 131개, 종합 3.8점은 <a href="https://restaurantguru.com/Yu-Chun-Korean-Restaurant-Honolulu" target="_blank" rel="noopener">Restaurant Guru</a>에도 나옵니다.</li>
-    <li>구글 리뷰, 유천 (512개, 별점별 분포), Wanderlog 경유: <a href="https://wanderlog.com/place/details/1071345/yu-chun-korean-restaurant" target="_blank" rel="noopener">wanderlog.com/place/details/1071345</a></li>
-    <li>최스 가든 냉면 정상가: Aloha State Daily, 2025년 11월 4일. <a href="https://alohastatedaily.com/2025/11/04/budget-bites-chois-gardens-5-99-cold-noodle-lunch-special" target="_blank" rel="noopener">alohastatedaily.com</a></li>
-    <li>코리아 가든 칡냉면 $20.99, 갈비 점심 $26.99: Honolulu Magazine, "Our Favorite Cold Noodles", 2025년 7월 31일. <a href="https://www.honolulumagazine.com/our-favorite-cold-noodles-honolulu/" target="_blank" rel="noopener">honolulumagazine.com</a></li>
-    <li>한강 온라인 메뉴 (칡냉면 $25.95, 냉면 콤보 $37.95): <a href="https://hangangkoreangrillhouse.com/menu/" target="_blank" rel="noopener">hangangkoreangrillhouse.com/menu</a>. 온라인 주문 사이트이므로 매장 가격과 다를 수 있습니다.</li>
-    <li>코리아 가든 갈비 + 냉면 $26.99: Honolulu Magazine, 2024년 4월 22일. <a href="https://www.honolulumagazine.com/korea-garden-lunch-specials/" target="_blank" rel="noopener">honolulumagazine.com</a></li>
-    <li>무봉리 $25 점심, 한강 니우 밸리 개점과 $28 점심 특선: Honolulu Magazine, 2025년 4월 16일. <a href="https://www.honolulumagazine.com/4-new-korean-restaurants-opened-honolulu-12-days/" target="_blank" rel="noopener">honolulumagazine.com</a></li>
-    <li>최스 가든 $5.99 행사, "점심시간 내내 붐볐다": Aloha State Daily, 2025년 11월 4일(출처 6), 2025년 8월 18일. <a href="https://alohastatedaily.com/2025/08/18/budget-bites-5-99-cold-noodle-lunch-special-at-chois-garden" target="_blank" rel="noopener">alohastatedaily.com</a></li>
-    <li>유천 Yelp 리뷰 (메뉴 항목 페이지): <a href="https://www.yelp.com/menu/yu-chun-korean-restaurant-honolulu/item/kalbi" target="_blank" rel="noopener">갈비 페이지</a>, <a href="https://www.yelp.com/menu/yu-chun-korean-restaurant-honolulu/item/bulgogi" target="_blank" rel="noopener">불고기 페이지</a>, <a href="https://www.yelp.com/menu/yu-chun-korean-restaurant-honolulu/item/black-noodle-in-iced-soup" target="_blank" rel="noopener">칡물냉면 페이지</a></li>
-    <li>Trip.com, 유천: <a href="https://us.trip.com/restaurant/united-states/honolulu/detail/yu-chun-korean-restaurant-18865130/" target="_blank" rel="noopener">trip.com</a></li>
+    <li>Yelp 평점, 한강(카카아코), MapQuest에 표시: <a href="https://www.mapquest.com/us/hawaii/hangang-519950117" target="_blank" rel="noopener">mapquest.com/us/hawaii/hangang-519950117</a><span class="flag">†</span></li>
+    <li>Yelp 평점과 주소, 한강(니우 밸리), MapQuest에 표시: <a href="https://www.mapquest.com/us/hawaii/hangang-hawaii-kai-niu-valley-777127926" target="_blank" rel="noopener">mapquest.com/us/hawaii/hangang-hawaii-kai-niu-valley-777127926</a><span class="flag">†</span></li>
+    <li>Yelp 평점과 리뷰, 유천(리뷰 359개): <a href="https://www.yelp.com/biz/yu-chun-korean-restaurant-honolulu" target="_blank" rel="noopener">yelp.com/biz/yu-chun-korean-restaurant-honolulu</a>, <a href="https://www.mapquest.com/us/hawaii/yu-chun-korean-restaurant-273014339" target="_blank" rel="noopener">mapquest.com</a><span class="flag">†</span></li>
+    <li>트립어드바이저, 유천: <a href="https://www.tripadvisor.com/Restaurant_Review-g60982-d1480573-Reviews-Yuchun_Korean_Restaurant-Honolulu_Oahu_Hawaii.html" target="_blank" rel="noopener">tripadvisor.com</a><span class="flag">†</span>. 리뷰 131개, 종합 3.8점은 <a href="https://restaurantguru.com/Yu-Chun-Korean-Restaurant-Honolulu" target="_blank" rel="noopener">Restaurant Guru</a><span class="flag">†</span>에도 나옵니다.</li>
+    <li>구글 리뷰, 유천(512개, 별점별 분포), Wanderlog에 표시: <a href="https://wanderlog.com/place/details/1071345/yu-chun-korean-restaurant" target="_blank" rel="noopener">wanderlog.com/place/details/1071345</a></li>
+    <li>초이스 가든: 정상가, $5.99 행사 재개, “점심시간에 손님으로 꽉 찼다”. Aloha State Daily, 2025년 11월 4일. <a href="https://alohastatedaily.com/2025/11/04/budget-bites-chois-gardens-5-99-cold-noodle-lunch-special" target="_blank" rel="noopener">alohastatedaily.com</a></li>
+    <li>코리아 가든 칡냉면 $20.99, 냉면 + 작은 갈비 점심 $26.99: Honolulu Magazine, “All Our Favorite Cold Noodles in Honolulu”, 2025년 7월 31일. <a href="https://www.honolulumagazine.com/our-favorite-cold-noodles-honolulu/" target="_blank" rel="noopener">honolulumagazine.com</a></li>
+    <li>한강 온라인 주문 메뉴(칡냉면 $25.95, 냉면 콤보 $37.95, 점심 세트 $37.95): <a href="https://hangangkoreangrillhouse.com/menu/" target="_blank" rel="noopener">hangangkoreangrillhouse.com/menu</a>. 매장 가격과 다를 수 있습니다.</li>
+    <li>코리아 가든 갈비 + 냉면 점심 $26.99: Honolulu Magazine, 2024년 4월 22일. <a href="https://www.honolulumagazine.com/korea-garden-lunch-specials/" target="_blank" rel="noopener">honolulumagazine.com</a></li>
+    <li>무봉리 $25 점심, 한강 니우 밸리 주소·개점·$28 점심 특선·냉면 콤보: Honolulu Magazine, 2025년 4월 16일. <a href="https://www.honolulumagazine.com/4-new-korean-restaurants-opened-honolulu-12-days/" target="_blank" rel="noopener">honolulumagazine.com</a></li>
+    <li>초이스 가든의 첫 $5.99 냉면 행사: Aloha State Daily, 2025년 8월 18일. <a href="https://alohastatedaily.com/2025/08/18/budget-bites-5-99-cold-noodle-lunch-special-at-chois-garden" target="_blank" rel="noopener">alohastatedaily.com</a></li>
+    <li>유천 Yelp 리뷰(메뉴 항목 페이지): <a href="https://www.yelp.com/menu/yu-chun-korean-restaurant-honolulu/item/kalbi" target="_blank" rel="noopener">갈비 페이지</a>(대부분의 인용), <a href="https://www.yelp.com/menu/yu-chun-korean-restaurant-honolulu/item/black-noodle-in-iced-soup" target="_blank" rel="noopener">칡물냉면 페이지</a>(2018년 리뷰)</li>
+    <li>Trip.com 유천 리뷰: <a href="https://us.trip.com/restaurant/united-states/honolulu/detail/yu-chun-korean-restaurant-18865130/" target="_blank" rel="noopener">trip.com</a></li>
     <li>한강 점심 세트와 주차: Honolulu Magazine, 2024년 5월 7일. <a href="https://www.honolulumagazine.com/hangang-korean-lunch-sets/" target="_blank" rel="noopener">honolulumagazine.com</a></li>
-    <li>한강 니우 밸리 주소: Aloha State Daily, 2025년 3월 26일. <a href="https://alohastatedaily.com/2025/03/26/new-korean-barbecue-spot-in-east-oahu" target="_blank" rel="noopener">alohastatedaily.com</a></li>
-    <li>"Home of the Black Noodle", 825 Keeaumoku St 시절의 유천: MidWeek, 2006년 10월 18일. <a href="https://archives-new.midweek.com/content/columns/tabletalk_article/home_of_the_black_noodle/index.html" target="_blank" rel="noopener">midweek.com 아카이브</a></li>
-    <li>키아우모쿠에서 카피올라니로 이전: Honolulu Star-Bulletin, 2009년 10월 28일. <a href="https://archives.starbulletin.com/content/20091028_Seeing_the_light" target="_blank" rel="noopener">starbulletin.com 아카이브</a></li>
+    <li>구글 평점, 한강(카카아코, 리뷰 351개), Wanderlog에 표시: <a href="https://wanderlog.com/place/details/6019822/hangang-korean-bbq" target="_blank" rel="noopener">wanderlog.com/place/details/6019822</a></li>
+    <li>“Home of the Black Noodle”, 825 Keeaumoku St 시절의 유천: MidWeek, 2006년 10월 18일. <a href="https://archives-new.midweek.com/content/columns/tabletalk_article/home_of_the_black_noodle/index.html" target="_blank" rel="noopener">midweek.com 아카이브</a></li>
+    <li>키아모쿠에서 카피올라니로 이전: Honolulu Star-Bulletin, 2009년 10월 28일. <a href="https://archives.starbulletin.com/content/20091028_Seeing_the_light" target="_blank" rel="noopener">starbulletin.com 아카이브</a></li>
   </ol>
 </section>
 
 </div></main>
-<footer><div class="wrap"><p>공개 자료를 바탕으로 유천 코리안 레스토랑을 위해 작성했습니다. 2026년 11월.</p></div></footer>
+<footer><div class="wrap"><p>공개 자료를 바탕으로 유천 칡냉면을 위해 작성했습니다(2026년 11월). 리뷰 인용문은 영어 원문을 우리말로 옮긴 것입니다.</p></div></footer>
 </div>
 
 <script>
@@ -541,14 +553,14 @@ footer .wrap{padding-block:0 32px}
     en.hidden=(l!=='en');ko.hidden=(l!=='ko');
     b.en.setAttribute('aria-pressed',l==='en');b.ko.setAttribute('aria-pressed',l==='ko');
     document.documentElement.lang=l;
-    document.title=l==='ko'?'유천 시장 점검':'Yu Chun Market Check';
+    document.title=l==='ko'?'유천 칡냉면 경쟁 현황 점검':'Yu Chun Market Check';
   }
   function fromHash(){var h=location.hash.replace('#','');return h==='ko'||h==='en'?h:null}
   var start=fromHash();
   if(!start){try{start=(navigator.language||'').toLowerCase().indexOf('ko')===0?'ko':'en'}catch(e){start='en'}}
   set(start);
-  b.en.addEventListener('click',function(){set('en');history.replaceState(null,'','#en')});
-  b.ko.addEventListener('click',function(){set('ko');history.replaceState(null,'','#ko')});
+  b.en.addEventListener('click',function(){set('en');try{history.replaceState(null,'','#en')}catch(e){}});
+  b.ko.addEventListener('click',function(){set('ko');try{history.replaceState(null,'','#ko')}catch(e){}});
   window.addEventListener('hashchange',function(){var h=fromHash();if(h)set(h)});
 })();
 </script>
