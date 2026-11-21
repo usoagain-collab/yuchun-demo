@@ -128,11 +128,15 @@ p { margin: 0 0 1em; }
   font-family: var(--font-display); font-size: clamp(5rem, 28vw, 9.5rem); line-height: .9;
   color: var(--stamp); letter-spacing: -.02em; word-break: keep-all;
   pointer-events: none; user-select: none;
-  animation: stamp .5s cubic-bezier(.2, .9, .3, 1.2) .15s both;
+  animation: stamp .7s cubic-bezier(.3, 0, .2, 1) .35s both;
 }
+/* Hold the stamp until its font has arrived (index.html removes this class), so visitors actually see it land */
+.stamp-wait .hero-dish { opacity: 0; animation: none; }
 @keyframes stamp {
-  from { transform: scale(1.14) rotate(-2.5deg); }
-  to { opacity: 1; transform: none; }
+  0% { opacity: 0; transform: scale(1.7) rotate(-6deg); }
+  55% { opacity: 1; transform: scale(.96) rotate(.5deg); }
+  75% { transform: scale(1.02) rotate(0); }
+  100% { opacity: 1; transform: none; }
 }
 .hero-copy { padding-top: 14px; }
 .hero-copy h1 { max-width: 15em; }
