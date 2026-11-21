@@ -1,0 +1,13 @@
+{
+  "id": "P016",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "When I take the family out, we order a few things to share, and with kalbi at $38.95, noodles at $18.95, tax and tip, four of us are looking at well over $150. I can feed everybody for less at places we already like, so this one stays on the 'maybe for a birthday' list.",
+  "objection": "$18.95 for a bowl of cold noodles plus tax and tip is a lot, and the meat dishes make a family meal add up fast.",
+  "would_change_my_mind": "A family or sharing set priced for four, around $100 for noodles plus a meat dish or two, so I know the total before we sit down.",
+  "price_too_cheap": 8,
+  "price_cheap": 12,
+  "price_expensive": 16,
+  "price_too_expensive": 20
+}

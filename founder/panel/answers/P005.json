@@ -1,0 +1,13 @@
+{
+  "id": "P005",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "I planned where we'd eat this week from the guidebook and a couple of blogs before we flew out, and this place isn't on my list. I'm not going to cab out of Waikiki to pay nearly twenty dollars plus tax and tip for cold noodles I've never heard anyone recommend.",
+  "objection": "Nobody I trust has vouched for it. Without a guidebook write-up or a blog review, $18.95 for a bowl of cold noodles feels like a gamble, not a treat.",
+  "would_change_my_mind": "Seeing it recommended in a guidebook or a well-known travel blog as a must-try in Honolulu.",
+  "price_too_cheap": 7,
+  "price_cheap": 11,
+  "price_expensive": 16,
+  "price_too_expensive": 22
+}

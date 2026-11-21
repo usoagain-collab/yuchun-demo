@@ -1,0 +1,13 @@
+{
+  "id": "P001",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "I don't try anywhere new without checking the Google and Yelp ratings and photos first, and nothing here tells me what other people think. Paying almost $19 plus tax and tip for a cold noodle soup I might not even like is a gamble I won't take blind.",
+  "objection": "I'm not sure I'd like ice-cold broth or arrowroot noodles, and if I don't, the backup is a $36 to $39 kalbi or bulgogi plate, which is a lot for a lunch I wasn't sure about.",
+  "would_change_my_mind": "Seeing a strong Google or Yelp rating with lots of recent photos and reviews saying the naengmyeon is worth it, even for people who had never tried cold noodles.",
+  "price_too_cheap": 9,
+  "price_cheap": 14,
+  "price_expensive": 20,
+  "price_too_expensive": 26
+}

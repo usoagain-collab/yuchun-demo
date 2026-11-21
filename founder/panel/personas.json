@@ -1,0 +1,222 @@
+[
+ {
+  "id": "P001",
+  "name": "Wes",
+  "age": 32,
+  "segment": "Local Honolulu resident",
+  "income": 105000,
+  "behaviour": "Reads every review",
+  "behaviour_how": "Checks Yelp or Google ratings and photos before trying anywhere.",
+  "objection": "I am not sure I will like cold noodle soup or arrowroot noodles",
+  "habit": "you usually pay by credit card"
+ },
+ {
+  "id": "P002",
+  "name": "Malik",
+  "age": 46,
+  "segment": "Japanese tourist",
+  "income": 156000,
+  "behaviour": "Guidebook follower",
+  "behaviour_how": "Picks restaurants from Japanese guidebooks, blogs or Instagram before the trip.",
+  "objection": "I am not sure I will like cold noodle soup or arrowroot noodles",
+  "habit": "hot afternoons make you want something cold"
+ },
+ {
+  "id": "P003",
+  "name": "Zara",
+  "age": 55,
+  "segment": "US mainland tourist",
+  "income": 167000,
+  "behaviour": "Value-conscious",
+  "behaviour_how": "Feels Honolulu prices keep climbing, compares plate prices, notices tax and tip.",
+  "objection": "Korean food is everywhere in Honolulu, why this one",
+  "habit": "you usually pay by credit card"
+ },
+ {
+  "id": "P004",
+  "name": "Jordan",
+  "age": 23,
+  "segment": "Local Honolulu resident",
+  "income": 122000,
+  "behaviour": "Convenience-first",
+  "behaviour_how": "Eats wherever is close and has parking or a short wait.",
+  "objection": "Other Korean places nearby are cheaper or bigger portions",
+  "habit": "you eat out about twice a week"
+ },
+ {
+  "id": "P005",
+  "name": "Oscar",
+  "age": 67,
+  "segment": "US mainland tourist",
+  "income": 165000,
+  "behaviour": "Guidebook follower",
+  "behaviour_how": "Picks restaurants from Japanese guidebooks, blogs or Instagram before the trip.",
+  "objection": "$18.95 for a bowl of cold noodles, plus tax and tip, is a lot",
+  "habit": "you are staying in Waikiki for a week"
+ },
+ {
+  "id": "P006",
+  "name": "Raj",
+  "age": 60,
+  "segment": "Local Honolulu resident",
+  "income": 85000,
+  "behaviour": "Reads every review",
+  "behaviour_how": "Checks Yelp or Google ratings and photos before trying anywhere.",
+  "objection": "$18.95 for a bowl of cold noodles, plus tax and tip, is a lot",
+  "habit": "you are staying in Waikiki for a week"
+ },
+ {
+  "id": "P007",
+  "name": "Hana",
+  "age": 28,
+  "segment": "Japanese tourist",
+  "income": 51000,
+  "behaviour": "Guidebook follower",
+  "behaviour_how": "Picks restaurants from Japanese guidebooks, blogs or Instagram before the trip.",
+  "objection": "Parking on Kapiolani is a hassle",
+  "habit": "hot afternoons make you want something cold"
+ },
+ {
+  "id": "P008",
+  "name": "Quinn",
+  "age": 61,
+  "segment": "Korean or Korean-American local",
+  "income": 58000,
+  "behaviour": "Regular for naengmyeon",
+  "behaviour_how": "Has a favourite naengmyeon spot and goes back often, especially on hot days.",
+  "objection": "Korean food is everywhere in Honolulu, why this one",
+  "habit": "you eat out about twice a week"
+ },
+ {
+  "id": "P009",
+  "name": "Freya",
+  "age": 36,
+  "segment": "Korean or Korean-American local",
+  "income": 40000,
+  "behaviour": "Group diner",
+  "behaviour_how": "Usually eats with family or friends, orders to share.",
+  "objection": "Korean food is everywhere in Honolulu, why this one",
+  "habit": "you eat out about twice a week"
+ },
+ {
+  "id": "P010",
+  "name": "Marco",
+  "age": 33,
+  "segment": "Local Honolulu resident",
+  "income": 115000,
+  "behaviour": "Regular for naengmyeon",
+  "behaviour_how": "Has a favourite naengmyeon spot and goes back often, especially on hot days.",
+  "objection": "The 20% gratuity for parties of 5 or more feels like a lot",
+  "habit": "you shop at Ala Moana Center now and then"
+ },
+ {
+  "id": "P011",
+  "name": "Ivy",
+  "age": 39,
+  "segment": "Local Honolulu resident",
+  "income": 82000,
+  "behaviour": "Group diner",
+  "behaviour_how": "Usually eats with family or friends, orders to share.",
+  "objection": "Parking on Kapiolani is a hassle",
+  "habit": "you eat out about twice a week"
+ },
+ {
+  "id": "P012",
+  "name": "Harper",
+  "age": 34,
+  "segment": "Local Honolulu resident",
+  "income": 69000,
+  "behaviour": "Reads every review",
+  "behaviour_how": "Checks Yelp or Google ratings and photos before trying anywhere.",
+  "objection": "The 20% gratuity for parties of 5 or more feels like a lot",
+  "habit": "you usually pay by credit card"
+ },
+ {
+  "id": "P013",
+  "name": "Kenji",
+  "age": 49,
+  "segment": "Japanese tourist",
+  "income": 51000,
+  "behaviour": "Value-conscious",
+  "behaviour_how": "Feels Honolulu prices keep climbing, compares plate prices, notices tax and tip.",
+  "objection": "The 20% gratuity for parties of 5 or more feels like a lot",
+  "habit": "you usually pay by credit card"
+ },
+ {
+  "id": "P014",
+  "name": "Andre",
+  "age": 29,
+  "segment": "Japanese tourist",
+  "income": 125000,
+  "behaviour": "Value-conscious",
+  "behaviour_how": "Feels Honolulu prices keep climbing, compares plate prices, notices tax and tip.",
+  "objection": "Parking on Kapiolani is a hassle",
+  "habit": "you shop at Ala Moana Center now and then"
+ },
+ {
+  "id": "P015",
+  "name": "Mason",
+  "age": 30,
+  "segment": "Japanese tourist",
+  "income": 111000,
+  "behaviour": "Convenience-first",
+  "behaviour_how": "Eats wherever is close and has parking or a short wait.",
+  "objection": "$18.95 for a bowl of cold noodles, plus tax and tip, is a lot",
+  "habit": "you are staying in Waikiki for a week"
+ },
+ {
+  "id": "P016",
+  "name": "Ruby",
+  "age": 62,
+  "segment": "Local Honolulu resident",
+  "income": 51000,
+  "behaviour": "Group diner",
+  "behaviour_how": "Usually eats with family or friends, orders to share.",
+  "objection": "$18.95 for a bowl of cold noodles, plus tax and tip, is a lot",
+  "habit": "you eat out about twice a week"
+ },
+ {
+  "id": "P017",
+  "name": "Pablo",
+  "age": 68,
+  "segment": "Local Honolulu resident",
+  "income": 109000,
+  "behaviour": "Value-conscious",
+  "behaviour_how": "Feels Honolulu prices keep climbing, compares plate prices, notices tax and tip.",
+  "objection": "$18.95 for a bowl of cold noodles, plus tax and tip, is a lot",
+  "habit": "you usually pay by credit card"
+ },
+ {
+  "id": "P018",
+  "name": "Lina",
+  "age": 34,
+  "segment": "Korean or Korean-American local",
+  "income": 87000,
+  "behaviour": "Guidebook follower",
+  "behaviour_how": "Picks restaurants from Japanese guidebooks, blogs or Instagram before the trip.",
+  "objection": "Parking on Kapiolani is a hassle",
+  "habit": "you are staying in Waikiki for a week"
+ },
+ {
+  "id": "P019",
+  "name": "Nico",
+  "age": 27,
+  "segment": "Japanese tourist",
+  "income": 158000,
+  "behaviour": "Regular for naengmyeon",
+  "behaviour_how": "Has a favourite naengmyeon spot and goes back often, especially on hot days.",
+  "objection": "The 20% gratuity for parties of 5 or more feels like a lot",
+  "habit": "you are staying in Waikiki for a week"
+ },
+ {
+  "id": "P020",
+  "name": "Chloe",
+  "age": 33,
+  "segment": "Local Honolulu resident",
+  "income": 50000,
+  "behaviour": "Convenience-first",
+  "behaviour_how": "Eats wherever is close and has parking or a short wait.",
+  "objection": "$18.95 for a bowl of cold noodles, plus tax and tip, is a lot",
+  "habit": "you eat out about twice a week"
+ }
+]

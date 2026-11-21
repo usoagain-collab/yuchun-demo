@@ -1,0 +1,13 @@
+{
+  "id": "P011",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "convenience",
+  "reason": "Cold naengmyeon plus kalbi to share is an easy pick for a family dinner near Ala Moana, and the Set B looks like a decent way to split things. I'd try it once, but with kalbi near $39 and the parking on Kapiolani, it's not going to become a weekly thing.",
+  "objection": "Parking on Kapiolani is a hassle, and once you add tax and kalbi for a group of four, the bill gets big fast for a casual weeknight dinner.",
+  "would_change_my_mind": "Validated or easy parking nearby would get me back more often.",
+  "price_too_cheap": 9,
+  "price_cheap": 13,
+  "price_expensive": 19,
+  "price_too_expensive": 25
+}

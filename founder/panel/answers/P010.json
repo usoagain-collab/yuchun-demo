@@ -1,0 +1,13 @@
+{
+  "id": "P010",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "quality",
+  "reason": "I eat naengmyeon all the time, so a place that makes it the signature dish with arrowroot noodles is worth one try when I'm near Ala Moana anyway. It's going up against my usual spot, though, so it has to be better to get a second visit.",
+  "objection": "$18.95 plus tax and tip for a bowl of cold noodles is more than my regular place charges, and I already have a spot I trust. Also the 20% gratuity on 5 or more means I wouldn't bring the whole group here.",
+  "would_change_my_mind": "If the noodles and broth beat my usual spot, I'd switch and come back weekly in summer. If they're just average, I'm not coming back at that price.",
+  "price_too_cheap": 9,
+  "price_cheap": 14,
+  "price_expensive": 19,
+  "price_too_expensive": 24
+}

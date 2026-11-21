@@ -1,0 +1,13 @@
+{
+  "id": "P012",
+  "buys": true,
+  "purchases_first_month": 1,
+  "reason_code": "quality",
+  "reason": "Kudzu naengmyeon in an ice-cold broth sounds like a really good lunch, and $18.95 for a bowl is normal for Honolulu. I'd go once, but only after I've looked at the Google and Yelp photos and reviews and they hold up.",
+  "objection": "Nothing here tells me what other people think of it, so I have to go check the reviews myself. And $38.95 for kalbi plus tax and tip adds up fast if I bring friends, and the 20% added on for groups of 5 or more feels like a lot.",
+  "would_change_my_mind": "If the Google or Yelp reviews come back mediocre or the photos look sad, I wouldn't go at all.",
+  "price_too_cheap": 9,
+  "price_cheap": 14,
+  "price_expensive": 21,
+  "price_too_expensive": 26
+}

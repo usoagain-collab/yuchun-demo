@@ -1,0 +1,13 @@
+{
+  "id": "P003",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "I'm only here for a week and Korean places are on every block, so nothing here tells me why I should go out of my way for this one. Kalbi at $38.95 before tax is steep, and $18.95 for cold noodles is fine but not a reason to make the trip.",
+  "objection": "Korean food is everywhere in Honolulu. Why this one? I see prices and a menu but no proof it's better than the place next to my hotel.",
+  "would_change_my_mind": "Strong recent reviews or a local friend saying the kudzu naengmyeon is the best in town. Then I'd try one bowl.",
+  "price_too_cheap": 9,
+  "price_cheap": 13,
+  "price_expensive": 19,
+  "price_too_expensive": 25
+}

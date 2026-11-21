@@ -1,0 +1,13 @@
+{
+  "id": "P008",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "I already have my naengmyeon place and I go there whenever it's hot. Nothing here tells me this bowl is better than the one I already trust, and $18.95 plus tax is more than I like to pay for noodles.",
+  "objection": "Korean food is everywhere in Honolulu. Arrowroot noodles sound interesting, but every place says theirs is special. Why would I leave my regular spot for this one?",
+  "would_change_my_mind": "A friend or someone in the Korean community I trust telling me their chik naengmyeon broth is the real thing, better than my usual place.",
+  "price_too_cheap": 9,
+  "price_cheap": 13,
+  "price_expensive": 17,
+  "price_too_expensive": 22
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P017",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Nineteen bucks for cold noodles, then tax and tip on top, comes to about twenty-four dollars a bowl. I can get a good plate lunch for a lot less, so in a normal week I'd skip it.",
+  "objection": "Once you add tax and tip it's close to twenty-five dollars for noodles, and the kalbi at almost forty is out of the question for an ordinary lunch.",
+  "would_change_my_mind": "A lunch special around $14 for the naengmyeon, or a friend telling me it's really worth the money.",
+  "price_too_cheap": 8,
+  "price_cheap": 12,
+  "price_expensive": 16,
+  "price_too_expensive": 20
+}

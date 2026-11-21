@@ -1,0 +1,13 @@
+{
+  "id": "P006",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Nineteen dollars for a bowl of cold noodles, and over twenty-two once tax and tip go on, is more than I want to pay for lunch, especially for a place I know nothing about. Nothing here tells me what other people thought of it, and I don't try a new spot at these prices on a description alone.",
+  "objection": "$18.95 for cold noodles plus tax and tip is a lot, and I have no reviews or photos telling me it's worth it over the Korean places I already know.",
+  "would_change_my_mind": "A strong Google or Yelp rating, 4.5 or better with a lot of reviews, and photos showing a big bowl of noodles that really are made in house.",
+  "price_too_cheap": 8,
+  "price_cheap": 12,
+  "price_expensive": 16,
+  "price_too_expensive": 20
+}

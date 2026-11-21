@@ -1,0 +1,13 @@
+{
+  "id": "P004",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "convenience",
+  "reason": "I eat wherever's easy, and nothing here tells me if there's parking or how long the wait is on Kapiolani. Without that I'll just default to a spot I already know, and $38.95 for kalbi when other Korean places nearby feel cheaper or bigger doesn't give me a reason to make the effort.",
+  "objection": "No word on parking, and the prices look high next to the other Korean places around Ala Moana that seem to give you more food for less.",
+  "would_change_my_mind": "Knowing there's easy parking or validated parking and basically no wait at lunch.",
+  "price_too_cheap": 8,
+  "price_cheap": 13,
+  "price_expensive": 20,
+  "price_too_expensive": 27
+}

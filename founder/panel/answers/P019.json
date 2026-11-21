@@ -1,0 +1,13 @@
+{
+  "id": "P019",
+  "buys": true,
+  "purchases_first_month": 2,
+  "reason_code": "habit",
+  "reason": "I eat naengmyeon all the time back home, and a bowl of cold kudzu noodles after a hot day on the beach sounds perfect. It's only 10 minutes from my hotel, so I'd go once, and if the noodles are properly chewy I'd go back before my week is over.",
+  "objection": "I have my own favourite naengmyeon place, so the bar is high. $18.95 plus tax and tip for one bowl is more than I usually pay, and if I ever came with a bigger group, the 20% gratuity on top feels like a lot.",
+  "would_change_my_mind": "",
+  "price_too_cheap": 8,
+  "price_cheap": 13,
+  "price_expensive": 21,
+  "price_too_expensive": 28
+}
